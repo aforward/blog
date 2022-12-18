@@ -1,19 +1,30 @@
 # Blog
 
-To start your Phoenix server:
+## Writing
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+The blog articles are located in
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+```
+../writing/blog
+```
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+## Re-generate
 
-## Learn more
+To regenerate run (this is aliased from `Blog.Generator`) from `iex -S mix`
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+
+```elixir
+Gen.run()
+```
+
+## More languages
+
+If you provide additional code samples in an unsupported language then
+visit [prism.js](/assets/vendor/prism.js) to get the current confirmation
+which will look like the following
+
+```
+https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript+bash+elixir+go&plugins=line-numbers */
+```
+
+Add the new language and update [prism.js](/assets/vendor/prism.js) and [prism.css](/priv/static/css/prism.css).

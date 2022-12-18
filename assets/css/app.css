@@ -3,3 +3,15 @@
 @import "tailwindcss/utilities";
 
 /* This file is for your main application CSS */
+
+article a {
+  @apply underline text-blue-500;
+}
+
+article .summary p, article .summary pre {
+  @apply relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400;
+}
+
+article .full p {
+  @apply relative z-10 mt-4 text-sm text-zinc-600 dark:text-zinc-400;
+}
