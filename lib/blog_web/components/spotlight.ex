@@ -80,75 +80,7 @@ defmodule BlogWeb.Spotlight do
               </div>
             </div>
           </main>
-          <footer class="mt-32">
-            <div class="sm:px-8">
-              <div class="mx-auto max-w-7xl lg:px-8">
-                <div class="border-t border-zinc-100 pt-10 pb-16 dark:border-zinc-700/40">
-                  <div class="relative px-4 sm:px-8 lg:px-12">
-                    <div class="mx-auto max-w-2xl lg:max-w-5xl">
-                      <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
-                        <div class="flex gap-2 text-sm font-medium text-zinc-800 dark:text-zinc-200">
-                          <svg
-                            width="32px"
-                            height="32px"
-                            viewBox="0 0 64 64"
-                            version="1.1"
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                          >
-                            <g
-                              id="logo_outline"
-                              stroke="none"
-                              stroke-width="1"
-                              fill="none"
-                              fill-rule="evenodd"
-                            >
-                              <path
-                                d="M32,4.0551624 C47.463973,4.0551624 60,16.7593213 60,32.4306955 C60,44.643665 52.3864308,55.0545405 41.7068606,59.0547622 L31.8541667,32.4306955 L22.0380355,58.9577656 C11.4925306,54.8882531 4,44.5461967 4,32.4306955 C4,16.7593213 16.536027,4.0551624 32,4.0551624 Z"
-                                id="Combined-Shape"
-                                stroke="#781244"
-                                stroke-width="8"
-                              >
-                              </path>
-                              <rect
-                                id="Rectangle"
-                                fill="#781244"
-                                x="27.1508908"
-                                y="50.0994823"
-                                width="10"
-                                height="5.41164514"
-                              >
-                              </rect>
-                              <circle
-                                id="Oval"
-                                stroke="#F2B726"
-                                stroke-width="5"
-                                fill="#FFFFFF"
-                                cx="50.060985"
-                                cy="14.4183656"
-                                r="11"
-                              >
-                              </circle>
-                            </g>
-                          </svg>
-                          <a
-                            href="/"
-                            class="underline text-pink-900 hover:text-pink-500"
-                            style="line-height: 32px"
-                          >
-                            anunknown.dev
-                          </a>
-                        </div>
-                        <p class="text-sm text-zinc-400 dark:text-zinc-500">
-                          © <%= Date.utc_today().year %> Andrew Forward. All rights reserved.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </footer>
+          <.footer />
         </div>
       </div>
     </body>
@@ -218,75 +150,7 @@ defmodule BlogWeb.Spotlight do
               </div>
             </div>
           </main>
-          <footer class="mt-32">
-            <div class="sm:px-8">
-              <div class="mx-auto max-w-7xl lg:px-8">
-                <div class="border-t border-zinc-100 pt-10 pb-16 dark:border-zinc-700/40">
-                  <div class="relative px-4 sm:px-8 lg:px-12">
-                    <div class="mx-auto max-w-2xl lg:max-w-5xl">
-                      <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
-                        <div class="flex gap-2 text-sm font-medium text-zinc-800 dark:text-zinc-200">
-                          <svg
-                            width="32px"
-                            height="32px"
-                            viewBox="0 0 64 64"
-                            version="1.1"
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                          >
-                            <g
-                              id="logo_outline"
-                              stroke="none"
-                              stroke-width="1"
-                              fill="none"
-                              fill-rule="evenodd"
-                            >
-                              <path
-                                d="M32,4.0551624 C47.463973,4.0551624 60,16.7593213 60,32.4306955 C60,44.643665 52.3864308,55.0545405 41.7068606,59.0547622 L31.8541667,32.4306955 L22.0380355,58.9577656 C11.4925306,54.8882531 4,44.5461967 4,32.4306955 C4,16.7593213 16.536027,4.0551624 32,4.0551624 Z"
-                                id="Combined-Shape"
-                                stroke="#781244"
-                                stroke-width="8"
-                              >
-                              </path>
-                              <rect
-                                id="Rectangle"
-                                fill="#781244"
-                                x="27.1508908"
-                                y="50.0994823"
-                                width="10"
-                                height="5.41164514"
-                              >
-                              </rect>
-                              <circle
-                                id="Oval"
-                                stroke="#F2B726"
-                                stroke-width="5"
-                                fill="#FFFFFF"
-                                cx="50.060985"
-                                cy="14.4183656"
-                                r="11"
-                              >
-                              </circle>
-                            </g>
-                          </svg>
-                          <a
-                            href="/"
-                            class="underline text-pink-900 hover:text-pink-500"
-                            style="line-height: 32px"
-                          >
-                            anunknown.dev
-                          </a>
-                        </div>
-                        <p class="text-sm text-zinc-400 dark:text-zinc-500">
-                          © <%= Date.utc_today().year %> Andrew Forward. All rights reserved.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </footer>
+          <.footer />
         </div>
       </div>
     </body>
@@ -336,6 +200,96 @@ defmodule BlogWeb.Spotlight do
         <%= to_friendly(assigns.datetime) %>
       </time>
     </article>
+    """
+  end
+
+  def footer(assigns) do
+    ~H"""
+    <footer class="mt-32">
+      <div class="sm:px-8">
+        <div class="mx-auto max-w-7xl lg:px-8">
+          <div class="border-t border-zinc-100 pt-10 pb-16 dark:border-zinc-700/40">
+            <div class="relative px-4 sm:px-8 lg:px-12">
+              <div class="mx-auto max-w-2xl lg:max-w-5xl">
+                <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
+                  <div class="flex gap-2 text-sm font-medium text-zinc-800 dark:text-zinc-200">
+                    <svg
+                      width="32px"
+                      height="32px"
+                      viewBox="0 0 64 64"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <g
+                        id="logo_outline"
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <path
+                          d="M32,4.0551624 C47.463973,4.0551624 60,16.7593213 60,32.4306955 C60,44.643665 52.3864308,55.0545405 41.7068606,59.0547622 L31.8541667,32.4306955 L22.0380355,58.9577656 C11.4925306,54.8882531 4,44.5461967 4,32.4306955 C4,16.7593213 16.536027,4.0551624 32,4.0551624 Z"
+                          id="Combined-Shape"
+                          stroke="#781244"
+                          stroke-width="8"
+                        >
+                        </path>
+                        <rect
+                          id="Rectangle"
+                          fill="#781244"
+                          x="27.1508908"
+                          y="50.0994823"
+                          width="10"
+                          height="5.41164514"
+                        >
+                        </rect>
+                        <circle
+                          id="Oval"
+                          stroke="#F2B726"
+                          stroke-width="5"
+                          fill="#FFFFFF"
+                          cx="50.060985"
+                          cy="14.4183656"
+                          r="11"
+                        >
+                        </circle>
+                      </g>
+                    </svg>
+                    <a
+                      href="/"
+                      class="underline text-pink-900 hover:text-pink-500"
+                      style="line-height: 32px"
+                    >
+                      anunknown.dev
+                    </a>
+
+                    <div
+                      class="pl-2 text-gray-500 hover:text-gray-800 hover:underline"
+                      style="line-height: 32px"
+                      href="/books"
+                    >
+                      Books
+                    </div>
+
+                    <a
+                      class="pl-2 text-gray-500 hover:text-gray-800 hover:underline"
+                      style="line-height: 32px"
+                      href="/"
+                    >
+                      Blog
+                    </a>
+                  </div>
+                  <p class="text-sm text-zinc-400 dark:text-zinc-500">
+                    © <%= Date.utc_today().year %> Andrew Forward. All rights reserved.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     """
   end
 end
