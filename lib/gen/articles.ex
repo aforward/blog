@@ -167,10 +167,10 @@ defmodule Gen.Articles do
   <p>
   After you install <a href="https://golang.org/">Golang</a>, it&#39;s
   easy to <a href="https://www.packer.io/intro/getting-started/install.html#compiling-from-source">install Packer from source</a>.</p>
-  <pre><code class="bash language-bash">mkdir -p ~/src &amp;&amp; \
-    cd ~/src &amp;&amp; \
-    git clone https://github.com/hashicorp/packer.git &amp;&amp; \
-    cd packer &amp;&amp; \
+  <pre><code class="bash language-bash">mkdir -p ~/src &amp;&amp; \\
+    cd ~/src &amp;&amp; \\
+    git clone https://github.com/hashicorp/packer.git &amp;&amp; \\
+    cd packer &amp;&amp; \\
     make dev</code></pre>
   """,
   datetime: "2019-07-03",
@@ -2507,10 +2507,10 @@ def article("installing-packer-for-image-creation") do
   <p>
   For packer however, once <a href="https://golang.org/">Golang</a> is installed, it seems rather straight forward
   to <a href="https://www.packer.io/intro/getting-started/install.html#compiling-from-source">install from source</a>.</p>
-  <pre><code class="bash language-bash">mkdir -p ~/src &amp;&amp; \
-    cd ~/src &amp;&amp; \
-    git clone https://github.com/hashicorp/packer.git &amp;&amp; \
-    cd packer &amp;&amp; \
+  <pre><code class="bash language-bash">mkdir -p ~/src &amp;&amp; \\
+    cd ~/src &amp;&amp; \\
+    git clone https://github.com/hashicorp/packer.git &amp;&amp; \\
+    cd packer &amp;&amp; \\
     make dev</code></pre>
   <p>
   The installed things into <code class="inline">~/src/packer</code>. Let&#39;s make the packer
