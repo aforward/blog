@@ -522,7 +522,7 @@ defmodule Gen.Articles do
   <pre><code class="bash language-bash">npx tailwindcss init</code></pre>
   <p>
   Update the <code class="inline">purge</code> in <code class="inline">tailwind.config.js</code></p>
-  <pre><code>/** @type {import(&#39;tailwindcss&#39;).Config} */
+  <pre><code class="javascript language-javascript">/** @type {import(&#39;tailwindcss&#39;).Config} */
   module.exports = {
    purge: [&#39;layouts/**/*.html&#39;],
    content: [&quot;./content/**/*.{html,js}&quot;, &quot;./layouts/**/*.{html,js}&quot;],
