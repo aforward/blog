@@ -27,7 +27,7 @@ defmodule BlogWeb.Spotlight do
     end
   end
 
-  def home(assigns) do
+  def body(assigns) do
     ~H"""
     <body class="flex h-full flex-col bg-zinc-50 dark:bg-black">
       <div>
@@ -38,48 +38,9 @@ defmodule BlogWeb.Spotlight do
           </div>
         </div>
         <div class="relative">
-          <main>
-            <div class="sm:px-8 mt-16 sm:mt-10">
-              <div class="mx-auto max-w-7xl lg:px-8">
-                <div class="relative px-4 sm:px-8 lg:px-12">
-                  <div class="mx-auto max-w-2xl lg:max-w-5xl">
-                    <header class="max-w-2xl">
-                      <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-                        <img
-                          alt="This is a picture of me, Andrew Forward"
-                          src="/images/me.jpg"
-                          decoding="async"
-                          class="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-12 w-12 inline align-middle"
-                          style="color: transparent;"
-                        />
-                        <span class="align-middle">
-                          Deliver Early; <span class="text-blue-500">Often.</span>
-                        </span>
-                      </h1>
-                      <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                        Test-driven development, infrastructure as code, manage, design, development, automate and continuous everything.
-                        I don't often blog, but when I do, I reach for Markdown.
-                      </p>
-                    </header>
-                    <div class="mt-16 sm:mt-20">
-                      <div class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
-                        <div class="flex max-w-3xl flex-col space-y-16">
-                          <%= for article <- assigns.articles do %>
-                            <.summary
-                              slug={article.slug}
-                              title={article.title}
-                              body={article.body}
-                              datetime={article.datetime}
-                            />
-                          <% end %>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </main>
+          <.main>
+            <%= render_slot(@inner_block) %>
+          </.main>
           <.footer />
         </div>
       </div>
@@ -87,73 +48,19 @@ defmodule BlogWeb.Spotlight do
     """
   end
 
-  def article(assigns) do
+  def main(assigns) do
     ~H"""
-    <body class="flex h-full flex-col bg-zinc-50 dark:bg-black">
-      <div id="__next">
-        <div class="fixed inset-0 flex justify-center sm:px-8">
-          <div class="flex w-full max-w-7xl lg:px-8">
-            <div class="w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20">
+    <main>
+      <div class="sm:px-8 mt-16 sm:mt-10">
+        <div class="mx-auto max-w-7xl lg:px-8">
+          <div class="relative px-4 sm:px-8 lg:px-12">
+            <div class="mx-auto max-w-2xl lg:max-w-5xl">
+              <%= render_slot(@inner_block) %>
             </div>
           </div>
         </div>
-        <div class="relative">
-          <main>
-            <div class="sm:px-8 mt-10 lg:mt-20">
-              <div class="mx-auto max-w-7xl lg:px-8">
-                <div class="relative px-4 sm:px-8 lg:px-12">
-                  <div class="mx-auto max-w-2xl lg:max-w-5xl">
-                    <div class="xl:relative">
-                      <div class="mx-auto max-w-2xl">
-                        <a
-                          type="button"
-                          href="/"
-                          aria-label="Go back to articles"
-                          class="group mb-8 flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 transition dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0 dark:ring-white/10 dark:hover:border-zinc-700 dark:hover:ring-white/20 lg:absolute lg:-left-5 lg:mb-0 lg:-mt-2 xl:-top-1.5 xl:left-0 xl:mt-0"
-                        >
-                          <svg
-                            viewBox="0 0 16 16"
-                            fill="none"
-                            aria-hidden="true"
-                            class="h-4 w-4 stroke-zinc-500 transition group-hover:stroke-zinc-700 dark:stroke-zinc-500 dark:group-hover:stroke-zinc-400"
-                          >
-                            <path
-                              d="M7.25 11.25 3.75 8m0 0 3.5-3.25M3.75 8h8.5"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            >
-                            </path>
-                          </svg>
-                        </a>
-                        <article>
-                          <header class="flex flex-col">
-                            <h1 class="mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-                              <%= assigns.title %>
-                            </h1>
-                            <time
-                              datetime="2022-09-05"
-                              class="order-first flex items-center text-base text-zinc-400 dark:text-zinc-500"
-                            >
-                              <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500">
-                              </span><span class="ml-3">September 5, 2022</span>
-                            </time>
-                          </header>
-                          <div class="full mt-8 prose dark:prose-invert">
-                            <%= Phoenix.HTML.raw(assigns.body) %>
-                          </div>
-                        </article>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </main>
-          <.footer />
-        </div>
       </div>
-    </body>
+    </main>
     """
   end
 
@@ -200,6 +107,29 @@ defmodule BlogWeb.Spotlight do
         <%= to_friendly(assigns.datetime) %>
       </time>
     </article>
+    """
+  end
+
+  def header(assigns) do
+    ~H"""
+    <header class="max-w-2xl">
+      <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+        <img
+          alt="This is a picture of me, Andrew Forward"
+          src="/images/me.jpg"
+          decoding="async"
+          class="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-12 w-12 inline align-middle"
+          style="color: transparent;"
+        />
+        <span class="align-middle">
+          Deliver Early; <span class="text-blue-500">Often.</span>
+        </span>
+      </h1>
+      <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+        Test-driven development, infrastructure as code, manage, design, development, automate and continuous everything.
+        I don't often blog, but when I do, I reach for Markdown.
+      </p>
+    </header>
     """
   end
 
@@ -264,13 +194,13 @@ defmodule BlogWeb.Spotlight do
                       anunknown.dev
                     </a>
 
-                    <div
+                    <a
                       class="pl-2 text-gray-500 hover:text-gray-800 hover:underline"
                       style="line-height: 32px"
                       href="/books"
                     >
                       Books
-                    </div>
+                    </a>
 
                     <a
                       class="pl-2 text-gray-500 hover:text-gray-800 hover:underline"

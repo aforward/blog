@@ -1,31 +1,60 @@
 defmodule Blog.Generator do
-  @blogs_dir "../writing/blog"
+  @writing_dir "../writing"
 
-  def run(dir \\ @blogs_dir) do
+  def run(dir \\ @writing_dir) do
+    # publish_blog("#{dir}/blog")
+    publish_books("#{dir}/books")
+  end
+
+  def publish_books(dir) do
+    File.rm_rf("./priv/static/images/books")
+    File.cp_r("#{dir}/covers", "./priv/static/images/book-covers")
+
+    slugs = slugs(dir)
+
+    gen_books = """
+    defmodule Gen.Books do
+      def books() do
+        [
+          #{slugs |> Enum.map(fn slug ->
+      meta = metadata(slug, dir)
+
+      """
+      %{
+        title: "#{title(slug, :escape, dir)}",
+        author: "#{author(slug, :escape, dir)}",
+        published: "#{meta["published"]}",
+        url: "/images/book-covers/#{slug}.png",
+        slug: "#{slug}"
+      },
+      """
+    end) |> Enum.join("\n")}
+        ]
+      end
+    end
+    """
+
+    File.write("./lib/gen/books.ex", gen_books)
+  end
+
+  def publish_blog(dir) do
     File.rm_rf("./priv/static/images/blog")
     File.cp_r(dir, "./priv/static/images/blog")
 
-    slugs =
-      dir
-      |> slugs()
-      |> Enum.map(fn s ->
-        {s, metadata(s)}
-      end)
-      |> Enum.sort_by(fn {_s, m} -> m["datetime"] end, :desc)
-      |> Enum.map(fn {s, _} -> s end)
+    slugs = slugs(dir)
 
     gen_articles = """
     defmodule Gen.Articles do
       def articles() do
         [
           #{slugs |> Enum.map(fn slug ->
-      meta = metadata(slug)
+      meta = metadata(slug, dir)
 
       """
       %{
-        title: "#{title(slug, :escape)}",
+        title: "#{title(slug, :escape, dir)}",
         body: \"\"\"
-        #{summary(slug)}
+        #{summary(slug, dir)}
         \"\"\",
         datetime: "#{meta["datetime"]}",
         slug: "#{slug}"
@@ -38,13 +67,13 @@ defmodule Blog.Generator do
       #{slugs |> Enum.map(fn slug -> """
       def article("#{slug}") do
         \"\"\"
-        #{article(slug)}
+        #{article(slug, dir)}
         \"\"\"
       end
       """ end)}
 
       #{slugs |> Enum.map(fn slug -> """
-      def title("#{slug}"),  do: "#{title(slug, :escape)}"
+      def title("#{slug}"),  do: "#{title(slug, :escape, dir)}"
       """ end)}
 
     end
@@ -53,35 +82,44 @@ defmodule Blog.Generator do
     File.write("./lib/gen/articles.ex", gen_articles)
   end
 
-  def slugs(dir \\ @blogs_dir) do
+  def slugs(dir) do
     dir
     |> File.ls!()
     |> Enum.filter(&String.ends_with?(&1, ".md"))
     |> Enum.map(&String.split_at(&1, -3))
     |> Enum.map(fn {slug, _} -> slug end)
+    |> Enum.map(fn s ->
+      {s, metadata(s, dir)}
+    end)
+    |> Enum.sort_by(fn {_s, m} -> m["datetime"] end, :desc)
+    |> Enum.map(fn {s, _} -> s end)
   end
 
-  defp filename(slug, dir \\ @blogs_dir), do: "#{dir}/#{slug}.md"
+  defp filename(slug, dir), do: "#{dir}/#{slug}.md"
 
-  def title(slug, mode, dir \\ @blogs_dir) do
-    title =
+  def title(slug, mode, dir), do: line(slug, 1, mode, dir)
+  def author(slug, mode, dir), do: line(slug, 2, mode, dir)
+
+  def line(slug, line, mode, dir) do
+    line =
       slug
       |> filename(dir)
       |> File.stream!()
+      |> Stream.drop(line - 1)
       |> Enum.take(1)
       |> case do
         [] -> slug
-        [title] -> title |> String.replace(~r{^#\s*}, "")
+        [line] -> line |> String.replace(~r{^#*\s*}, "")
       end
 
     case mode do
-      :escape -> String.replace(title, "\"", "\\\"")
-      _else -> title
+      :escape -> String.replace(line, "\"", "\\\"")
+      _else -> line
     end
     |> String.trim()
   end
 
-  def metadata(slug, dir \\ @blogs_dir) do
+  def metadata(slug, dir) do
     slug
     |> filename(dir)
     |> File.stream!()
@@ -98,9 +136,9 @@ defmodule Blog.Generator do
     |> Enum.into(%{})
   end
 
-  defp summary(slug) do
+  defp summary(slug, dir) do
     slug
-    |> filename()
+    |> filename(dir)
     |> File.stream!()
     |> Enum.chunk_while(
       {:before, []},
@@ -122,9 +160,9 @@ defmodule Blog.Generator do
     |> to_html()
   end
 
-  def article(slug) do
+  def article(slug, dir) do
     slug
-    |> filename()
+    |> filename(dir)
     |> File.stream!()
     |> Enum.drop_while(&(&1 != "## Article\n"))
     |> Enum.drop(1)

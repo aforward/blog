@@ -7,6 +7,12 @@ defmodule BlogWeb.PageController do
     |> render(:home)
   end
 
+  def books(conn, _params) do
+    conn
+    |> assign(:books, Gen.Books.books())
+    |> render(:books)
+  end
+
   def article(conn, %{"slug" => slug}) do
     conn
     |> assign(:slug, slug)

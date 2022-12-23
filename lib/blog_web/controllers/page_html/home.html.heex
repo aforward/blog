@@ -1,1 +1,17 @@
-<Spotlight.home articles={assigns.articles} />
+<Spotlight.body>
+  <Spotlight.header />
+  <div class="mt-16 sm:mt-20">
+    <div class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
+      <div class="flex max-w-3xl flex-col space-y-16">
+        <%= for article <- @articles do %>
+          <Spotlight.summary
+            slug={article.slug}
+            title={article.title}
+            body={article.body}
+            datetime={article.datetime}
+          />
+        <% end %>
+      </div>
+    </div>
+  </div>
+</Spotlight.body>
