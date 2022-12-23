@@ -19,6 +19,7 @@ defmodule BlogWeb.Router do
 
     get "/", PageController, :home
     get "/books", PageController, :books
+    get "/snippets", PageController, :snippets
     get "/articles/:slug", PageController, :article
   end
 

@@ -13,6 +13,12 @@ defmodule BlogWeb.PageController do
     |> render(:books)
   end
 
+  def snippets(conn, _params) do
+    conn
+    |> assign(:snippets, Gen.Snippets.snippets())
+    |> render(:snippets)
+  end
+
   def article(conn, %{"slug" => slug}) do
     conn
     |> assign(:slug, slug)

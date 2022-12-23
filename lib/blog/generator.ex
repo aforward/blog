@@ -2,9 +2,34 @@ defmodule Blog.Generator do
   @writing_dir "../writing"
 
   def run(dir \\ @writing_dir) do
-    publish_blog("#{dir}/blog")
-    publish_books("#{dir}/books")
+    # publish_blog("#{dir}/blog")
+    # publish_books("#{dir}/books")
+    publish_snippets("#{dir}/snippets")
     :ok
+  end
+
+  def publish_snippets(dir) do
+    slugs = slugs(dir)
+
+    gen_books = """
+    defmodule Gen.Snippets do
+      def snippets() do
+        [
+          #{slugs |> Enum.map(fn slug -> """
+      %{
+        title: "#{title(slug, :escape, dir)}",
+        body: \"\"\"
+        #{body(slug, 2, dir)}
+        \"\"\",
+        slug: "#{slug}"
+      },
+      """ end) |> Enum.join("\n")}
+        ]
+      end
+    end
+    """
+
+    File.write("./lib/gen/snippets.ex", gen_books)
   end
 
   def publish_books(dir) do
@@ -93,6 +118,7 @@ defmodule Blog.Generator do
       {s, metadata(s, dir)}
     end)
     |> Enum.sort_by(fn {_s, m} -> m["datetime"] end, :desc)
+    |> Enum.sort_by(fn {s, _m} -> s end, :asc)
     |> Enum.map(fn {s, _} -> s end)
   end
 
@@ -161,6 +187,15 @@ defmodule Blog.Generator do
     |> to_html()
   end
 
+  def body(slug, start_line, dir) do
+    slug
+    |> filename(dir)
+    |> File.stream!()
+    |> Stream.drop(start_line - 1)
+    |> Enum.into([])
+    |> to_html()
+  end
+
   def article(slug, dir) do
     slug
     |> filename(dir)
@@ -174,6 +209,7 @@ defmodule Blog.Generator do
     chunked
     |> List.flatten()
     |> Enum.map(&format_image/1)
+    |> Enum.map(&escape_elixir/1)
     |> Enum.join()
     |> Earmark.as_html!(%Earmark.Options{
       code_class_prefix: "language-",
@@ -183,6 +219,13 @@ defmodule Blog.Generator do
     |> Enum.map(&"  #{&1}\n")
     |> Enum.join()
     |> String.trim()
+  end
+
+  defp escape_elixir(nil), do: nil
+
+  defp escape_elixir(line) do
+    line
+    |> String.replace("\#{", "\\\#{")
   end
 
   defp format_image(nil), do: nil
