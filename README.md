@@ -16,6 +16,13 @@ To regenerate run
 mix run --eval "Blog.Generator.run()"
 ```
 
+## Deploy
+
+When ready, deploy to [anunknown.dev](https://anunknown.dev) with
+
+```bash
+fly deploy
+```
 
 ## More languages
 
