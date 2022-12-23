@@ -2,8 +2,9 @@ defmodule Blog.Generator do
   @writing_dir "../writing"
 
   def run(dir \\ @writing_dir) do
-    # publish_blog("#{dir}/blog")
+    publish_blog("#{dir}/blog")
     publish_books("#{dir}/books")
+    :ok
   end
 
   def publish_books(dir) do

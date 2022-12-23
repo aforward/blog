@@ -148,7 +148,7 @@ defmodule Gen.Articles do
 },
 
 %{
-  title: "The Code I Didn’t Write",
+  title: "The Code I Didn't Write",
   body: """
   <p>
   I enjoy reading job listings.  There&#39;s the &quot;what&#39;s trending&quot;
@@ -351,10 +351,10 @@ defmodule Gen.Articles do
 },
 
 %{
-  title: "Oh, the API Clients You’ll Build (in Elixir)",
+  title: "Oh, the API Clients You'll Build (in Elixir)",
   body: """
   <p>
-    <img src="/images/blog/talks/oh-the-apis-opencamps-2017/oh_the_apis.png" alt="Oh, the API Clients You’ll Build (in Elixir)" />
+    <img src="/images/blog/talks/oh-the-apis-opencamps-2017/oh_the_apis.png" alt="Oh, the API Clients You&#39;ll Build (in Elixir)" />
   </p>
   <p>
   Today we are going explore how to write API clients in the <a href="https://elixir-lang.org">Elixir</a> language. This is a follow-up article to my presentation at OpenCamps 2017.</p>
@@ -367,7 +367,7 @@ defmodule Gen.Articles do
   title: "Yet Another Digital Ocean API client in Elixir",
   body: """
   <p>
-  Want to automate your infrastructure leveraging the awesome <a href="https://developers.digitalocean.com/documentation/v2/">Digital Ocean API V2</a>, then the shell is your friend. Here we will learn about how to access the API from the command line using Elixir’s <a href="https://hexdocs.pm/mix/master/Mix.Tasks.Escript.Build.html">Escript</a> tooling.</p>
+  Want to automate your infrastructure leveraging the awesome <a href="https://developers.digitalocean.com/documentation/v2/">Digital Ocean API V2</a>, then the shell is your friend. Here we will learn about how to access the API from the command line using Elixir&#39;s <a href="https://hexdocs.pm/mix/master/Mix.Tasks.Escript.Build.html">Escript</a> tooling.</p>
   <p>
     <img src="/images/blog/doex/doex_on_hex.png" alt="doex API for digital ocean on hex" />
   </p>
@@ -1937,26 +1937,26 @@ def article("git-rebase-webcampzg") do
     <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.005.png" alt="git rebase -i HEAD~25 slide 05" />
   </p>
   <p>
-  In a perfect world, we solve problems perfectly.  In my imperfect world, I might find and fix a bug mid feature.  I might take a break from the feature and clean up the code.  I might forget to pull in other peoples changes for a while.  I might think I pulled in peoples changes, but haven’t.  I might chase down a rabbit, trying a bunch of things with a bunch of poorly formed, poorly named, and just plain awful commits.  I might need to share code with a colleague that is riddled with half implemented work.</p>
+  In a perfect world, we solve problems perfectly.  In my imperfect world, I might find and fix a bug mid feature.  I might take a break from the feature and clean up the code.  I might forget to pull in other peoples changes for a while.  I might think I pulled in peoples changes, but haven&#39;t.  I might chase down a rabbit, trying a bunch of things with a bunch of poorly formed, poorly named, and just plain awful commits.  I might need to share code with a colleague that is riddled with half implemented work.</p>
   <p>
   Reality is messy, and there is nothing wrong with changing our git commit history to tell a more compelling story about our intention with the changes, not the unfocussed journey that got us there.</p>
   <p>
     <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.006.png" alt="git rebase -i HEAD~25 slide 06" />
   </p>
   <p>
-  Git rebase, and similar commands do allow us to change what actually happened.  Purest might complain your repository is an untrue reflection of what truly happened.  And, I agree!  It’s a good thing that git allows us to clean up our disorganized self and our disorganized code.</p>
+  Git rebase, and similar commands do allow us to change what actually happened.  Purest might complain your repository is an untrue reflection of what truly happened.  And, I agree!  It&#39;s a good thing that git allows us to clean up our disorganized self and our disorganized code.</p>
   <p>
   We alter history all the time.  My first draft of this talk is very different that what I am presenting now.  All other mediums are highly edited and tailored to the intended audience to deliver a clear and concise message, removing our mis-steps and better communicating our intent.  This benefits the audience, which will be your colleagues and most likely also your future self.</p>
   <p>
     <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.007.png" alt="git rebase -i HEAD~25 slide 07" />
   </p>
   <p>
-  Git is a a distributed source code repository.  Unlike centralized repositories such as Subversion, every copy of a git repo IS itself also a git repository, and every copy can behave like a server and most copies can also behave like a client. So you push to the remote server and you pull into your local client.  Most people use it like a centralized repository, but it’s not, so let’s consider two falsehoods in what I just told you.</p>
+  Git is a a distributed source code repository.  Unlike centralized repositories such as Subversion, every copy of a git repo IS itself also a git repository, and every copy can behave like a server and most copies can also behave like a client. So you push to the remote server and you pull into your local client.  Most people use it like a centralized repository, but it&#39;s not, so let&#39;s consider two falsehoods in what I just told you.</p>
   <p>
     <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.008.png" alt="git rebase -i HEAD~25 slide 08" />
   </p>
   <p>
-  Firstly, you don’t really pull into your local code.  You actually fetch code from a remote repository and then you merge it into your local code.  You now have your code locally, but also a local copy of the remote code. And then the legitimate remote code on the <code class="inline">origin</code> server.</p>
+  Firstly, you don&#39;t really pull into your local code.  You actually fetch code from a remote repository and then you merge it into your local code.  You now have your code locally, but also a local copy of the remote code. And then the legitimate remote code on the <code class="inline">origin</code> server.</p>
   <p>
     <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.009.png" alt="git rebase -i HEAD~25 slide 09" />
   </p>
@@ -2003,7 +2003,7 @@ def article("git-rebase-webcampzg") do
     <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.015.png" alt="git rebase -i HEAD~25 slide 15" />
   </p>
   <p>
-  Let’s now consider Amy, a developer getting back from a totally unplugged holiday.
+  Let&#39;s now consider Amy, a developer getting back from a totally unplugged holiday.
   First thing back, she wants to forcibly get the latest code from <code class="inline">origin</code>.
   She enters the main branch, fetches code from the <code class="inline">origin</code> server and then does a
   hard reset against the local <code class="inline">origin/main</code> branch.</p>
@@ -2039,7 +2039,7 @@ def article("git-rebase-webcampzg") do
   </p>
   <p>
   Amy was in a rush on that last commit “doing stuff” and could write a better message.
-  She amend’s that last commit changing the message to “hard change”.</p>
+  She amend&#39;s that last commit changing the message to “hard change”.</p>
   <p>
     <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.021.png" alt="git rebase -i HEAD~25 slide 21" />
   </p>
@@ -2051,8 +2051,8 @@ def article("git-rebase-webcampzg") do
   </p>
   <p>
   Git status is not a network operation.  So we could still be behind our remote version of the
-  remote code.  That’s why we want to <code class="inline">git fetch</code> all the time.  This will reduce accidental
-  conflicts when you thought you had the latest remote code, but actually didn’t.</p>
+  remote code.  That&#39;s why we want to <code class="inline">git fetch</code> all the time.  This will reduce accidental
+  conflicts when you thought you had the latest remote code, but actually didn&#39;t.</p>
   <p>
     <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.021.png" alt="git rebase -i HEAD~25 slide 21" />
   </p>
@@ -2063,21 +2063,21 @@ def article("git-rebase-webcampzg") do
   </p>
   <p>
   Visually, we amended our last commit changing a “C” into a “D”.  We did the change,
-  it’s our branch, let’s forcibly but with room for error push that to our remote
+  it&#39;s our branch, let&#39;s forcibly but with room for error push that to our remote
   <code class="inline">origin</code> server using <code class="inline">git push --force-with-lease</code>.  The “--with-lease” avoids overwriting
   commits that others might have pushed to our branch.</p>
   <p>
     <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.025.png" alt="git rebase -i HEAD~25 slide 25" />
   </p>
   <p>
-  Amy then notices she also forgot to add a file to that last commit. Let’s use the <code class="inline">-A</code> to add all
-  changes to avoid this going forward.  We can also add a <code class="inline">--no-edit</code> flag as we don’t want to change
+  Amy then notices she also forgot to add a file to that last commit. Let&#39;s use the <code class="inline">-A</code> to add all
+  changes to avoid this going forward.  We can also add a <code class="inline">--no-edit</code> flag as we don&#39;t want to change
   the commit message this time.</p>
   <p>
     <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.026.png" alt="git rebase -i HEAD~25 slide 26" />
   </p>
   <p>
-  But, the code isn’t really flowing and does not tell a good story of “making the hard change easy, and then making the easy change”,
+  But, the code isn&#39;t really flowing and does not tell a good story of “making the hard change easy, and then making the easy change”,
   so Amy wants to re-order the commits to tell a better story of the progression of this feature. We can do this with an
   interactive <code class="inline">-i</code> rebase.</p>
   <p>
@@ -2090,7 +2090,7 @@ def article("git-rebase-webcampzg") do
   </p>
   <p>
   Amy leaves for the day, and back tomorrow to finish the work.  Her teammate Bob was also
-  working and he pushed new code to the teams main branch.  Let’s pull that work into our branch.
+  working and he pushed new code to the teams main branch.  Let&#39;s pull that work into our branch.
   First we need to fetch from our origin server.  Second, we rebase against that local main branch
   identified as <code class="inline">origin/main</code>.  This <code class="inline">origin/main</code> is the local copy of the main branch stored in our remote server labelled <code class="inline">origin</code>.
   Just like <code class="inline">origin/f/jumps</code> is the local copy of the <code class="inline">f/jumps</code> branch stored in our remote server labelled <code class="inline">origin</code>.</p>
@@ -2105,12 +2105,12 @@ def article("git-rebase-webcampzg") do
   <p>
   So today Bobs new commits are in the main branch, and are visible once we “git fetch”.  Now we can rebase our work against that the new code.  Amy and Bob communicate well together so no conflicts are expected.</p>
   <p>
-  The first step in a rebase will detach Amy’s local commits from her branch.</p>
+  The first step in a rebase will detach Amy&#39;s local commits from her branch.</p>
   <p>
     <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.031.png" alt="git rebase -i HEAD~25 slide 31" />
   </p>
   <p>
-  The first step in a rebase will detach Amy’s local commits from her branch.</p>
+  The first step in a rebase will detach Amy&#39;s local commits from her branch.</p>
   <p>
     <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.032.png" alt="git rebase -i HEAD~25 slide 32" />
   </p>
@@ -2130,7 +2130,7 @@ def article("git-rebase-webcampzg") do
     <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.035.png" alt="git rebase -i HEAD~25 slide 35" />
   </p>
   <p>
-  And this is why rebase gets a bad name, and why we shouldn’t rebase against shared branches like main.  On the left was our tiny little amended commit.  But, we forgot to push the change and then someone else (maybe even us) pushed code to that remote branch that still had the older “C” commit.</p>
+  And this is why rebase gets a bad name, and why we shouldn&#39;t rebase against shared branches like main.  On the left was our tiny little amended commit.  But, we forgot to push the change and then someone else (maybe even us) pushed code to that remote branch that still had the older “C” commit.</p>
   <p>
     <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.036.png" alt="git rebase -i HEAD~25 slide 36" />
   </p>
@@ -2145,19 +2145,19 @@ def article("git-rebase-webcampzg") do
     <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.038.png" alt="git rebase -i HEAD~25 slide 38" />
   </p>
   <p>
-  Back and Amy.  She find’s a bug in some of Bobs code, but he is not available so Amy goes ahead and fixes the issue locally.</p>
+  Back and Amy.  She find&#39;s a bug in some of Bobs code, but he is not available so Amy goes ahead and fixes the issue locally.</p>
   <p>
     <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.039.png" alt="git rebase -i HEAD~25 slide 39" />
   </p>
   <p>
-  As it is unrelated to Amy’s feature work, she is in the habit of automatically moving those unrelated change to the top of her local commit history.</p>
+  As it is unrelated to Amy&#39;s feature work, she is in the habit of automatically moving those unrelated change to the top of her local commit history.</p>
   <p>
     <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.040.png" alt="git rebase -i HEAD~25 slide 40" />
   </p>
   <p>
   Amy likes to have unrelated bug fixes at the top of her commits, for just such an occasion.
   Turns out the bug is affecting a lot of people and the change needs to be out today.
-  Amy’s feature however isn’t done, but because she isolated the bug fix and put it “next in line”
+  Amy&#39;s feature however isn&#39;t done, but because she isolated the bug fix and put it “next in line”
   in her commit history we can safely cherry-pick it out of her branch, drop it into a a new
   <code class="inline">b/off-by-one</code> branch and merge it separately without having to prematurely push her
   unfinished feature.</p>
@@ -2179,12 +2179,12 @@ def article("git-rebase-webcampzg") do
   <p>
   Taking the poorly constructed story and editing it into a clear and concise summary of what you intended will help your future self when you return to this code in a few weeks, months or years.</p>
   <p>
-  Let’s qualify this with an example.</p>
+  Let&#39;s qualify this with an example.</p>
   <p>
     <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.044.png" alt="git rebase -i HEAD~25 slide 44" />
   </p>
   <p>
-  We recently introduced Apple Pay at our company. Here’s an isolated snippet of code to
+  We recently introduced Apple Pay at our company. Here&#39;s an isolated snippet of code to
   create an Apple Pay Session to get the payment process going.</p>
   <p>
     <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.045.png" alt="git rebase -i HEAD~25 slide 45" />
@@ -2205,12 +2205,12 @@ def article("git-rebase-webcampzg") do
   <p>
   And I totally committed this work.  This work help demonstrate that the other, well-written,
   helper code actually worked as expected.  Slowly but surely the code was re-worked into
-  it’s final production-ready state.</p>
+  it&#39;s final production-ready state.</p>
   <p>
     <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.048.png" alt="git rebase -i HEAD~25 slide 48" />
   </p>
   <p>
-  Refactoring is about small, behaviour preserving incremental and safe steps. Refactoring is not an excuse to go back and fix “TODOs” like what we saw with the Apple Pay example.  There’s a great quote from Kent Beck that I have repeated a few times already about making the hard change easy, and then making the easy change.  My interpretation is that you want to refactor, rework, re-architect your system before trying to implement a change.</p>
+  Refactoring is about small, behaviour preserving incremental and safe steps. Refactoring is not an excuse to go back and fix “TODOs” like what we saw with the Apple Pay example.  There&#39;s a great quote from Kent Beck that I have repeated a few times already about making the hard change easy, and then making the easy change.  My interpretation is that you want to refactor, rework, re-architect your system before trying to implement a change.</p>
   <p>
   In a perfect world, you know exactly how to make the the hard change easy and prepare your code for the eventual change. In practice, that hard.  Git rebase allows us to use near perfect hindsight so that your code changes flow as a coherent set of refactoring, and then the actual feature changes after.</p>
   <p>
@@ -2224,7 +2224,7 @@ def article("git-rebase-webcampzg") do
     <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.050.png" alt="git rebase -i HEAD~25 slide 50" />
   </p>
   <p>
-  Adding support for ApplePay became a one-liner.  This wasn’t my first version of my solution,
+  Adding support for ApplePay became a one-liner.  This wasn&#39;t my first version of my solution,
   not even my second, but it was the solution that I delivered as a pull-request for review
   from my team.  What an &quot;easy change&quot;, I made :-)</p>
   <p>
@@ -2235,7 +2235,7 @@ def article("git-rebase-webcampzg") do
   as we find them.  By isolating bug fixes to just address the fixing of the bug we can then move
   those unrelated changes to the top of our branch commits.  This gives us two benefits.</p>
   <p>
-  First, we don’t have the overhead of fixing the bug in isolation if it’s not needed.</p>
+  First, we don&#39;t have the overhead of fixing the bug in isolation if it&#39;s not needed.</p>
   <p>
   But second, like we saw with Amy, we can easily cherry-pick that commit into a separately
   branch without being forced to prematurely pull in other code that isn&#39;t ready for production.</p>
@@ -2243,7 +2243,7 @@ def article("git-rebase-webcampzg") do
     <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.052.png" alt="git rebase -i HEAD~25 slide 52" />
   </p>
   <p>
-  Here’s a javascript bug that was observed when implementing apple way.  Captured as as an isolated commit.</p>
+  Here&#39;s a javascript bug that was observed when implementing apple way.  Captured as as an isolated commit.</p>
   <p>
     <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.053.png" alt="git rebase -i HEAD~25 slide 53" />
   </p>
@@ -2364,7 +2364,7 @@ def article("the-code-i-didnt-write") do
   Or maybe has a some historical significance  </li>
   </ul>
   <p>
-  It is also an intimidating question... you have to pick just <em>one</em> piece of code and what’s beautiful to some might be utter rubbish to others.  Maybe someone thinks your code is too clever (and it shouldn&#39;t be), or maybe your code is too simple (and does not consider enough edge cases), or maybe you used a <code class="inline">foreach</code> loop and everyone knows (tongue in cheek) that a <code class="inline">map</code> is always better.</p>
+  It is also an intimidating question... you have to pick just <em>one</em> piece of code and what&#39;s beautiful to some might be utter rubbish to others.  Maybe someone thinks your code is too clever (and it shouldn&#39;t be), or maybe your code is too simple (and does not consider enough edge cases), or maybe you used a <code class="inline">foreach</code> loop and everyone knows (tongue in cheek) that a <code class="inline">map</code> is always better.</p>
   <p>
   I see three general approaches to answering this question</p>
   <h4>
@@ -2417,7 +2417,7 @@ def article("the-code-i-didnt-write") do
   Much like the feeling of pride when you get to delete code,
   there is equal enjoyment when you can avoid writing code in the first place.  Maybe you were able to solve the problem in a <em>simpler</em> way, or you were able to avoid doing <em>what every does in similar situations</em> because it was not needed in this particular case.</p>
   <p>
-  In the abstract, this is a bit too motherly to provide much help to anyone.  So let’s instead look at a few examples to illustrate my thinking about <em>not</em> writing code.</p>
+  In the abstract, this is a bit too motherly to provide much help to anyone.  So let&#39;s instead look at a few examples to illustrate my thinking about <em>not</em> writing code.</p>
   <h4>
   Flat Files Over A Database</h4>
   <p>
@@ -2441,7 +2441,7 @@ def article("the-code-i-didnt-write") do
   <p>
   And 4 years later, the flat files are still running strong. As a small confession, part of my concession when getting approval to push flat files was that I would eventually write a MySQL storage adapter.  And I did write it. But, it was never deployed. The flat-file implementation was not only simpler to deploy but also simpler to back-up and version control.</p>
   <p>
-  So despite the fact that I actually <em>did</em> write the MySQL adapter, as it was never officially used, I consider it among my examples of <strong>code I didn’t have to write</strong>.</p>
+  So despite the fact that I actually <em>did</em> write the MySQL adapter, as it was never officially used, I consider it among my examples of <strong>code I didn&#39;t have to write</strong>.</p>
   <h4>
   Zero Caching</h4>
   <p>
@@ -2461,7 +2461,7 @@ def article("the-code-i-didnt-write") do
   <p>
   The front end was re-written using Wordpress, but that little Mortgage API remained, unchanged and proved to be fast enough for their needs, and continues to be used to this day (2019).</p>
   <p>
-  I focussed first on being <em>right</em>, and then on being <em>pretty</em>, and it turns out we didn’t need to <em>make it fast</em> (as it was already fast enough for the use case).  Indeed some of the API payloads are large coming in at 100kb of data, but that pales in comparison to say a poorly compressed 4mb JPEG image.</p>
+  I focussed first on being <em>right</em>, and then on being <em>pretty</em>, and it turns out we didn&#39;t need to <em>make it fast</em> (as it was already fast enough for the use case).  Indeed some of the API payloads are large coming in at 100kb of data, but that pales in comparison to say a poorly compressed 4mb JPEG image.</p>
   <h4>
   Let Your Email Provider Do The Filtering</h4>
   <p>
@@ -2483,11 +2483,11 @@ def article("the-code-i-didnt-write") do
   <p>
   Instead of integrating that accounting system directly with the payment gateway, we instead wrote a small adapter to make those accounting invoices look and behave like the  custom invoices.</p>
   <p>
-  That tiny adapter (let’s say 100 lines of code or so) meant that our automatic billing solution remained unchanged, our custom checkout webapp also unchanged and our reconciliation service (to double check that all payments from our gateway were properly handled) also remained unchanged.</p>
+  That tiny adapter (let&#39;s say 100 lines of code or so) meant that our automatic billing solution remained unchanged, our custom checkout webapp also unchanged and our reconciliation service (to double check that all payments from our gateway were properly handled) also remained unchanged.</p>
   <p>
   Our solution ended up providing a second benefit.  Turns out that the accounting software had some shall we say <em>performance bottlenecks</em> when serving up invoice data.  As invoices are write-once, we enabled <em>caching</em> by changing the <em>fetch</em> of the invoice data to only be done the first time, which took only a few lines of extra code.</p>
   <h3>
-  Be proud of the code you don’t write.</h3>
+  Be proud of the code you don&#39;t write.</h3>
   <p>
   Although the examples above did involve <em>some</em> code, the underlying spirit of implementing the feature focussed on using what was already available.</p>
   """
@@ -2615,7 +2615,7 @@ def article("empex-2019-liveview") do
     <img src="/images/blog/talks/empex-2019-liveview/api_impln.png" alt="Client Server API Implementation" />
   </p>
   <p>
-  Our client then updates the display.  Here’s we have plain old HTML templates with javascript, but we could easily be using a templating engine like Mustache or Handlebars, and/or a full on state mangement framework like React, Vue or Angular.</p>
+  Our client then updates the display.  Here&#39;s we have plain old HTML templates with javascript, but we could easily be using a templating engine like Mustache or Handlebars, and/or a full on state mangement framework like React, Vue or Angular.</p>
   <p>
     <img src="/images/blog/talks/empex-2019-liveview/client_update.png" alt="Client Update" />
   </p>
@@ -2638,7 +2638,7 @@ def article("empex-2019-liveview") do
     <img src="/images/blog/talks/empex-2019-liveview/login_step_1.png" alt="Login Step 1" />
   </p>
   <p>
-  Some find this annoying, but we can’t please everyone all the time.  Our application, like others that are rarely used, can benefit from pushing authentication in the users email so they don’t have to remember another password.</p>
+  Some find this annoying, but we can&#39;t please everyone all the time.  Our application, like others that are rarely used, can benefit from pushing authentication in the users email so they don&#39;t have to remember another password.</p>
   <p>
     <img src="/images/blog/talks/empex-2019-liveview/login_step_2.png" alt="Login Step 2" />
   </p>
@@ -2655,7 +2655,7 @@ def article("empex-2019-liveview") do
   <h3>
   Enter Live View</h3>
   <p>
-  And tada, it isn’t.</p>
+  And tada, it isn&#39;t.</p>
   <iframe src="/demo/empex" style="border: 0px" width="100%" height="800px">
   </iframe>
   <p>
@@ -2667,9 +2667,9 @@ def article("empex-2019-liveview") do
   <p>
   Check out the <a href="https://github.com/empex2019liveview/hangman">source code for our Hangman game</a>.</p>
   <p>
-  So it’s obviously not <em>no</em> javascript, there is LiveView JavaScript that will be run on the client.  We are using Phoenix Channels and WebSockets which also involves JavaScript.  And, finally there are custom HTML phx- tags that are required to pull things together.</p>
+  So it&#39;s obviously not <em>no</em> javascript, there is LiveView JavaScript that will be run on the client.  We are using Phoenix Channels and WebSockets which also involves JavaScript.  And, finally there are custom HTML phx- tags that are required to pull things together.</p>
   <p>
-  Let’s look at the major moving parts of LiveView</p>
+  Let&#39;s look at the major moving parts of LiveView</p>
   <h3>
   LiveView Client/Server Communication</h3>
   <p>
@@ -3502,7 +3502,7 @@ def article("from-sockets-to-sessions-with-liveview") do
   to communicate information from the LiveView websocket to the Connection Session.
   If you know a better way, please reach out to me <a href="https://twitter.com/a4word">@a4word</a> to discuss.</p>
   <p>
-  If you don’t know about LiveView, maybe <a href="/articles/liveview-examples">read more about that first</a></p>
+  If you don&#39;t know about LiveView, maybe <a href="/articles/liveview-examples">read more about that first</a></p>
   <h3>
   Problem</h3>
   <p>
@@ -3643,7 +3643,7 @@ def article("executing-custom-javascript-with-liveview") do
   As <a href="http://empex.co/events/2019/conference.html">part of my talk at EMPEX 2019</a> on <a href="https://github.com/phoenixframework/phoenix_live_view">LiveView</a>, I showed a way to execute custom JavaScript on a LiveView refresh.
   So where is how I do it?  If you know a better way, please reach out to me <a href="https://twitter.com/a4word">@a4word</a> to discuss.</p>
   <p>
-  If you don’t know about LiveView, maybe <a href="/articles/liveview-examples">read more about that first</a></p>
+  If you don&#39;t know about LiveView, maybe <a href="/articles/liveview-examples">read more about that first</a></p>
   <h2>
   Problem</h2>
   <p>
@@ -3667,7 +3667,7 @@ def article("executing-custom-javascript-with-liveview") do
     {reply, socket |&gt; update(:tick, &amp;(&amp;1 + 1))}
   end</code></pre>
   <p>
-  This is useful for a bunch of things, but let’s focus on running our custom javascript.</p>
+  This is useful for a bunch of things, but let&#39;s focus on running our custom javascript.</p>
   <h2>
   Reference that <code class="inline">@tick</code> in your <code class="inline">&lt;script id=&quot;xxx&quot;&gt;...&lt;/script&gt;</code></h2>
   <p>
@@ -3723,7 +3723,7 @@ def article("executing-custom-javascript-with-liveview") do
   First, LiveView continues to evolve, so please check out the inter
   webs to see if this is still a valid approach (and if not, let me know).</p>
   <p>
-  Second, don’t write lots of this kind of JavaScript.
+  Second, don&#39;t write lots of this kind of JavaScript.
   If it hurts, you might not be doing it right so maybe consider
   taking a step back and trying to figure out what exactly are you
   trying to achieve and will this approach do as you expect.</p>
@@ -3880,16 +3880,16 @@ end
 def article("oh-the-apis-opencamps-2017") do
   """
   <p>
-    <img src="/images/blog/talks/oh-the-apis-opencamps-2017/oh_the_apis.png" alt="Oh, the API Clients You’ll Build (in Elixir)" />
+    <img src="/images/blog/talks/oh-the-apis-opencamps-2017/oh_the_apis.png" alt="Oh, the API Clients You&#39;ll Build (in Elixir)" />
   </p>
   <p>
   Today we are going explore how to write API clients in the <a href="https://elixir-lang.org">Elixir</a> language. This is a follow-up article to my presentation at OpenCamps 2017.</p>
   <p>
-  <a href="https://elixir-lang.org">Elixir</a> is relatively new programming language (v1.0 released in 2014), with one of it’s greatest features being that is stands on the shoulders of a giant in Erlang. That said, it is still quite rare to find official support in <a href="https://elixir-lang.org">Elixir</a> for a lot of your favourite APIs. This leaves you with the task of writing your own, or possibly trying one of the many open source options out there.</p>
+  <a href="https://elixir-lang.org">Elixir</a> is relatively new programming language (v1.0 released in 2014), with one of it&#39;s greatest features being that is stands on the shoulders of a giant in Erlang. That said, it is still quite rare to find official support in <a href="https://elixir-lang.org">Elixir</a> for a lot of your favourite APIs. This leaves you with the task of writing your own, or possibly trying one of the many open source options out there.</p>
   <p>
   In this article, we will look at how you can build your own. The exercise of writing your own has many benefits. First, you learn a bit more about <a href="https://elixir-lang.org">Elixir</a>, the language, and how to leverage a bunch of it features. Second, you learn a bit more about the API you are working with. And finally, you gain some insight into how it could be built so that you can better evaluate the altneratives.</p>
   <p>
-  Let’s dive in.</p>
+  Let&#39;s dive in.</p>
   <h3>
   What Do We Mean API?</h3>
   <p>
@@ -3909,7 +3909,7 @@ def article("oh-the-apis-opencamps-2017") do
     <img src="/images/blog/talks/oh-the-apis-opencamps-2017/restful_mm.png" alt="RESTful maturity model" />
   </p>
   <p>
-  OK, now let’s start talking Elixir.</p>
+  OK, now let&#39;s start talking Elixir.</p>
   <h3>
   Elixir Libraries To Talk HTTP</h3>
   <p>
@@ -3920,7 +3920,7 @@ def article("oh-the-apis-opencamps-2017") do
   <p>
   We are going to use <a href="https://hex.pm/packages/httpoison">httpoison</a>, it is a pure Elixir library built on top of <a href="https://hex.pm/packages/hackney">hackney</a> and provides a very approachable interface.</p>
   <p>
-  Here’s how to make a GET request out to a public API.</p>
+  Here&#39;s how to make a GET request out to a public API.</p>
   <pre><code class="elixir language-elixir">iex&gt; HTTPoison.get!(&quot;https://api.github.com&quot;)
   %HTTPoison.Response{
     status_code: 200,
@@ -3962,15 +3962,15 @@ def article("oh-the-apis-opencamps-2017") do
   <h3>
   Decoding the Raw Response</h3>
   <p>
-  The response from our API is in it’s most raw form, in the case of the GitHub API it’s an encoded JSON string. This is not very usable within our Elixir client, so we much rather have something that we can manipulate more directly. For this, we will use poison, an Elixir library for dealing with JSON.</p>
+  The response from our API is in it&#39;s most raw form, in the case of the GitHub API it&#39;s an encoded JSON string. This is not very usable within our Elixir client, so we much rather have something that we can manipulate more directly. For this, we will use poison, an Elixir library for dealing with JSON.</p>
   <p>
-  Here’s an example of decoding a JSON string into an Elixir map.</p>
+  Here&#39;s an example of decoding a JSON string into an Elixir map.</p>
   <pre><code class="elixir language-elixir">iex&gt; Poison.decode(&quot;{\&quot;a\&quot;: 1}&quot;, keys: :atoms)
   {:ok, %{a: 1}}</code></pre>
   <p>
   You will notice that Poison follow a similar pattern of :ok and :error response tuples.</p>
   <p>
-  Let’s incorporate that into our get method from above. But first, let’s refactor it a bit into it’s parts.</p>
+  Let&#39;s incorporate that into our get method from above. But first, let&#39;s refactor it a bit into it&#39;s parts.</p>
   <pre><code class="elixir language-elixir">def get(url, headers \\ []) do
     url
     |&gt; HTTPoison.get(headers)
@@ -4004,7 +4004,7 @@ def article("oh-the-apis-opencamps-2017") do
   <p>
   So now we can extract the content type and use that decode the response from our API.</p>
   <p>
-  But before we tack that only our get method, let’s refactor it into it’s main parts.</p>
+  But before we tack that only our get method, let&#39;s refactor it into it&#39;s main parts.</p>
   <pre><code class="elixir language-elixir">def get(url, headers \\ []) do
     url
     |&gt; call(headers)
@@ -4029,14 +4029,14 @@ def article("oh-the-apis-opencamps-2017") do
   <h3>
   Implementing content_type</h3>
   <p>
-  Here’ s how we implement the content_type function.</p>
+  Here&#39; s how we implement the content_type function.</p>
   <p>
   First, we want to keep the information above, so we have a pass-through function that will keep the status_code and raw body untouched. We will pattern match on the desired tuple returned from call above.</p>
   <pre><code class="elixir language-elixir">def content_type({ok, body, headers}) do
     {ok, body, content_type(headers)}
   end</code></pre>
   <p>
-  But the acutal implementation will just focus on the headers list. We can implement this function in three parts. The first function matches an empty list, so if the API didn’t provide us with a content-type, then we will default to JSON.</p>
+  But the acutal implementation will just focus on the headers list. We can implement this function in three parts. The first function matches an empty list, so if the API didn&#39;t provide us with a content-type, then we will default to JSON.</p>
   <pre><code class="elixir language-elixir">def content_type([]), do: &quot;application/json&quot;</code></pre>
   <p>
   The second function matches a list (in head/tail syntax) where we have located the content-type. In this case, we want to tease out any additional meta information (such a the character set) and just return the type.</p>
@@ -4046,7 +4046,7 @@ def article("oh-the-apis-opencamps-2017") do
     |&gt; List.first
   end</code></pre>
   <p>
-  The last function matches a list again, but here it’s not the content-type, so we want to check the rest of the list.</p>
+  The last function matches a list again, but here it&#39;s not the content-type, so we want to check the rest of the list.</p>
   <pre><code class="elixir language-elixir">def content_type([_ | t]) do: content_type(t)</code></pre>
   <h3>
   Implementing decode</h3>
@@ -4074,7 +4074,7 @@ def article("oh-the-apis-opencamps-2017") do
   <p>
   We are using an Erlang function directly, and in this implementation we catch the <code class="inline">:exit</code> code that is raised if the XML is not well formed and instead wrap it in our consistent <code class="inline">{:error, reason}</code> response.</p>
   <p>
-  Finally, if we don’t understand the encoded, we will pass the raw body through, as such.</p>
+  Finally, if we don&#39;t understand the encoded, we will pass the raw body through, as such.</p>
   <pre><code class="elixir language-elixir">def decode({ok, body, _}), do: {ok, body}</code></pre>
   <h3>
   Playing With Our Own Server</h3>
@@ -4087,7 +4087,7 @@ def article("oh-the-apis-opencamps-2017") do
   $ mix deps.get
   $ mix run --no-halt</code></pre>
   <p>
-  Let’s use Myclient to access our server.</p>
+  Let&#39;s use Myclient to access our server.</p>
   <pre><code class="elixir language-elixir">iex&gt; Myclient.get(&quot;http://localhost:4000&quot;)
   {200, %{version: &quot;0.1.0&quot;}}</code></pre>
   <p>
@@ -4100,7 +4100,7 @@ def article("oh-the-apis-opencamps-2017") do
   <p>
   We have gone pretty far with our spike, but have not really talked about how we can test our client. Or, how to send data to the API. Or, how to handle those other API calls like <code class="inline">POST</code> and <code class="inline">PUT</code> and <code class="inline">DELETE</code>. Or, how to handle accessing protected API endpoints, using something like secure tokens or an OAuth2 like protocol.</p>
   <p>
-  Let’s address some fo these concerns in more detail, and others will be left to the reader to explore on their own.</p>
+  Let&#39;s address some fo these concerns in more detail, and others will be left to the reader to explore on their own.</p>
   <h3>
   Sending Data To The API</h3>
   <p>
@@ -4190,14 +4190,14 @@ end
 def article("doex-elixir-api-for-digital-ocean") do
   """
   <p>
-  Want to automate your infrastructure leveraging the awesome <a href="https://developers.digitalocean.com/documentation/v2/">Digital Ocean API V2</a>, then the shell is your friend. Here we will learn about how to access the API from the command line using Elixir’s <a href="https://hexdocs.pm/mix/master/Mix.Tasks.Escript.Build.html">Escript</a> tooling.</p>
+  Want to automate your infrastructure leveraging the awesome <a href="https://developers.digitalocean.com/documentation/v2/">Digital Ocean API V2</a>, then the shell is your friend. Here we will learn about how to access the API from the command line using Elixir&#39;s <a href="https://hexdocs.pm/mix/master/Mix.Tasks.Escript.Build.html">Escript</a> tooling.</p>
   <p>
     <img src="/images/blog/doex/doex_on_hex.png" alt="doex API for digital ocean on hex" />
   </p>
   <p>
-  Doex, access <a href="https://m.do.co/c/e450543d2a29">Digital Ocean</a>’s API through the shell and/or Elixir</p>
+  Doex, access <a href="https://m.do.co/c/e450543d2a29">Digital Ocean</a>&#39;s API through the shell and/or Elixir</p>
   <p>
-  First, if you don’t know <a href="https://m.do.co/c/e450543d2a29">Digital Ocean</a> (my referral link should you wish to sign up, we both get a little kickback) is a cloud provider that helps you spin up new servers, quickly, to help get your application into production.</p>
+  First, if you don&#39;t know <a href="https://m.do.co/c/e450543d2a29">Digital Ocean</a> (my referral link should you wish to sign up, we both get a little kickback) is a cloud provider that helps you spin up new servers, quickly, to help get your application into production.</p>
   <p>
     <img src="/images/blog/doex/create_droplet.png" alt="Digital Ocean create droplet" />
   </p>
@@ -4209,11 +4209,11 @@ def article("doex-elixir-api-for-digital-ocean") do
     <img src="/images/blog/doex/do_api_tokens.png" alt="Digital Ocean API tokens" />
   </p>
   <h2>
-  That’s not a real token, so don’t bother trying</h2>
+  That&#39;s not a real token, so don&#39;t bother trying</h2>
   <p>
   Store that token safely, as it allows scripts to perform actions on your account without human intervention.</p>
   <p>
-  Now let’s play with <a href="https://hex.pm/packages/doex">doex</a>, an elixir escript command line tool. This article assumes you have an <a href="https://elixir-lang.org/getting-started/introduction.html">elixir environment up and running</a>.</p>
+  Now let&#39;s play with <a href="https://hex.pm/packages/doex">doex</a>, an elixir escript command line tool. This article assumes you have an <a href="https://elixir-lang.org/getting-started/introduction.html">elixir environment up and running</a>.</p>
   <p>
   To install <em>doex</em>, run</p>
   <pre><code class="bash language-bash">mix escript.install github capbash/doex</code></pre>
@@ -4221,7 +4221,7 @@ def article("doex-elixir-api-for-digital-ocean") do
   You might see a warning like</p>
   <pre><code class="bash language-bash">warning: you must append &quot;/Users/&lt;username&gt;/.mix/escripts&quot; to your PATH if you want to invoke escripts by name</code></pre>
   <p>
-  Heed the adashvice and add it to your path, for example (each system is slightly different, so don’t blindly follow, instead learn more about PATH)</p>
+  Heed the adashvice and add it to your path, for example (each system is slightly different, so don&#39;t blindly follow, instead learn more about PATH)</p>
   <pre><code class="bash language-bash">vi ~/.bash_profile
   # add something like
   PATH=&quot;$HOME/.mix/escripts:$PATH&quot;
@@ -4230,7 +4230,7 @@ def article("doex-elixir-api-for-digital-ocean") do
   If you are up and running, then you can get help by calling doex without any arugments.</p>
   <pre><code class="bash language-bash">doex</code></pre>
   <p>
-  The output will show you what’s available on the command line, at this time that includes</p>
+  The output will show you what&#39;s available on the command line, at this time that includes</p>
   <pre><code class="bash language-bash">doex v0.3.1
   doex is a API client for Digital Ocean&#39;s API v2.
   
@@ -4244,18 +4244,18 @@ def article("doex-elixir-api-for-digital-ocean") do
     -- https://hex.pm/packages/doex
     -- https://github.com/capbash/doex</code></pre>
   <p>
-  Let’s <a href="https://hexdocs.pm/doex/Mix.Tasks.Doex.Config.html#content">configure our server</a> to talk to our <a href="https://m.do.co/c/e450543d2a29">Digital Ocean</a> account. I will use <code class="inline">ABC123DEF456</code> as my DO Token, please update the scripts below based on your token.</p>
+  Let&#39;s <a href="https://hexdocs.pm/doex/Mix.Tasks.Doex.Config.html#content">configure our server</a> to talk to our <a href="https://m.do.co/c/e450543d2a29">Digital Ocean</a> account. I will use <code class="inline">ABC123DEF456</code> as my DO Token, please update the scripts below based on your token.</p>
   <pre><code class="bash language-bash">doex init &amp;&amp; \
     doex config token ABC123DEF456</code></pre>
   <p>
-  Next, let’s <a href="https://hexdocs.pm/doex/Mix.Tasks.Doex.Droplets.Create.html#content">create a new droplet</a>.</p>
+  Next, let&#39;s <a href="https://hexdocs.pm/doex/Mix.Tasks.Doex.Droplets.Create.html#content">create a new droplet</a>.</p>
   <pre><code class="bash language-bash">mix doex.droplets.create mydroplet \
     --region tor1 \
     --tags myt \
     --image ubuntu-14-04-x64 \
     --size 512mb</code></pre>
   <p>
-  It’s just that easy.</p>
+  It&#39;s just that easy.</p>
   <p>
     <img src="/images/blog/doex/mydroplet.png" alt="my droplet created" />
   </p>
@@ -4264,7 +4264,7 @@ def article("doex-elixir-api-for-digital-ocean") do
   <h3>
   Alternatives</h3>
   <p>
-  If you are looking for a feature-complete command line tool, then checkout DigitalOcean’s <a href="https://github.com/digitalocean/doctl">doctl</a> command line tool. It is written in Go, and provides an excellent <em>shell</em> for interacting with the DO API.</p>
+  If you are looking for a feature-complete command line tool, then checkout DigitalOcean&#39;s <a href="https://github.com/digitalocean/doctl">doctl</a> command line tool. It is written in Go, and provides an excellent <em>shell</em> for interacting with the DO API.</p>
   <pre><code class="bash language-bash">doctl is a command line interface for the DigitalOcean API.
   
   Usage:
@@ -4291,7 +4291,7 @@ def article("doex-elixir-api-for-digital-ocean") do
     <img src="/images/blog/doex/altneratives_do_clients.png" alt="Alternatives to elixir Digital Ocean clients" />
   </p>
   <p>
-  Yep, that’s doex at the the bottom there with a ton of downloads; watch out!</p>
+  Yep, that&#39;s doex at the the bottom there with a ton of downloads; watch out!</p>
   <p>
   Happy automation.</p>
   """
@@ -4301,7 +4301,7 @@ def article("mailgun-on-digital-ocean") do
   <p>
   Not having to manage an email server is awesome, thank you <a href="https://www.mailgun.com">Mailgun</a>. I am currently integrating with <a href="https://m.do.co/c/e450543d2a29">Digital Ocean</a> and ran into some documentation confusion with DNS records, especially when trying to configure for a subdomain.</p>
   <p>
-  After following <a href="https://help.mailgun.com/hc/en-us/articles/202052074-How-do-I-verify-my-domain-">Mailgun’s instructions</a> (including the <a href="https://www.digitalocean.com/community/questions/how-to-set-up-a-host-name-in-digitalocean">Digital Ocean guide</a>, <a href="https://code.krister.ee/mailgun-digitalocean/">alternate guide</a>, and <a href="https://www.digitalocean.com/community/questions/failed-to-verify-domain-on-mailgun">community help</a>) I was able to get it setup.</p>
+  After following <a href="https://help.mailgun.com/hc/en-us/articles/202052074-How-do-I-verify-my-domain-">Mailgun&#39;s instructions</a> (including the <a href="https://www.digitalocean.com/community/questions/how-to-set-up-a-host-name-in-digitalocean">Digital Ocean guide</a>, <a href="https://code.krister.ee/mailgun-digitalocean/">alternate guide</a>, and <a href="https://www.digitalocean.com/community/questions/failed-to-verify-domain-on-mailgun">community help</a>) I was able to get it setup.</p>
   <p>
   Note that all links to <a href="https://m.do.co/c/e450543d2a29">Digital Ocean</a> are using my referral link.</p>
   <h3>
@@ -4328,7 +4328,7 @@ def article("mailgun-on-digital-ocean") do
   k1._domainkey.mydomain.com. 1800 IN TXT “k=rsa; p=ABC1234+DEF/aSDF@!#$/FWAEF”
   email.mydomain.com. 1800 IN CNAME mailgun.org.</code></pre>
   <p>
-  <a href="https://m.do.co/c/e450543d2a29">Digital Ocean</a>’s data entry provides shortcuts in the editor, so be sure to leave out mydomain.com, and use the @ symbol where necessary. Here’s what the values look like in <a href="https://m.do.co/c/e450543d2a29">Digital Ocean</a>’s editor</p>
+  <a href="https://m.do.co/c/e450543d2a29">Digital Ocean</a>&#39;s data entry provides shortcuts in the editor, so be sure to leave out mydomain.com, and use the @ symbol where necessary. Here&#39;s what the values look like in <a href="https://m.do.co/c/e450543d2a29">Digital Ocean</a>&#39;s editor</p>
   <p>
     <img src="/images/blog/mailgun-on-digital-ocean/do_dns_editor.png" alt="Digital Ocean DNS editor" />
   </p>
@@ -4362,17 +4362,17 @@ def article("mailgun-on-digital-ocean") do
   pic._domainkey.mg.mydomain.ca. 1800 IN TXT “k=rsa; p=MIGfMA0GCSqGSASDFASDFASDFBiQKBgQC+v78XOweoD+JGrE8STwHLQaxX310gDHAgK2IaJ/TEGZ4GS5xr/sb/AxX+crzEkMDp9e58PASDFASDFASDFASDFASDFQ9r4I/ni3LDC+ORkBzzmy3syU7UKCN3fRKPba4d8fvIE/GvqTGnuJuwDeLZ8lJfIfwIDAQAB”
   email.mg.mydomain.ca. 1800 IN CNAME mailgun.org.</code></pre>
   <p>
-  <a href="https://m.do.co/c/e450543d2a29">Digital Ocean</a>’s data entry provides shortcuts in the editor, so you will want to leave out mydomain.ca, but <strong>NOT</strong> mg. Here’s what the values look like in <a href="https://m.do.co/c/e450543d2a29">Digital Ocean</a>’s editor.</p>
+  <a href="https://m.do.co/c/e450543d2a29">Digital Ocean</a>&#39;s data entry provides shortcuts in the editor, so you will want to leave out mydomain.ca, but <strong>NOT</strong> mg. Here&#39;s what the values look like in <a href="https://m.do.co/c/e450543d2a29">Digital Ocean</a>&#39;s editor.</p>
   <p>
     <img src="/images/blog/mailgun-on-digital-ocean/do_dns_subdomain_editor.png" alt="Digital Ocean editing subdomains in DNS editor" />
   </p>
   <p>
-  Here’s what you need to change for your specific configuration</p>
+  Here&#39;s what you need to change for your specific configuration</p>
   <ul>
     <li>
   A record for mg should by the IP provided by mailgun (not 1.2.3.4)  </li>
     <li>
-  A record for @ should be your droplets’ IP (not mailgun’s)  </li>
+  A record for @ should be your droplets&#39; IP (not mailgun&#39;s)  </li>
     <li>
   TXT record for mg should be wrapped in quotes  </li>
     <li>
@@ -4388,7 +4388,7 @@ def article("mailgun-on-digital-ocean") do
     <img src="/images/blog/mailgun-on-digital-ocean/do_add_a_domain.png" alt="Digital Ocean add a domain" />
   </p>
   <p>
-  The IP address of 1.2.3.4 should that from <a href="https://www.mailgun.com">Mailgun</a> and NOT your droplet’s IP. Here is what the records will look like in editor.</p>
+  The IP address of 1.2.3.4 should that from <a href="https://www.mailgun.com">Mailgun</a> and NOT your droplet&#39;s IP. Here is what the records will look like in editor.</p>
   <p>
     <img src="/images/blog/mailgun-on-digital-ocean/do_dns_to_mailgun.png" alt="Digital Ocean DNS points to mailgun" />
   </p>
@@ -4408,7 +4408,7 @@ def article("continuous-testing-with-elixir") do
   <p>
   There is great power in having your tests always run, all the time when writing code, it stops the minor interruptions.</p>
   <p>
-  First, let’s start a new Elixir app. If you are new to elixir then first check out the many resources to get started. I also published a very small example on GitHub, if you prefer to look at code than read articles.</p>
+  First, let&#39;s start a new Elixir app. If you are new to elixir then first check out the many resources to get started. I also published a very small example on GitHub, if you prefer to look at code than read articles.</p>
   <pre><code class="elixir language-elixir">$ mix new my_app</code></pre>
   <p>
   Then add a dependency to mix_test_watch in your mix.exs.</p>
@@ -4482,7 +4482,7 @@ def article("continuous-testing-with-elixir") do
   1 test, 0 failures
   Randomized with seed 474092</code></pre>
   <p>
-  Now let’s add a new test. Open up your new project in your favourite elixir editor and add a new test. For example, let’s see if two wrongs make a right (vi ./test/my_app_test.exs).</p>
+  Now let&#39;s add a new test. Open up your new project in your favourite elixir editor and add a new test. For example, let&#39;s see if two wrongs make a right (vi ./test/my_app_test.exs).</p>
   <pre><code class="elixir language-elixir">defmodule MyAppTest do
     use ExUnit.Case
     doctest MyApp
@@ -4509,7 +4509,7 @@ def article("continuous-testing-with-elixir") do
   2 tests, 1 failure
   Randomized with seed 807654</code></pre>
   <p>
-  Turns out two wrongs don’t make a right. Let’s update the test.</p>
+  Turns out two wrongs don&#39;t make a right. Let&#39;s update the test.</p>
   <pre><code class="elixir language-elixir">defmodule MyAppTest do
     use ExUnit.Case
     doctest MyApp
@@ -5030,7 +5030,7 @@ def title("shapkgsum-verify-mac-packages"),  do: "Verifying .pkg files on a Mac 
 def title("fast-isolated-nonbrittle"),  do: "I don't like the name *unit tests*."
 def title("generating-global-ids"),  do: "Generating Globally Unique IDs"
 def title("git-rebase-webcampzg"),  do: "git rebase -i HEAD\~25"
-def title("the-code-i-didnt-write"),  do: "The Code I Didn’t Write"
+def title("the-code-i-didnt-write"),  do: "The Code I Didn't Write"
 def title("installing-packer-for-image-creation"),  do: "Installing Packer For Image Creation"
 def title("empex-2019-liveview"),  do: "LiveView Talk at Empex 2019"
 def title("connecting-to-aws-using-saml"),  do: "Connecting to AWS using SAML"
@@ -5041,7 +5041,7 @@ def title("from-sockets-to-sessions-with-liveview"),  do: "LiveView storing Sess
 def title("executing-custom-javascript-with-liveview"),  do: "Run Custom JS on LivePage Reload"
 def title("llewellyn-falco-from-0-to-100-tested-code"),  do: "Falco \"From 0% to 100% tested code\""
 def title("kent-beck-beauty-in-code"),  do: "Kent Beck's \"Beauty In Code\""
-def title("oh-the-apis-opencamps-2017"),  do: "Oh, the API Clients You’ll Build (in Elixir)"
+def title("oh-the-apis-opencamps-2017"),  do: "Oh, the API Clients You'll Build (in Elixir)"
 def title("doex-elixir-api-for-digital-ocean"),  do: "Yet Another Digital Ocean API client in Elixir"
 def title("mailgun-on-digital-ocean"),  do: "Setting up Mailgun on Digital Ocean"
 def title("continuous-testing-with-elixir"),  do: "Continuous Testing with Elixir"
