@@ -2,8 +2,8 @@ defmodule Blog.Generator do
   @writing_dir "../writing"
 
   def run(dir \\ @writing_dir) do
-    # publish_blog("#{dir}/blog")
-    # publish_books("#{dir}/books")
+    publish_blog("#{dir}/blog")
+    publish_books("#{dir}/books")
     publish_snippets("#{dir}/snippets")
     :ok
   end
@@ -117,8 +117,8 @@ defmodule Blog.Generator do
     |> Enum.map(fn s ->
       {s, metadata(s, dir)}
     end)
-    |> Enum.sort_by(fn {_s, m} -> m["datetime"] end, :desc)
     |> Enum.sort_by(fn {s, _m} -> s end, :asc)
+    |> Enum.sort_by(fn {_s, m} -> m["datetime"] end, :desc)
     |> Enum.map(fn {s, _} -> s end)
   end
 
@@ -231,7 +231,7 @@ defmodule Blog.Generator do
   defp format_image(nil), do: nil
 
   defp format_image(line) do
-    case Regex.run(~r{!\[.*\]\((.*)\)}, line) do
+    case Regex.run(~r{!\[[^\]]*\]\(([^\s]*)\)}, line) do
       nil ->
         line
 

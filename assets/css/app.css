@@ -10,10 +10,25 @@ article a {
 
 article .summary p,
 article .summary pre,
+article ul, article ol,
 .snippet .summary p,
-.snippet .summary pre {
+.snippet .summary pre,
+.snippet .summary ul, .snippet .summary ol {
   @apply relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400;
 }
+
+article ul, article ol {
+  @apply ml-4 mt-2 mb-4 list-inside;
+}
+
+article ul li {
+  @apply list-disc;
+}
+
+article ol li {
+  @apply list-decimal;
+}
+
 
 article .full p {
   @apply relative z-10 mt-4 text-sm text-zinc-600 dark:text-zinc-400;

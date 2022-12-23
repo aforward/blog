@@ -15,6 +15,7 @@ source projects, some with online demos and other where you can
 | -- | ---| -- |
 | ![Empex Display](liveview-examples/empexdisplay.png) | Manipulating a SVG graphic for the 2019 [Empex NY conference](https://empex.co/nyc.html) | [Empex SVG Demo](/demo/empex) <br> [Empex SVG Source](https://github.com/empex2019liveview/empexlogo) |
 
+
 ## Article
 
 [LiveView](https://github.com/phoenixframework/phoenix_live_view)

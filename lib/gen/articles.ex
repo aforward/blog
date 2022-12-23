@@ -2,6 +2,20 @@ defmodule Gen.Articles do
   def articles() do
     [
       %{
+  title: "A new blog for 2023",
+  body: """
+  <p>
+  It has been 2 years since I re-worked my personal website
+  <a href="https://anunknown.dev">anunknown.dev</a>, and the previous
+  version was on cloud hardware and I have recently
+  been using <a href="https://fly.io">fly.io</a> for small
+  project development, so I decided for a re-work.</p>
+  """,
+  datetime: "2022-12-23",
+  slug: "new-blog-2023"
+},
+
+%{
   title: "Installing Hugo with Tailwind CSS",
   body: """
   <p>
@@ -20,19 +34,6 @@ defmodule Gen.Articles do
 },
 
 %{
-  title: "Configure VS Code to run OCAML a Mac OSX",
-  body: """
-  <p>
-  Let&#39;s get up and running with OCaml and VS Code on a Mac.</p>
-  <p>
-    <img src="/images/blog/ocaml-and-vscode/vscode_ocaml.png" alt="VS Code up and running with OCaml" />
-  </p>
-  """,
-  datetime: "2020-08-30",
-  slug: "ocaml-and-vscode"
-},
-
-%{
   title: "Running OCAML on UOttawa VCL",
   body: """
   <p>
@@ -47,6 +48,19 @@ defmodule Gen.Articles do
   """,
   datetime: "2020-08-30",
   slug: "ocaml-and-vcl-cloud"
+},
+
+%{
+  title: "Configure VS Code to run OCAML a Mac OSX",
+  body: """
+  <p>
+  Let&#39;s get up and running with OCaml and VS Code on a Mac.</p>
+  <p>
+    <img src="/images/blog/ocaml-and-vscode/vscode_ocaml.png" alt="VS Code up and running with OCaml" />
+  </p>
+  """,
+  datetime: "2020-08-30",
+  slug: "ocaml-and-vscode"
 },
 
 %{
@@ -232,7 +246,7 @@ defmodule Gen.Articles do
     <tbody>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/empexdisplay.png" alt="Empex Display" />
+          <img src="/images/blog/liveview-examples/empexdisplay.png" alt="Empex Display" />
         </td>
         <td style="text-align: left;">
   Manipulating a SVG graphic for the 2019 <a href="https://empex.co/nyc.html">Empex NY conference</a>      </td>
@@ -257,7 +271,7 @@ defmodule Gen.Articles do
     def go() do
       num = input(:int)
       text = input(:string)
-      IO.puts(&quot;INPUTS # {num} and # {text}&quot;)
+      IO.puts(&quot;INPUTS \#{num} and \#{text}&quot;)
     end
   
     def input(:string), do: IO.read(:line) |&gt; String.trim()
@@ -448,7 +462,56 @@ defmodule Gen.Articles do
     ]
   end
 
-  def article("hugo_and_tailwind") do
+  def article("new-blog-2023") do
+  """
+  <p>
+  It has been 2 years since I re-worked my personal website
+  <a href="https://anunknown.dev">anunknown.dev</a>, and the previous
+  version was on cloud hardware and I have recently
+  been using <a href="https://fly.io">fly.io</a> for small
+  project development, so I decided for a re-work.</p>
+  <p>
+  The site is built using the following</p>
+  <ul>
+    <li>
+  <a href="https://www.phoenixframework.org">Elixir / Phoenix 1.7 App</a>  </li>
+    <li>
+  <a href="https://github.com/pragdave/earmark">Code generation using Earmark</a>  </li>
+    <li>
+  <a href="https://github.com/aforward/writing">Github repo with raw writing in markdown</a>  </li>
+    <li>
+  <a href="https://hexdocs.pm/phoenix/fly.html">Deployment via Fly.io</a>  </li>
+    <li>
+  <a href="https://www.digitalocean.com">DNS via DigitalOcean</a>  </li>
+    <li>
+  <a href="https://tailwindcss.com">Tailwind CSS</a>  </li>
+    <li>
+  <a href="https://tailwindui.com">Tailwind UI ($$) Design</a>  </li>
+  </ul>
+  <p>
+  The workflow is</p>
+  <ol>
+    <li>
+  Push writing to <a href="https://github.com/aforward/writing">writing repo</a>  </li>
+    <li>
+  Locally regenerate site custom <code class="inline">Gen.run()</code> code generator  </li>
+    <li>
+  Push to blog repo  </li>
+    <li>
+  Deploy changes using <code class="inline">fly deploy</code>  </li>
+  </ol>
+  <p>
+  The accomplishes my goal of having the writing (which everyone, including me,
+  needs to do more of) instead of focussing on formatting in HTML/CSS.</p>
+  <p>
+  I have experience with site generators, but I have certain elixir code projects
+  to display (not ported yet) so having an Elixir app running (instead of just
+  say raw HTML/CSS) is just fine.</p>
+  <p>
+  Cheers to more writing in 2023.</p>
+  """
+end
+def article("hugo_and_tailwind") do
   """
   <p>
   I was experimenting with <a href="https://gohugo.io">Hugo</a>
@@ -582,6 +645,88 @@ defmodule Gen.Articles do
   <pre><code class="bash language-bash">hugo server</code></pre>
   """
 end
+def article("ocaml-and-vcl-cloud") do
+  """
+  <p>
+  Let&#39;s get up and running with OCaml and the Ontario Reasearch
+  &amp; Education VCL Cloud.</p>
+  <h3>
+  VCL Cloud</h3>
+  <p>
+  Go visit the VCL Cloud home page</p>
+  <ul>
+    <li>
+  <a href="https://orec.rdc.uottawa.ca/vcl/index.php">https://orec.rdc.uottawa.ca/vcl/index.php</a>  </li>
+  </ul>
+  <p>
+    <img src="/images/blog/ocaml-and-vcl-cloud/01_vlc_login.png" alt="VCL Cloud" />
+  </p>
+  <h3>
+  Create A Reservation</h3>
+  <p>
+    <img src="/images/blog/ocaml-and-vcl-cloud/02_new_reservations.png" alt="Create a new reservation" />
+  </p>
+  <p>
+  Figure out how long you want the server for.</p>
+  <p>
+    <img src="/images/blog/ocaml-and-vcl-cloud/03_create_reservation.png" alt="Setup your reservation" />
+  </p>
+  <p>
+  Make sure you grab the correct version <code class="inline">CentOS7Basev3_EmacsOpam</code>.</p>
+  <p>
+    <img src="/images/blog/ocaml-and-vcl-cloud/04_emacs_opam.png" alt="EmacsOpam version" />
+  </p>
+  <p>
+  And now you can connect</p>
+  <p>
+    <img src="/images/blog/ocaml-and-vcl-cloud/05_connect.png" alt="Connect to your server" />
+  </p>
+  <p>
+  When the box is ready, you will be given the necessary login instruction</p>
+  <p>
+    <img src="/images/blog/ocaml-and-vcl-cloud/06_login_instructions.png" alt="Login Instructions" />
+  </p>
+  <h3>
+  SSH Client</h3>
+  <p>
+  If you are running on Windows then you might not have an <code class="inline">SSH client</code>
+  available (if that&#39;s no longer the case, please let me know).</p>
+  <p>
+  Here are two possible clients to log into the machine</p>
+  <ul>
+    <li>
+  <a href="https://www.bitvise.com/ssh-client-download">Bitvise</a>  </li>
+    <li>
+  <a href="https://sourceforge.net/projects/vcxsrv/">VcXsrv</a>  </li>
+    <li>
+  <a href="https://mobaxterm.mobatek.net">MobaXterm</a>  </li>
+  </ul>
+  <p>
+  If you are on a Mac, then open <code class="inline">Terminal</code> and you can access <code class="inline">SSH</code>
+  from the console.</p>
+  <h3>
+  SSH into the Box</h3>
+  <p>
+  Now that you have an SSH, copy the information from VLC to
+  log into your newly reserved box.  DO NOT BLINBLY COPY the details
+  below as your username and password will be different.</p>
+  <pre><code class="bash language-bash">$ ssh aforward@216.48.95.185</code></pre>
+  <p>
+  You will be asked about the authenticity of the host, to proceed
+  you will have to say &quot;yes&quot;</p>
+  <pre><code>The authenticity of host &#39;216.48.95.185 (216.48.95.185)&#39; can&#39;t be established.
+  ECDSA key fingerprint is SHA256:ED0vMKplAN3JZycg1F1ltpOEp7/9rtoMer0+STCgGc0.
+  Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+  Warning: Permanently added &#39;216.48.95.185&#39; (ECDSA) to the list of known hosts.</code></pre>
+  <p>
+  Now you can enter the <em>one-time use</em> password</p>
+  <pre><code class="bash language-bash">aforward@216.48.95.185&#39;s password:</code></pre>
+  <p>
+  And now we care</p>
+  <pre><code class="bash language-bash">[aforward@localhost ~]$ ocaml --version
+  The OCaml toplevel, version 4.05.0</code></pre>
+  """
+end
 def article("ocaml-and-vscode") do
   """
   <p>
@@ -678,88 +823,6 @@ def article("ocaml-and-vscode") do
   </p>
   <h3>
   Happy Coding!</h3>
-  """
-end
-def article("ocaml-and-vcl-cloud") do
-  """
-  <p>
-  Let&#39;s get up and running with OCaml and the Ontario Reasearch
-  &amp; Education VCL Cloud.</p>
-  <h3>
-  VCL Cloud</h3>
-  <p>
-  Go visit the VCL Cloud home page</p>
-  <ul>
-    <li>
-  <a href="https://orec.rdc.uottawa.ca/vcl/index.php">https://orec.rdc.uottawa.ca/vcl/index.php</a>  </li>
-  </ul>
-  <p>
-    <img src="/images/blog/ocaml-and-vcl-cloud/01_vlc_login.png" alt="VCL Cloud" />
-  </p>
-  <h3>
-  Create A Reservation</h3>
-  <p>
-    <img src="/images/blog/ocaml-and-vcl-cloud/02_new_reservations.png" alt="Create a new reservation" />
-  </p>
-  <p>
-  Figure out how long you want the server for.</p>
-  <p>
-    <img src="/images/blog/ocaml-and-vcl-cloud/03_create_reservation.png" alt="Setup your reservation" />
-  </p>
-  <p>
-  Make sure you grab the correct version <code class="inline">CentOS7Basev3_EmacsOpam</code>.</p>
-  <p>
-    <img src="/images/blog/ocaml-and-vcl-cloud/04_emacs_opam.png" alt="EmacsOpam version" />
-  </p>
-  <p>
-  And now you can connect</p>
-  <p>
-    <img src="/images/blog/ocaml-and-vcl-cloud/05_connect.png" alt="Connect to your server" />
-  </p>
-  <p>
-  When the box is ready, you will be given the necessary login instruction</p>
-  <p>
-    <img src="/images/blog/ocaml-and-vcl-cloud/06_login_instructions.png" alt="Login Instructions" />
-  </p>
-  <h3>
-  SSH Client</h3>
-  <p>
-  If you are running on Windows then you might not have an <code class="inline">SSH client</code>
-  available (if that&#39;s no longer the case, please let me know).</p>
-  <p>
-  Here are two possible clients to log into the machine</p>
-  <ul>
-    <li>
-  <a href="https://www.bitvise.com/ssh-client-download">Bitvise</a>  </li>
-    <li>
-  <a href="https://sourceforge.net/projects/vcxsrv/">VcXsrv</a>  </li>
-    <li>
-  <a href="https://mobaxterm.mobatek.net">MobaXterm</a>  </li>
-  </ul>
-  <p>
-  If you are on a Mac, then open <code class="inline">Terminal</code> and you can access <code class="inline">SSH</code>
-  from the console.</p>
-  <h3>
-  SSH into the Box</h3>
-  <p>
-  Now that you have an SSH, copy the information from VLC to
-  log into your newly reserved box.  DO NOT BLINBLY COPY the details
-  below as your username and password will be different.</p>
-  <pre><code class="bash language-bash">$ ssh aforward@216.48.95.185</code></pre>
-  <p>
-  You will be asked about the authenticity of the host, to proceed
-  you will have to say &quot;yes&quot;</p>
-  <pre><code>The authenticity of host &#39;216.48.95.185 (216.48.95.185)&#39; can&#39;t be established.
-  ECDSA key fingerprint is SHA256:ED0vMKplAN3JZycg1F1ltpOEp7/9rtoMer0+STCgGc0.
-  Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
-  Warning: Permanently added &#39;216.48.95.185&#39; (ECDSA) to the list of known hosts.</code></pre>
-  <p>
-  Now you can enter the <em>one-time use</em> password</p>
-  <pre><code class="bash language-bash">aforward@216.48.95.185&#39;s password:</code></pre>
-  <p>
-  And now we care</p>
-  <pre><code class="bash language-bash">[aforward@localhost ~]$ ocaml --version
-  The OCaml toplevel, version 4.05.0</code></pre>
   """
 end
 def article("1password-sessions") do
@@ -2821,7 +2884,7 @@ def article("liveview-examples") do
     <tbody>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/ant_farm.png" alt="Ant Farm" />
+          <img src="/images/blog/liveview-examples/ant_farm.png" alt="Ant Farm" />
         </td>
         <td style="text-align: left;">
   A virtual ant farm where every ant was a GenServer process, simulating a basic AI behavior. Originally straightforward, it got much bigger and eventually forgotten. Finally gave the ant farm another go, this time using Elixir only. So I rolled up my sleeves, and surprisingly, four or five hours later I had the ant farm working, and this is how it was done...      </td>
@@ -2830,7 +2893,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/observer.png" alt="Erlang Observer" />
+          <img src="/images/blog/liveview-examples/observer.png" alt="Erlang Observer" />
         </td>
         <td style="text-align: left;">
   A port of <a href="https://github.com/zhongwencool/observer_cli">observer_cli</a> using <a href="https://github.com/phoenixframework/phoenix_live_view">LiveView</a>. The docs are clear, accurate and provide a very smooth introduction to the capabilities of this interactive server-side rendering way of doing things.      </td>
@@ -2839,7 +2902,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/markdown.png" alt="Markdown Editor" />
+          <img src="/images/blog/liveview-examples/markdown.png" alt="Markdown Editor" />
         </td>
         <td style="text-align: left;">
   When a client connects to the server they are initially served some HTML content. In our case, what is initially rendered is a textarea prepopulated with some Markdown and the HTML view of that Markdown. However, this is where things get interesting. A websocket connection is opened between the client and the server. The server listens for changes in the textbox, re-renders the HTML, and sends the smallest possible change back to the client which then updates the DOM.      </td>
@@ -2848,7 +2911,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/flappy_bird.png" alt="Flappy Bird" />
+          <img src="/images/blog/liveview-examples/flappy_bird.png" alt="Flappy Bird" />
         </td>
         <td style="text-align: left;">
   Flappy Bird Clone written in LiveView.  Some interesting files: <a href="https://github.com/moomerman/flappy-phoenix/blob/master/lib/flappy_phoenix_web/live/game_live.ex">Live &quot;view&quot;</a>, <a href="https://github.com/moomerman/flappy-phoenix/blob/master/lib/flappy_phoenix/game.ex">game logic</a>, <a href="https://github.com/moomerman/flappy-phoenix/blob/master/lib/flappy_phoenix_web/templates/game/index.html.leex">UI (leex)</a>      </td>
@@ -2857,7 +2920,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/breakout.png" alt="Breakout" />
+          <img src="/images/blog/liveview-examples/breakout.png" alt="Breakout" />
         </td>
         <td style="text-align: left;">
   A Breakout clone written in pure Elixir, using Phoenix LiveView.      </td>
@@ -2866,7 +2929,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/blackjack.png" alt="Black Jack" />
+          <img src="/images/blog/liveview-examples/blackjack.png" alt="Black Jack" />
         </td>
         <td style="text-align: left;">
   A Black Jack game      </td>
@@ -2875,7 +2938,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/hippo.png" alt="Hippo" />
+          <img src="/images/blog/liveview-examples/hippo.png" alt="Hippo" />
         </td>
         <td style="text-align: left;">
   Hippopotamuses have been the subjects of various African folktales. According to a San story; when the Creator assigned each animal its place in nature, the hippos wanted to live in the water, but were refused out of fear that they might eat all the fish. After begging and pleading, the hippos were finally allowed to live in the water on the conditions that they would eat grass instead of fish and would fling their dung so that it can be inspected for fish bones.      </td>
@@ -2884,7 +2947,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/bear.png" alt="Bear Game" />
+          <img src="/images/blog/liveview-examples/bear.png" alt="Bear Game" />
         </td>
         <td style="text-align: left;">
   A little toy repo to show off a very unnecessarily fast-rendering clock, done with Phoenix LiveView. There&#39;s also a keyboard demo in here, just haven&#39;t had a chance to write it up yet, but it does have a super cute bear 🐻.      </td>
@@ -2893,7 +2956,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/bear_necessities.png" alt="Bear Necessities" />
+          <img src="/images/blog/liveview-examples/bear_necessities.png" alt="Bear Necessities" />
         </td>
         <td style="text-align: left;">
   Another game involving a bear.      </td>
@@ -2902,7 +2965,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/property_search.png" alt="Milwaukee Property Search" />
+          <img src="/images/blog/liveview-examples/property_search.png" alt="Milwaukee Property Search" />
         </td>
         <td style="text-align: left;">
   A website that allows filtering by some attributes from Milwaukee&#39;s <a href="http://city.milwaukee.gov/DownloadTabularData3496.htm?docid=3496">Master Property Record</a>      </td>
@@ -2911,7 +2974,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/falling_tiles.png" alt="Falling Tiles" />
+          <img src="/images/blog/liveview-examples/falling_tiles.png" alt="Falling Tiles" />
         </td>
         <td style="text-align: left;">
   Simple shares, rotate the fast-dropping puzzle pieces and create solid lines — which then disappear. Rince and Repeat.      </td>
@@ -2920,7 +2983,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/wikipedia.png" alt="Wikipedia LiveView" />
+          <img src="/images/blog/liveview-examples/wikipedia.png" alt="Wikipedia LiveView" />
         </td>
         <td style="text-align: left;">
   Wikipedia LiveView, a little demo to test out some phoenix_live_view features using the SSE provided from the <a href="https://wikitech.wikimedia.org/wiki/Event_Platform/EventStreams">wikimedia Kafka clusters</a>.      </td>
@@ -2929,7 +2992,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/undo.png" alt="Undo" />
+          <img src="/images/blog/liveview-examples/undo.png" alt="Undo" />
         </td>
         <td style="text-align: left;">
   A simple pattern for support an undo feature.      </td>
@@ -2938,7 +3001,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/logic_simulator.png" alt="Logic Simulator" />
+          <img src="/images/blog/liveview-examples/logic_simulator.png" alt="Logic Simulator" />
         </td>
         <td style="text-align: left;">
   Simulating Logic Gates Switches and Lightbulbs.      </td>
@@ -2947,7 +3010,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/dooms_fire.png" alt="Doom&#39;s Fire" />
+          <img src="/images/blog/liveview-examples/dooms_fire.png" alt="Doom&#39;s Fire" />
         </td>
         <td style="text-align: left;">
   DOOM fire animated from server side. Made with <a href="https://github.com/phoenixframework/phoenix_live_view">Phoenix LiveView</a>. Based on <a href="https://github.com/filipedeschamps/doom-fire-algorithm">Doom fire algorithm</a>      </td>
@@ -2956,7 +3019,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/svgeditor.png" alt="SVG Editor" />
+          <img src="/images/blog/liveview-examples/svgeditor.png" alt="SVG Editor" />
         </td>
         <td style="text-align: left;">
   SVG Editor      </td>
@@ -2965,7 +3028,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/calculator.png" alt="Calculator" />
+          <img src="/images/blog/liveview-examples/calculator.png" alt="Calculator" />
         </td>
         <td style="text-align: left;">
   A simple calculator written in LiveView.      </td>
@@ -2974,7 +3037,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/pixels_with_frenemies.png" alt="Pixels with Frenemies" />
+          <img src="/images/blog/liveview-examples/pixels_with_frenemies.png" alt="Pixels with Frenemies" />
         </td>
         <td style="text-align: left;">
   Simple app to see how easy it would be to expand the demo apps to real-time collaboration. Spoiler: it was easy, in 1 day. Now just select a color and paint the canvas!      </td>
@@ -2983,7 +3046,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/load_generator.png" alt="Load Generator" />
+          <img src="/images/blog/liveview-examples/load_generator.png" alt="Load Generator" />
         </td>
         <td style="text-align: left;">
   Synthetic load generator + ad-hoc scheduler observer powered by LiveView      </td>
@@ -2992,7 +3055,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/sea_battle.png" alt="Sea Battle" />
+          <img src="/images/blog/liveview-examples/sea_battle.png" alt="Sea Battle" />
         </td>
         <td style="text-align: left;">
   Sea Battle game (require &quot;registration&quot;)      </td>
@@ -3001,7 +3064,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/bluetooth_low_energy_heart_rate_senor.png" alt="Bluetooth Low Energy Heart Rate Sensor" />
+          <img src="/images/blog/liveview-examples/bluetooth_low_energy_heart_rate_senor.png" alt="Bluetooth Low Energy Heart Rate Sensor" />
         </td>
         <td style="text-align: left;">
   Bluetooth Low Energy Heart Rate Sensor that gets <a href="https://www.w3.org/community/web-bluetooth/">Bluetooth Low Energy&#39;s</a> heart rate sensor data, and presents the results using LiveView.      </td>
@@ -3010,7 +3073,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/bike_compare.png" alt="Bike Comapare" />
+          <img src="/images/blog/liveview-examples/bike_compare.png" alt="Bike Comapare" />
         </td>
         <td style="text-align: left;">
   Bike Comparison tool written in LiveView      </td>
@@ -3019,7 +3082,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/adventure_capitalist.png" alt="Adventure Capitalist" />
+          <img src="/images/blog/liveview-examples/adventure_capitalist.png" alt="Adventure Capitalist" />
         </td>
         <td style="text-align: left;">
   A very simple implementation of <a href="https://en.wikipedia.org/wiki/AdVenture_Capitalist">Adventure Capitalist</a>      </td>
@@ -3028,7 +3091,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/examples.png" alt="Phoenix Live Examples" />
+          <img src="/images/blog/liveview-examples/examples.png" alt="Phoenix Live Examples" />
         </td>
         <td style="text-align: left;">
   A collection of examples including: thermostat, snake, autocomplete search, image editor, clock, pacman, rainbow, counter, &quot;top&quot;, CRUD (users), presence      </td>
@@ -3037,7 +3100,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/tablesort.png" alt="Table Sort" />
+          <img src="/images/blog/liveview-examples/tablesort.png" alt="Table Sort" />
         </td>
         <td style="text-align: left;">
   Table Sort in LiveView      </td>
@@ -3046,7 +3109,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/table_filter.png" alt="Table Filter" />
+          <img src="/images/blog/liveview-examples/table_filter.png" alt="Table Filter" />
         </td>
         <td style="text-align: left;">
   Table Filter in LiveView      </td>
@@ -3055,7 +3118,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/table_editing.png" alt="Table Editing" />
+          <img src="/images/blog/liveview-examples/table_editing.png" alt="Table Editing" />
         </td>
         <td style="text-align: left;">
   Table Editing in LiveView      </td>
@@ -3064,7 +3127,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/match.png" alt="Elixir Match" />
+          <img src="/images/blog/liveview-examples/match.png" alt="Elixir Match" />
         </td>
         <td style="text-align: left;">
   Elixir Match is an online version of the memory card game.      </td>
@@ -3073,7 +3136,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/empexdisplay.png" alt="Empex Display" />
+          <img src="/images/blog/liveview-examples/empexdisplay.png" alt="Empex Display" />
         </td>
         <td style="text-align: left;">
   Manipulating a SVG graphic for the 2019 <a href="https://empex.co/nyc.html">Empex NY conference</a>      </td>
@@ -3082,7 +3145,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/hangman.png" alt="Hangman" />
+          <img src="/images/blog/liveview-examples/hangman.png" alt="Hangman" />
         </td>
         <td style="text-align: left;">
   Impleneting a LiveView UI for Dave Thomas&#39; DIET implementation of hangman <a href="https://empex.co/nyc.html">Empex NY conference</a>      </td>
@@ -3091,7 +3154,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/hanoi.png" alt="Towers of Hanoi" />
+          <img src="/images/blog/liveview-examples/hanoi.png" alt="Towers of Hanoi" />
         </td>
         <td style="text-align: left;">
   Impleneting a LiveView UI for the Towers of Hanoi game      </td>
@@ -3100,7 +3163,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/chat.png" alt="LiveView Chat" />
+          <img src="/images/blog/liveview-examples/chat.png" alt="LiveView Chat" />
         </td>
         <td style="text-align: left;">
   Tracking Users in a Chat App with LiveView, PubSub Presence      </td>
@@ -3109,7 +3172,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/real_time_chat.png" alt="Another LiveView Chat" />
+          <img src="/images/blog/liveview-examples/real_time_chat.png" alt="Another LiveView Chat" />
         </td>
         <td style="text-align: left;">
   Another LiveView Chat      </td>
@@ -3118,7 +3181,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/debounce.png" alt="Search Debounce" />
+          <img src="/images/blog/liveview-examples/debounce.png" alt="Search Debounce" />
         </td>
         <td style="text-align: left;">
   Phoenix Live View Debounce      </td>
@@ -3127,7 +3190,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/blast.png" alt="Blast" />
+          <img src="/images/blog/liveview-examples/blast.png" alt="Blast" />
         </td>
         <td style="text-align: left;">
   Blast Game      </td>
@@ -3136,7 +3199,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/kanban_board.png" alt="Kanban Board" />
+          <img src="/images/blog/liveview-examples/kanban_board.png" alt="Kanban Board" />
         </td>
         <td style="text-align: left;">
   Kanban Board      </td>
@@ -3145,7 +3208,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/soup.png" alt="Boggle Game (Soup)" />
+          <img src="/images/blog/liveview-examples/soup.png" alt="Boggle Game (Soup)" />
         </td>
         <td style="text-align: left;">
   Boggle Game called Soup      </td>
@@ -3154,7 +3217,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/trivia.png" alt="Tech Trivia Game" />
+          <img src="/images/blog/liveview-examples/trivia.png" alt="Tech Trivia Game" />
         </td>
         <td style="text-align: left;">
   Tech Trivia      </td>
@@ -3163,7 +3226,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/compare_node.png" alt="Timer Compared To Node" />
+          <img src="/images/blog/liveview-examples/compare_node.png" alt="Timer Compared To Node" />
         </td>
         <td style="text-align: left;">
   Timer Comparison Node to LiveView      </td>
@@ -3172,7 +3235,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/rubular.png" alt="Rubular Regex Parser" />
+          <img src="/images/blog/liveview-examples/rubular.png" alt="Rubular Regex Parser" />
         </td>
         <td style="text-align: left;">
   Rubular Regex Parser      </td>
@@ -3181,7 +3244,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/moving_imu.png" alt="Displays IMU data using Phoenix LiveView" />
+          <img src="/images/blog/liveview-examples/moving_imu.png" alt="Displays IMU data using Phoenix LiveView" />
         </td>
         <td style="text-align: left;">
   Displays IMU data using Phoenix LiveView      </td>
@@ -3190,7 +3253,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/calendar.png" alt="Calendar" />
+          <img src="/images/blog/liveview-examples/calendar.png" alt="Calendar" />
         </td>
         <td style="text-align: left;">
   Calendar      </td>
@@ -3199,7 +3262,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/kubernetes.png" alt="Kubernetes Dashboard" />
+          <img src="/images/blog/liveview-examples/kubernetes.png" alt="Kubernetes Dashboard" />
         </td>
         <td style="text-align: left;">
   Kubernetes Dashboard      </td>
@@ -3208,7 +3271,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/ux_keypad.png" alt="UX Keypad" />
+          <img src="/images/blog/liveview-examples/ux_keypad.png" alt="UX Keypad" />
         </td>
         <td style="text-align: left;">
   UX Keypad      </td>
@@ -3217,7 +3280,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/functional_data_structures.png" alt="Visualizing Functional Data Structures with LiveView" />
+          <img src="/images/blog/liveview-examples/functional_data_structures.png" alt="Visualizing Functional Data Structures with LiveView" />
         </td>
         <td style="text-align: left;">
   Visualizing Functional Data Structures with LiveView      </td>
@@ -3226,7 +3289,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/todo.png" alt="TODO App in LiveView" />
+          <img src="/images/blog/liveview-examples/todo.png" alt="TODO App in LiveView" />
         </td>
         <td style="text-align: left;">
   TODO App      </td>
@@ -3235,7 +3298,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="liveview-examples/conway_game_of_life.png" alt="Conways Game of Life" />
+          <img src="/images/blog/liveview-examples/conway_game_of_life.png" alt="Conways Game of Life" />
         </td>
         <td style="text-align: left;">
   Conways Game of Life      </td>
@@ -3273,12 +3336,12 @@ def article("liveview-examples") do
   <h4>
   Chris McCord Keynote: ElixirConf 2018 (LiveView Sneak Peak)</h4>
   <p>
-  <a href="https://www.youtube.com/watch?feature=player_embedded&v=Z2DU0qLfPIY">  <img src="liveview-examples/video_elixirconf_2018_chrismccord.png" alt="Chris McCord Keynote: ElixirConf 2018 (LiveView Sneak Peak)" />
+  <a href="https://www.youtube.com/watch?feature=player_embedded&v=Z2DU0qLfPIY">  <img src="/images/blog/liveview-examples/video_elixirconf_2018_chrismccord.png" alt="Chris McCord Keynote: ElixirConf 2018 (LiveView Sneak Peak)" />
   </a></p>
   <h4>
   Chris McCord Keynote: ElixirConf EU 2019 (LiveView Released)</h4>
   <p>
-  <a href="https://www.youtube.com/watch?feature=player_embedded&v=8xJzHq8ru0M">  <img src="liveview-examples/video_elixirconfeu_2019_chrismccord.png" alt="Chris McCord Keynote: Code Sync 2019 (LiveView Released)" />
+  <a href="https://www.youtube.com/watch?feature=player_embedded&v=8xJzHq8ru0M">  <img src="/images/blog/liveview-examples/video_elixirconfeu_2019_chrismccord.png" alt="Chris McCord Keynote: Code Sync 2019 (LiveView Released)" />
   </a></p>
   <h4>
   How to Create a Counter with Phoenix LiveView</h4>
@@ -3303,13 +3366,13 @@ def article("liveview-examples") do
   <h4>
   Getting Started With Phoenix LiveView 3 Parts (Elixircasts)</h4>
   <p>
-  <a href="https://elixircasts.io/phoenix-liveview-part-1">  <img src="liveview-examples/video_elixircasts_part1.png" alt="Getting Started With Phoenix LiveView Part 1 (Free)" />
+  <a href="https://elixircasts.io/phoenix-liveview-part-1">  <img src="/images/blog/liveview-examples/video_elixircasts_part1.png" alt="Getting Started With Phoenix LiveView Part 1 (Free)" />
   </a></p>
   <p>
-  <a href="https://elixircasts.io/phoenix-liveview-part-2">  <img src="liveview-examples/video_elixircasts_part2.png" alt="Getting Started With Phoenix LiveView Part 2 (Subscription)" />
+  <a href="https://elixircasts.io/phoenix-liveview-part-2">  <img src="/images/blog/liveview-examples/video_elixircasts_part2.png" alt="Getting Started With Phoenix LiveView Part 2 (Subscription)" />
   </a></p>
   <p>
-  <a href="https://elixircasts.io/phoenix-liveview-part-3">  <img src="liveview-examples/video_elixircasts_part3.png" alt="Getting Started With Phoenix LiveView Part 3 (Subscription)" />
+  <a href="https://elixircasts.io/phoenix-liveview-part-3">  <img src="/images/blog/liveview-examples/video_elixircasts_part3.png" alt="Getting Started With Phoenix LiveView Part 3 (Subscription)" />
   </a></p>
   <h4>
   Setup Phoenix Live View</h4>
@@ -3380,7 +3443,7 @@ def article("hackerrank-for-elixir") do
     def go() do
       num = input(:int)
       text = input(:string)
-      IO.puts(&quot;INPUTS # {num} and # {text}&quot;)
+      IO.puts(&quot;INPUTS \#{num} and \#{text}&quot;)
     end
   
     def input(:string), do: IO.read(:line) |&gt; String.trim()
@@ -4649,7 +4712,7 @@ def article("safetybox") do
   <pre><code class="elixir language-elixir">def conf(_env) do
     raw_password = Application.get_env(:myapp, :db_password)
     password = S.decrypt(raw_password, :myapp)
-    parse_url &quot;ecto://myapp:# {password}@localhost/myapp&quot;
+    parse_url &quot;ecto://myapp:\#{password}@localhost/myapp&quot;
   end</code></pre>
   <p>
   The code above is really only as secure as your SECRET and SALT, but it is much, much better than storing passwords directly in your database (no matter how small your project may be). For those trying out <a href="https://elixir-lang.org/">Elixir</a>, <a href="https://github.com/aforward/safetybox">safetybox</a> provides a simple enough mechanism to encrypt your own passwords, as well as the passwords of your users.</p>
@@ -4671,7 +4734,7 @@ def article("safetybox") do
   <pre><code class="elixir language-elixir">def encrypt(plaintext, secret, salt) when is_binary(secret) do
     secret
     |&gt; K.generate(salt)
-    |&gt; E.new(K.generate(secret, &quot;signed # {salt}&quot;))
+    |&gt; E.new(K.generate(secret, &quot;signed \#{salt}&quot;))
     |&gt; E.encrypt_and_sign(plaintext)
   end</code></pre>
   <p>
@@ -5021,9 +5084,10 @@ def article("webl") do
 end
 
 
-  def title("hugo_and_tailwind"),  do: "Installing Hugo with Tailwind CSS"
-def title("ocaml-and-vscode"),  do: "Configure VS Code to run OCAML a Mac OSX"
+  def title("new-blog-2023"),  do: "A new blog for 2023"
+def title("hugo_and_tailwind"),  do: "Installing Hugo with Tailwind CSS"
 def title("ocaml-and-vcl-cloud"),  do: "Running OCAML on UOttawa VCL"
+def title("ocaml-and-vscode"),  do: "Configure VS Code to run OCAML a Mac OSX"
 def title("1password-sessions"),  do: "Automating 1Password CLI with --session"
 def title("1password-bootstrap"),  do: "Bootstrapping 1Password CLI using Expect"
 def title("shapkgsum-verify-mac-packages"),  do: "Verifying .pkg files on a Mac (using Go)"

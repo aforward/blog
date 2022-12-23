@@ -10,12 +10,12 @@ The blog articles are located in
 
 ## Re-generate
 
-To regenerate run (this is aliased from `Blog.Generator`) from `iex -S mix`
+To regenerate run
 
-
-```elixir
-Gen.run()
+```bash
+mix run --eval "Blog.Generator.run()"
 ```
+
 
 ## More languages
 

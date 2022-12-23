@@ -130,14 +130,6 @@ defmodule Gen.Books do
 },
 
 %{
-  title: "1984",
-  author: "George Orwell",
-  published: "1949-06-08",
-  url: "/images/book-covers/1984.png",
-  slug: "1984"
-},
-
-%{
   title: "10% Happier: How I Tamed the Voice in My Head, Reduced Stress Without Losing My Edge, and Found Self-Help That Actually Works - A True Story",
   author: "Dan Harris",
   published: "2019-04-16",
@@ -154,6 +146,22 @@ defmodule Gen.Books do
 },
 
 %{
+  title: "1984",
+  author: "George Orwell",
+  published: "1949-06-08",
+  url: "/images/book-covers/1984.png",
+  slug: "1984"
+},
+
+%{
+  title: "Lean From the Trenches: Managing Large Scale Projects with Kanban",
+  author: "Henrik Kniberg",
+  published: "2011-12-01",
+  url: "/images/book-covers/lean-from-the-trenches.png",
+  slug: "lean-from-the-trenches"
+},
+
+%{
   title: "Never Split the Difference: Negotiating As If Your Life Depended On It",
   author: "Chriss Voss",
   published: "2016-05-17",
@@ -167,14 +175,6 @@ defmodule Gen.Books do
   published: "2015-06-01",
   url: "/images/book-covers/real-world-kanban.png",
   slug: "real-world-kanban"
-},
-
-%{
-  title: "Lean From the Trenches: Managing Large Scale Projects with Kanban",
-  author: "Henrik Kniberg",
-  published: "2011-12-01",
-  url: "/images/book-covers/lean-from-the-trenches.png",
-  slug: "lean-from-the-trenches"
 },
 
 %{
