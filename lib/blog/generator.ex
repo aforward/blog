@@ -102,6 +102,20 @@ defmodule Blog.Generator do
       def title("#{slug}"),  do: "#{title(slug, :escape, dir)}"
       """ end)}
 
+
+      #{slugs |> Enum.map(fn slug ->
+      meta = metadata(slug, dir)
+
+      """
+      def meta("#{slug}") do
+        %{
+          title: "#{title(slug, :escape, dir)}",
+          datetime: "#{meta["datetime"]}",
+          slug: "#{slug}"
+        }
+      end
+      """
+    end)}
     end
     """
 

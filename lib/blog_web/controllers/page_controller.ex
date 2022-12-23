@@ -20,9 +20,12 @@ defmodule BlogWeb.PageController do
   end
 
   def article(conn, %{"slug" => slug}) do
+    meta = Gen.Articles.meta(slug)
+
     conn
     |> assign(:slug, slug)
-    |> assign(:title, Gen.Articles.title(slug))
+    |> assign(:title, meta[:title])
+    |> assign(:datetime, meta[:datetime])
     |> assign(:body, Gen.Articles.article(slug))
     |> render(:article)
   end

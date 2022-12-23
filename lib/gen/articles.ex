@@ -5113,4 +5113,195 @@ def title("safetybox"),  do: "Simple encryption in Elixir"
 def title("webl"),  do: "A simple web crawler in Golang"
 
 
+
+  def meta("new-blog-2023") do
+  %{
+    title: "A new blog for 2023",
+    datetime: "2022-12-23",
+    slug: "new-blog-2023"
+  }
+end
+def meta("hugo_and_tailwind") do
+  %{
+    title: "Installing Hugo with Tailwind CSS",
+    datetime: "2022-09-14",
+    slug: "hugo_and_tailwind"
+  }
+end
+def meta("ocaml-and-vcl-cloud") do
+  %{
+    title: "Running OCAML on UOttawa VCL",
+    datetime: "2020-08-30",
+    slug: "ocaml-and-vcl-cloud"
+  }
+end
+def meta("ocaml-and-vscode") do
+  %{
+    title: "Configure VS Code to run OCAML a Mac OSX",
+    datetime: "2020-08-30",
+    slug: "ocaml-and-vscode"
+  }
+end
+def meta("1password-sessions") do
+  %{
+    title: "Automating 1Password CLI with --session",
+    datetime: "2020-08-28",
+    slug: "1password-sessions"
+  }
+end
+def meta("1password-bootstrap") do
+  %{
+    title: "Bootstrapping 1Password CLI using Expect",
+    datetime: "2020-08-27",
+    slug: "1password-bootstrap"
+  }
+end
+def meta("shapkgsum-verify-mac-packages") do
+  %{
+    title: "Verifying .pkg files on a Mac (using Go)",
+    datetime: "2020-08-22",
+    slug: "shapkgsum-verify-mac-packages"
+  }
+end
+def meta("fast-isolated-nonbrittle") do
+  %{
+    title: "I don't like the name *unit tests*.",
+    datetime: "2020-07-10",
+    slug: "fast-isolated-nonbrittle"
+  }
+end
+def meta("generating-global-ids") do
+  %{
+    title: "Generating Globally Unique IDs",
+    datetime: "2020-05-26",
+    slug: "generating-global-ids"
+  }
+end
+def meta("git-rebase-webcampzg") do
+  %{
+    title: "git rebase -i HEAD\~25",
+    datetime: "2019-10-11",
+    slug: "git-rebase-webcampzg"
+  }
+end
+def meta("the-code-i-didnt-write") do
+  %{
+    title: "The Code I Didn't Write",
+    datetime: "2019-07-06",
+    slug: "the-code-i-didnt-write"
+  }
+end
+def meta("installing-packer-for-image-creation") do
+  %{
+    title: "Installing Packer For Image Creation",
+    datetime: "2019-07-03",
+    slug: "installing-packer-for-image-creation"
+  }
+end
+def meta("empex-2019-liveview") do
+  %{
+    title: "LiveView Talk at Empex 2019",
+    datetime: "2019-07-02",
+    slug: "empex-2019-liveview"
+  }
+end
+def meta("connecting-to-aws-using-saml") do
+  %{
+    title: "Connecting to AWS using SAML",
+    datetime: "2019-05-30",
+    slug: "connecting-to-aws-using-saml"
+  }
+end
+def meta("liveview-examples") do
+  %{
+    title: "Phoenix LiveView Examples",
+    datetime: "2019-05-29",
+    slug: "liveview-examples"
+  }
+end
+def meta("hackerrank-for-elixir") do
+  %{
+    title: "HackerRank Template in Elixir",
+    datetime: "2019-05-27",
+    slug: "hackerrank-for-elixir"
+  }
+end
+def meta("installing-chefdk-on-mac") do
+  %{
+    title: "Getting Started With ChefDK",
+    datetime: "2019-05-22",
+    slug: "installing-chefdk-on-mac"
+  }
+end
+def meta("from-sockets-to-sessions-with-liveview") do
+  %{
+    title: "LiveView storing Session Data on Redirect",
+    datetime: "2019-05-21",
+    slug: "from-sockets-to-sessions-with-liveview"
+  }
+end
+def meta("executing-custom-javascript-with-liveview") do
+  %{
+    title: "Run Custom JS on LivePage Reload",
+    datetime: "2019-05-20",
+    slug: "executing-custom-javascript-with-liveview"
+  }
+end
+def meta("llewellyn-falco-from-0-to-100-tested-code") do
+  %{
+    title: "Falco \"From 0% to 100% tested code\"",
+    datetime: "2019-05-15",
+    slug: "llewellyn-falco-from-0-to-100-tested-code"
+  }
+end
+def meta("kent-beck-beauty-in-code") do
+  %{
+    title: "Kent Beck's \"Beauty In Code\"",
+    datetime: "2018-05-31",
+    slug: "kent-beck-beauty-in-code"
+  }
+end
+def meta("oh-the-apis-opencamps-2017") do
+  %{
+    title: "Oh, the API Clients You'll Build (in Elixir)",
+    datetime: "2017-11-27",
+    slug: "oh-the-apis-opencamps-2017"
+  }
+end
+def meta("doex-elixir-api-for-digital-ocean") do
+  %{
+    title: "Yet Another Digital Ocean API client in Elixir",
+    datetime: "2017-07-28",
+    slug: "doex-elixir-api-for-digital-ocean"
+  }
+end
+def meta("mailgun-on-digital-ocean") do
+  %{
+    title: "Setting up Mailgun on Digital Ocean",
+    datetime: "2015-12-03",
+    slug: "mailgun-on-digital-ocean"
+  }
+end
+def meta("continuous-testing-with-elixir") do
+  %{
+    title: "Continuous Testing with Elixir",
+    datetime: "2015-12-02",
+    slug: "continuous-testing-with-elixir"
+  }
+end
+def meta("safetybox") do
+  %{
+    title: "Simple encryption in Elixir",
+    datetime: "2015-10-24",
+    slug: "safetybox"
+  }
+end
+def meta("webl") do
+  %{
+    title: "A simple web crawler in Golang",
+    datetime: "2014-06-07",
+    slug: "webl"
+  }
+end
+
 end

@@ -28,11 +28,11 @@
             <%= assigns.title %>
           </h1>
           <time
-            datetime="2022-09-05"
+            datetime={assigns.datetime}
             class="order-first flex items-center text-base text-zinc-400 dark:text-zinc-500"
           >
             <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500">
-            </span><span class="ml-3">September 5, 2022</span>
+            </span><span class="ml-3"><%= to_friendly(assigns.datetime) %></span>
           </time>
         </header>
         <div class="full mt-8 prose dark:prose-invert">
