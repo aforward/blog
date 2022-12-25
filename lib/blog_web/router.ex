@@ -21,6 +21,11 @@ defmodule BlogWeb.Router do
     get "/books", PageController, :books
     get "/snippets", PageController, :snippets
     get "/articles/:slug", PageController, :article
+
+    live "/quiz", QuizLive, :index
+    live "/quiz/new", QuizLive, :new
+    live "/quiz/a/:id", QuizLive, :admin
+    live "/quiz/:slug", QuizLive, :quiz
   end
 
   # Other scopes may use custom stacks.
