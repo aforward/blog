@@ -21,6 +21,8 @@ defmodule BlogWeb.Router do
     get "/books", PageController, :books
     get "/snippets", PageController, :snippets
     get "/articles/:slug", PageController, :article
+
+    live "/demo/empex", EmpexlogoLive
   end
 
   # Other scopes may use custom stacks.
