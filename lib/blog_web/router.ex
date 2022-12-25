@@ -23,6 +23,7 @@ defmodule BlogWeb.Router do
     get "/articles/:slug", PageController, :article
 
     live "/demo/empex", EmpexlogoLive
+    live "/demo/hanoi", HanoiLive
   end
 
   # Other scopes may use custom stacks.
