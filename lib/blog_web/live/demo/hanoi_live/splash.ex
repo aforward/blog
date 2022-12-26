@@ -3,9 +3,6 @@ defmodule BlogWeb.HanoiLive.Splash do
   alias BlogWeb.HanoiLive.Game
 
   def render(assigns) do
-    class_dec = "easier-#{if assigns.game.num_pieces > 1, do: "on", else: "off"}"
-    class_inc = "harder-#{if assigns.game.num_pieces < Hanoi.max_pieces(), do: "on", else: "off"}"
-
     ~H"""
     <div class="splash-screen">
       <div class="game">
@@ -13,8 +10,18 @@ defmodule BlogWeb.HanoiLive.Splash do
         <div class="container">
           <div class="left">
             <button phx-click="start_game" class="start">START</button>
-            <button phx-click="dec" class={class_dec}>Easier</button>
-            <button phx-click="inc" class={class_inc}>Harder</button>
+            <button
+              phx-click="dec"
+              class={"easier-#{if assigns.game.num_pieces > 1, do: "on", else: "off"}"}
+            >
+              Easier
+            </button>
+            <button
+              phx-click="inc"
+              class={"harder-#{if assigns.game.num_pieces < Hanoi.max_pieces(), do: "on", else: "off"}"}
+            >
+              Harder
+            </button>
           </div>
           <div class="right">
             <div class="tower">

@@ -13,6 +13,11 @@ defmodule BlogWeb.PageController do
     |> render(:books)
   end
 
+  def demos(conn, _params) do
+    conn
+    |> render(:demos)
+  end
+
   def snippets(conn, _params) do
     conn
     |> assign(:snippets, Gen.Snippets.snippets())

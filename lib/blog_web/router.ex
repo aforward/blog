@@ -22,6 +22,8 @@ defmodule BlogWeb.Router do
     get "/snippets", PageController, :snippets
     get "/articles/:slug", PageController, :article
 
+    get "/demos", PageController, :demos
+    get "/demo", PageController, :demos
     live "/demo/empex", EmpexlogoLive
     live "/demo/hanoi", HanoiLive
   end

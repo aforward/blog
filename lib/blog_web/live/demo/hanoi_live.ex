@@ -230,10 +230,12 @@ defmodule BlogWeb.HanoiLive do
     """
   end
 
+  @impl true
   def mount(_params, _session, socket) do
     {:ok, socket |> assign_game()}
   end
 
+  @impl true
   def handle_event("start_game", _, socket) do
     socket
     |> update(:game, &Hanoi.start_game(&1))
@@ -270,6 +272,7 @@ defmodule BlogWeb.HanoiLive do
     {:noreply, socket |> update(:game, &Hanoi.pick(&1, :tower_c))}
   end
 
+  @impl true
   def handle_info(:tick, socket) do
     socket
     |> update(:game, &Hanoi.display(&1))

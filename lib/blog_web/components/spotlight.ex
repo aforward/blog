@@ -99,16 +99,6 @@ defmodule BlogWeb.Spotlight do
   end
 
   def header(assigns) do
-    case assigns.mode do
-      "home" ->
-        {
-          ""
-        }
-
-      "snippets" ->
-        nil
-    end
-
     ~H"""
     <header class="max-w-2xl">
       <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
@@ -125,6 +115,8 @@ defmodule BlogWeb.Spotlight do
               Deliver Early; <span class="text-blue-500">Often.</span>
             <% "snippets" -> %>
               Technical <span class="text-blue-500">Tidbits</span>
+            <% "demos" -> %>
+              Technical <span class="text-blue-500">Demos</span>
           <% end %>
         </span>
       </h1>
@@ -135,6 +127,8 @@ defmodule BlogWeb.Spotlight do
             I don't often blog, but when I do, I reach for Markdown.
           <% "snippets" -> %>
             A collection of code snippets of sometimes rarely used, or perhaps difficult to remember tasks, commands and code snippets.
+          <% "demos" -> %>
+            A collection of demos that have been built to support a talk, to learn a concept, or maybe just for fun.
         <% end %>
       </p>
     </header>
@@ -202,7 +196,7 @@ defmodule BlogWeb.Spotlight do
                       anunknown.dev
                     </a>
 
-                    <%= for {title, href} <- [{"Books", "/books"}, {"Snippets", "/snippets"}, {"Blog", "/"}] do %>
+                    <%= for {title, href} <- [{"Books", "/books"}, {"Demos", "/demo"}, {"Snippets", "/snippets"}, {"Blog", "/"}] do %>
                       <a
                         class="pl-2 text-gray-500 hover:text-gray-800 hover:underline"
                         style="line-height: 32px"
