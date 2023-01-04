@@ -2,6 +2,19 @@ defmodule Gen.Articles do
   def articles() do
     [
       %{
+  title: "Doctor Who Doodles",
+  body: """
+  <p>
+  Played around with some Doctor Who sketches</p>
+  <p>
+    <img src="/images/blog/doodles/tardises.png" alt="Tardises or maybe it&#39;s Tardii" />
+  </p>
+  """,
+  datetime: "2023-01-04",
+  slug: "doodle-doctorwho"
+},
+
+%{
   title: "Spacecat",
   body: """
   <p>
@@ -475,7 +488,22 @@ defmodule Gen.Articles do
     ]
   end
 
-  def article("doodle-spacecat") do
+  def article("doodle-doctorwho") do
+  """
+  <p>
+  Huge Doctor Who fan, and working through a few sketches.</p>
+  <p>
+    <img src="/images/blog/doodles/tardises.png" alt="Tardises or maybe it&#39;s Tardii" />
+  
+    <img src="/images/blog/doodles/dalek.png" alt="Dalek" />
+  
+    <img src="/images/blog/doodles/weepingangle1.png" alt="Weeping Angle 1" />
+  
+    <img src="/images/blog/doodles/weepingangle2.png" alt="Weeping Angle 2" />
+  </p>
+  """
+end
+def article("doodle-spacecat") do
   """
   <p>
     <img src="/images/blog/doodles/spacecat.png" alt="Spacecat" />
@@ -5110,7 +5138,8 @@ def article("webl") do
 end
 
 
-  def title("doodle-spacecat"),  do: "Spacecat"
+  def title("doodle-doctorwho"),  do: "Doctor Who Doodles"
+def title("doodle-spacecat"),  do: "Spacecat"
 def title("new-blog-2023"),  do: "A new blog for 2023"
 def title("hugo_and_tailwind"),  do: "Installing Hugo with Tailwind CSS"
 def title("ocaml-and-vcl-cloud"),  do: "Running OCAML on UOttawa VCL"
@@ -5141,7 +5170,14 @@ def title("webl"),  do: "A simple web crawler in Golang"
 
 
 
-  def meta("doodle-spacecat") do
+  def meta("doodle-doctorwho") do
+  %{
+    title: "Doctor Who Doodles",
+    datetime: "2023-01-04",
+    slug: "doodle-doctorwho"
+  }
+end
+def meta("doodle-spacecat") do
   %{
     title: "Spacecat",
     datetime: "2023-01-01",
