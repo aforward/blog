@@ -2,6 +2,19 @@ defmodule Gen.Articles do
   def articles() do
     [
       %{
+  title: "Spacecat",
+  body: """
+  <p>
+  Learning to draw is a slow process, but it is about the journey right!</p>
+  <p>
+    <img src="/images/blog/doodles/spacecat.png" alt="Spacecat" />
+  </p>
+  """,
+  datetime: "2023-01-01",
+  slug: "doodle-spacecat"
+},
+
+%{
   title: "A new blog for 2023",
   body: """
   <p>
@@ -462,7 +475,20 @@ defmodule Gen.Articles do
     ]
   end
 
-  def article("new-blog-2023") do
+  def article("doodle-spacecat") do
+  """
+  <p>
+    <img src="/images/blog/doodles/spacecat.png" alt="Spacecat" />
+  </p>
+  <p>
+  I am trying to get better at drawing and decided that drawing inspiration
+  from doodles on the internet are the way to go.</p>
+  <p>
+  My approach is to find and be-inspired by
+  <a href="https://media.giphy.com/media/LrAGJnsTMjUZlaf5JG/giphy.gif">like this space cat</a>.</p>
+  """
+end
+def article("new-blog-2023") do
   """
   <p>
   It has been 2 years since I re-worked my personal website
@@ -5084,7 +5110,8 @@ def article("webl") do
 end
 
 
-  def title("new-blog-2023"),  do: "A new blog for 2023"
+  def title("doodle-spacecat"),  do: "Spacecat"
+def title("new-blog-2023"),  do: "A new blog for 2023"
 def title("hugo_and_tailwind"),  do: "Installing Hugo with Tailwind CSS"
 def title("ocaml-and-vcl-cloud"),  do: "Running OCAML on UOttawa VCL"
 def title("ocaml-and-vscode"),  do: "Configure VS Code to run OCAML a Mac OSX"
@@ -5114,7 +5141,14 @@ def title("webl"),  do: "A simple web crawler in Golang"
 
 
 
-  def meta("new-blog-2023") do
+  def meta("doodle-spacecat") do
+  %{
+    title: "Spacecat",
+    datetime: "2023-01-01",
+    slug: "doodle-spacecat"
+  }
+end
+def meta("new-blog-2023") do
   %{
     title: "A new blog for 2023",
     datetime: "2022-12-23",
