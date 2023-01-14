@@ -143,7 +143,7 @@ defmodule BlogWeb.Spotlight do
           <div class="border-t border-zinc-100 pt-10 pb-16 dark:border-zinc-700/40">
             <div class="relative px-4 sm:px-8 lg:px-12">
               <div class="mx-auto max-w-2xl lg:max-w-5xl">
-                <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
+                <div class="grid justify-items-center grid-cols-1">
                   <div class="flex gap-2 text-sm font-medium text-zinc-800 dark:text-zinc-200">
                     <svg
                       width="32px"
@@ -195,10 +195,11 @@ defmodule BlogWeb.Spotlight do
                     >
                       anunknown.dev
                     </a>
-
+                  </div>
+                  <div class="mx-auto">
                     <%= for {title, href} <- [{"Books", "/books"}, {"Demos", "/demo"}, {"Snippets", "/snippets"}, {"Blog", "/"}] do %>
                       <a
-                        class="pl-2 text-gray-500 hover:text-gray-800 hover:underline"
+                        class="px-2 text-gray-500 hover:text-gray-800 hover:underline"
                         style="line-height: 32px"
                         href={href}
                       >
@@ -206,7 +207,7 @@ defmodule BlogWeb.Spotlight do
                       </a>
                     <% end %>
                   </div>
-                  <p class="text-sm text-zinc-400 dark:text-zinc-500">
+                  <p class="text-sm pt-4 text-zinc-400 dark:text-zinc-500">
                     © <%= Date.utc_today().year %> Andrew Forward. All rights reserved.
                   </p>
                 </div>
