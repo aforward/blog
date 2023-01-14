@@ -4,9 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="csrf-token" content={get_csrf_token()} />
-    <.live_title suffix=" · Phoenix Framework">
-      <%= assigns[:page_title] || "Blog" %>
-    </.live_title>
+    <.live_title suffix=" · Andrew Forward has a blog"><%= assigns[:page_title] || "An unknown developer wanders through the internet" %></.live_title>
+    <meta name="description" content={"#{assigns[:meta_description] || "Test-driven development, infrastructure as code, manage, design, development, automate and continuous everything. I do not often blog, but when I do, I reach for Markdown."}"} />
     <link phx-track-static rel="stylesheet" href={~p"/assets/app.css"} />
     <link phx-track-static rel="stylesheet" href={~p"/css/prism.css"} />
     <script defer phx-track-static type="text/javascript" src={~p"/assets/app.js"}>
