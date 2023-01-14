@@ -2,6 +2,22 @@ defmodule Gen.Books do
   def books() do
     [
       %{
+  title: "Save The Cat! Writes a Novel",
+  author: "Jessica Brody",
+  published: "2018-10-09",
+  url: "/images/book-covers/save-the-cat-writes-a-novel.png",
+  slug: "save-the-cat-writes-a-novel"
+},
+
+%{
+  title: "Build",
+  author: "Tony Fadell",
+  published: "2022-05-02",
+  url: "/images/book-covers/build.png",
+  slug: "build"
+},
+
+%{
   title: "Radical Candor",
   author: "Kim Scott",
   published: "2017-03-01",
