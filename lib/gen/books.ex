@@ -2,6 +2,30 @@ defmodule Gen.Books do
   def books() do
     [
       %{
+  title: "Radical Candor",
+  author: "Kim Scott",
+  published: "2017-03-01",
+  url: "/images/book-covers/radical-candor.png",
+  slug: "radical-candor"
+},
+
+%{
+  title: "War of the Worlds",
+  author: "H.G. Wells",
+  published: "1898-01-01",
+  url: "/images/book-covers/war-of-the-worlds.png",
+  slug: "war-of-the-worlds"
+},
+
+%{
+  title: "Make Time",
+  author: "Kim Scott",
+  published: "2018-09-01",
+  url: "/images/book-covers/make-time.png",
+  slug: "make-time"
+},
+
+%{
   title: "The Lean Startup",
   author: "Eric Ries",
   published: "2011-09-13",
