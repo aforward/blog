@@ -146,6 +146,14 @@ defmodule Gen.Books do
 },
 
 %{
+  title: "Effortless",
+  author: "Greg McKeown",
+  published: "2021-04-26",
+  url: "/images/book-covers/effortless.png",
+  slug: "effortless"
+},
+
+%{
   title: "The Minimalist Entrepreneur",
   author: "Sahil Lavingia",
   published: "2021-10-26",
@@ -215,6 +223,14 @@ defmodule Gen.Books do
   published: "2015-06-01",
   url: "/images/book-covers/real-world-kanban.png",
   slug: "real-world-kanban"
+},
+
+%{
+  title: "Essentialism",
+  author: "Greg McKeown",
+  published: "2014-04-14",
+  url: "/images/book-covers/essentialism.png",
+  slug: "essentialism"
 },
 
 %{
