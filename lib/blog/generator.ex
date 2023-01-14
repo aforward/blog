@@ -50,7 +50,7 @@ defmodule Blog.Generator do
         title: "#{title(slug, :escape, dir)}",
         author: "#{author(slug, :escape, dir)}",
         published: "#{meta["published"]}",
-        url: "/images/book-covers/#{slug}.png",
+        url: "/images/book-covers/#{slug}.jpg",
         slug: "#{slug}"
       },
       """
