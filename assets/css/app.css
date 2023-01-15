@@ -21,6 +21,18 @@ article ul, article ol,
   @apply relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400;
 }
 
+article table {
+  @apply min-w-full divide-y divide-gray-300 mt-4;
+}
+
+article table th {
+  @apply px-3 py-4 text-sm bg-gray-100;
+}
+
+article table td {
+  @apply px-3 py-4 text-sm;
+}
+
 article ul, article ol {
   @apply ml-4 mt-2 mb-4 list-inside;
 }

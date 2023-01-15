@@ -16,7 +16,21 @@ defmodule Gen.Articles do
   </p>
   """,
   datetime: "2023-01-15",
-  slug: "lightohouse-seo-chrome-tool"
+  slug: "lighthouse-seo-chrome-tool"
+},
+
+%{
+  title: "Analysing your website with Hubspot Website Grader",
+  body: """
+  <p>
+  To help ensure my <a href="/articles/new-blog-2023">pesonal websites, like this blog</a>
+  are optimzed for the web, I have been using <a href="https://website.grader.com/">Hubspot Website Grader®</a>.</p>
+  <p>
+    <img src="/images/blog/website-tools/website_grader_summary_report.png" alt="Website Grader® Summary" />
+  </p>
+  """,
+  datetime: "2023-01-14",
+  slug: "hubspot_website_grader"
 },
 
 %{
@@ -506,7 +520,7 @@ defmodule Gen.Articles do
     ]
   end
 
-  def article("lightohouse-seo-chrome-tool") do
+  def article("lighthouse-seo-chrome-tool") do
   """
   <p>
   Having recently <a href="/articles/new-blog-2023">re-worked by personal blog</a>,
@@ -516,10 +530,10 @@ defmodule Gen.Articles do
   job at helping create an <em>optimized website</em> in terms of performance,
   accessibility, and bugs.</p>
   <p>
-  An snapshot report for anunknown.dev is shown below
+  A snapshot report for <a href="https://anunknown.dev">anunknown.dev</a> is shown below
   <a href="https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fanunknown.dev%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext">click here to generate a new report</a>.</p>
   <p>
-    <img src="/images/blog/website-tools/lighthouse_full_report.jpg" alt="Lighthouse Report" />
+    <img src="/images/blog/website-tools/lighthouse_full_report.png" alt="Lighthouse Report" />
   </p>
   <p>
   <a href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk">From the plugin itself</a>
@@ -537,8 +551,70 @@ defmodule Gen.Articles do
   <p>
   But even at 100%, there are always opportunities for improvements.</p>
   <p>
-    <img src="/images/blog/website-tools/lighthouse_diagnostics.jpg" alt="Lighthouse diagnostics" />
+    <img src="/images/blog/website-tools/lighthouse_diagnostics.png" alt="Lighthouse diagnostics" />
   </p>
+  """
+end
+def article("hubspot_website_grader") do
+  """
+  <p>
+  A snapshot report for <a href="https://anunknown.dev">anunknown.dev</a> is shown below
+  <a href="https://website.grader.com/tests/anunknown.dev">click here to generate a new report</a>.</p>
+  <p>
+    <img src="/images/blog/website-tools/website_grader_summary_report.png" alt="Website Grader® Summary" />
+  </p>
+  <p>
+  I recently fix an issue on mobile where the width was not correcltly
+  limitedo the screen width (and would &quot;overhang&quot; allowing a scroll right,
+  that I did not want).</p>
+  <p>
+  Still some work to do, as summarized below.</p>
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align: left;">
+  Category      </th>
+        <th style="text-align: left;">
+  Performance      </th>
+        <th style="text-align: left;">
+  Current      </th>
+        <th style="text-align: left;">
+  Recommendation      </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: left;">
+  Performance      </td>
+        <td style="text-align: left;">
+  Image Size      </td>
+        <td style="text-align: left;">
+  No      </td>
+        <td style="text-align: left;">
+  Yes. Use responsive images or SVGs to optimize your images for different screen sizes.      </td>
+      </tr>
+      <tr>
+        <td style="text-align: left;">
+  SEO      </td>
+        <td style="text-align: left;">
+  Descriptive Link Text      </td>
+        <td style="text-align: left;">
+  No      </td>
+        <td style="text-align: left;">
+  Yes. Use descriptive link text that tells visitors what they&#39;ll see if they click the link.      </td>
+      </tr>
+      <tr>
+        <td style="text-align: left;">
+  Mobile      </td>
+        <td style="text-align: left;">
+  Tap Targets      </td>
+        <td style="text-align: left;">
+  No      </td>
+        <td style="text-align: left;">
+  Yes. Tap targets (e.g., links and buttons) should be at least 8px apart from each other, and at least 48px wide and 48px tall so they are clickable for mobile users.      </td>
+      </tr>
+    </tbody>
+  </table>
   """
 end
 def article("doodle-doctorwho") do
@@ -5191,7 +5267,8 @@ def article("webl") do
 end
 
 
-  def title("lightohouse-seo-chrome-tool"),  do: "Analysing your website with Lighthouse SEO (Chrome Plugin)"
+  def title("lighthouse-seo-chrome-tool"),  do: "Analysing your website with Lighthouse SEO (Chrome Plugin)"
+def title("hubspot_website_grader"),  do: "Analysing your website with Hubspot Website Grader"
 def title("doodle-doctorwho"),  do: "Doctor Who Doodles"
 def title("doodle-spacecat"),  do: "Spacecat"
 def title("new-blog-2023"),  do: "A new blog for 2023"
@@ -5224,11 +5301,18 @@ def title("webl"),  do: "A simple web crawler in Golang"
 
 
 
-  def meta("lightohouse-seo-chrome-tool") do
+  def meta("lighthouse-seo-chrome-tool") do
   %{
     title: "Analysing your website with Lighthouse SEO (Chrome Plugin)",
     datetime: "2023-01-15",
-    slug: "lightohouse-seo-chrome-tool"
+    slug: "lighthouse-seo-chrome-tool"
+  }
+end
+def meta("hubspot_website_grader") do
+  %{
+    title: "Analysing your website with Hubspot Website Grader",
+    datetime: "2023-01-14",
+    slug: "hubspot_website_grader"
   }
 end
 def meta("doodle-doctorwho") do
