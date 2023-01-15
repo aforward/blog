@@ -533,7 +533,7 @@ defmodule Gen.Articles do
   A snapshot report for <a href="https://anunknown.dev">anunknown.dev</a> is shown below
   <a href="https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fanunknown.dev%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext">click here to generate a new report</a>.</p>
   <p>
-    <img src="/images/blog/website-tools/lighthouse_full_report.png" alt="Lighthouse Report" />
+    <img src="/images/blog/website-tools/lighthouse_full_report.jpg" alt="Lighthouse Report" />
   </p>
   <p>
   <a href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk">From the plugin itself</a>
@@ -551,7 +551,7 @@ defmodule Gen.Articles do
   <p>
   But even at 100%, there are always opportunities for improvements.</p>
   <p>
-    <img src="/images/blog/website-tools/lighthouse_diagnostics.png" alt="Lighthouse diagnostics" />
+    <img src="/images/blog/website-tools/lighthouse_diagnostics.jpg" alt="Lighthouse diagnostics" />
   </p>
   """
 end
