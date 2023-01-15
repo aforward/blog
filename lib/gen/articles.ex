@@ -2,6 +2,24 @@ defmodule Gen.Articles do
   def articles() do
     [
       %{
+  title: "Analysing your website with Lighthouse SEO (Chrome Plugin)",
+  body: """
+  <p>
+  Having recently <a href="/articles/new-blog-2023">re-worked by personal blog</a>,
+  I recently stumbled upon
+  <a href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk">Lighthouse</a>.
+  It is geared towards <em>improving SEO</em>, but really it is does a great
+  job at helping create an <em>optimized website</em> in terms of performance,
+  accessibility, and bugs.</p>
+  <p>
+    <img src="/images/blog/website-tools/lighthouse_summary_report.png" alt="Lighthouse Summary" />
+  </p>
+  """,
+  datetime: "2023-01-15",
+  slug: "lightohouse-seo-chrome-tool"
+},
+
+%{
   title: "Doctor Who Doodles",
   body: """
   <p>
@@ -488,7 +506,42 @@ defmodule Gen.Articles do
     ]
   end
 
-  def article("doodle-doctorwho") do
+  def article("lightohouse-seo-chrome-tool") do
+  """
+  <p>
+  Having recently <a href="/articles/new-blog-2023">re-worked by personal blog</a>,
+  I recently stumbled upon
+  <a href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk">Lighthouse</a>.
+  It is geared towards <em>improving SEO</em>, but really it is does a great
+  job at helping create an <em>optimized website</em> in terms of performance,
+  accessibility, and bugs.</p>
+  <p>
+  An snapshot report for anunknown.dev is shown below
+  <a href="https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fanunknown.dev%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext">click here to generate a new report</a>.</p>
+  <p>
+    <img src="/images/blog/website-tools/lighthouse_full_report.jpg" alt="Lighthouse Report" />
+  </p>
+  <p>
+  <a href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk">From the plugin itself</a>
+  is an open-source, automated tool for improving the performance, quality, and correctness of your web apps.</p>
+  <p>
+  When auditing a page, Lighthouse runs a barrage of tests against the page, and then generates a report on how well the page did. From here you can use the failing tests as indicators on what you can do to improve your app.</p>
+  <ul>
+    <li>
+  <a href="https://developers.google.com/web/tools/lighthouse/">Quick-start guide on using Lighthouse</a>  </li>
+    <li>
+  <a href="https://googlechrome.github.io/lighthouse/viewer/">View and share reports online</a>  </li>
+    <li>
+  <a href="https://github.com/GoogleChrome/lighthouse">Github source and details</a>  </li>
+  </ul>
+  <p>
+  But even at 100%, there are always opportunities for improvements.</p>
+  <p>
+    <img src="/images/blog/website-tools/lighthouse_diagnostics.jpg" alt="Lighthouse diagnostics" />
+  </p>
+  """
+end
+def article("doodle-doctorwho") do
   """
   <p>
   Huge Doctor Who fan, and working through a few sketches.</p>
@@ -5138,7 +5191,8 @@ def article("webl") do
 end
 
 
-  def title("doodle-doctorwho"),  do: "Doctor Who Doodles"
+  def title("lightohouse-seo-chrome-tool"),  do: "Analysing your website with Lighthouse SEO (Chrome Plugin)"
+def title("doodle-doctorwho"),  do: "Doctor Who Doodles"
 def title("doodle-spacecat"),  do: "Spacecat"
 def title("new-blog-2023"),  do: "A new blog for 2023"
 def title("hugo_and_tailwind"),  do: "Installing Hugo with Tailwind CSS"
@@ -5170,7 +5224,14 @@ def title("webl"),  do: "A simple web crawler in Golang"
 
 
 
-  def meta("doodle-doctorwho") do
+  def meta("lightohouse-seo-chrome-tool") do
+  %{
+    title: "Analysing your website with Lighthouse SEO (Chrome Plugin)",
+    datetime: "2023-01-15",
+    slug: "lightohouse-seo-chrome-tool"
+  }
+end
+def meta("doodle-doctorwho") do
   %{
     title: "Doctor Who Doodles",
     datetime: "2023-01-04",
