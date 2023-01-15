@@ -18,6 +18,14 @@ defmodule Gen.Books do
 },
 
 %{
+  title: "Zen and the Art of Motorcycle Maintenance",
+  author: "Robert M. Pirsig",
+  published: "1974-01-01",
+  url: "/images/book-covers/zen-and-the-art-of-motorcycle-maintenance.jpg",
+  slug: "zen-and-the-art-of-motorcycle-maintenance"
+},
+
+%{
   title: "Radical Candor",
   author: "Kim Scott",
   published: "2017-03-01",
@@ -39,6 +47,14 @@ defmodule Gen.Books do
   published: "2018-09-01",
   url: "/images/book-covers/make-time.jpg",
   slug: "make-time"
+},
+
+%{
+  title: "Hit Refresh",
+  author: "Satya Nadella",
+  published: "2017-09-26",
+  url: "/images/book-covers/hit-refresh.jpg",
+  slug: "hit-refresh"
 },
 
 %{
