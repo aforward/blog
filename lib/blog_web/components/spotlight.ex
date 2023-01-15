@@ -62,17 +62,16 @@ defmodule BlogWeb.Spotlight do
           href={"/articles/#{assigns.slug}"}
           class="relative z-10 mt-4 flex items-center text-sm font-medium text-blue-500 underline"
         >
-          Read article<svg
-            viewBox="0 0 16 16"
-            fill="none"
-            aria-hidden="true"
-            class="h-4 w-4 stroke-current"
-          ><path
+          <span>Read article <span class="font-bold"><%= assigns.title %></span></span>
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="h-6 w-6 stroke-current">
+            <path
               d="M6.75 5.75 9.25 8l-2.5 2.25"
               stroke-width="1.5"
               stroke-linecap="round"
               stroke-linejoin="round"
-            ></path></svg>
+            >
+            </path>
+          </svg>
         </a>
       </div>
       <time
