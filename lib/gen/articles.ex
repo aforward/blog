@@ -7,7 +7,7 @@ defmodule Gen.Articles do
   <p>
   Played around with some Doctor Who sketches</p>
   <p>
-    <img src="/images/blog/doodles/tardises.png" alt="Tardises or maybe it&#39;s Tardii" />
+    <img src="/images/blog/doodles/tardises.jpg" alt="Tardises or maybe it&#39;s Tardii" />
   </p>
   """,
   datetime: "2023-01-04",
@@ -20,7 +20,7 @@ defmodule Gen.Articles do
   <p>
   Learning to draw is a slow process, but it is about the journey right!</p>
   <p>
-    <img src="/images/blog/doodles/spacecat.png" alt="Spacecat" />
+    <img src="/images/blog/doodles/spacecat.jpg" alt="Spacecat" />
   </p>
   """,
   datetime: "2023-01-01",
@@ -45,7 +45,7 @@ defmodule Gen.Articles do
   title: "Installing Hugo with Tailwind CSS",
   body: """
   <p>
-    <img src="/images/blog/hugo_and_tailwind/html.png" alt="Hugo and Tailwind CSS homepage" />
+    <img src="/images/blog/hugo_and_tailwind/html.jpg" alt="Hugo and Tailwind CSS homepage" />
   </p>
   <p>
   I was experimenting with <a href="https://gohugo.io">Hugo</a>
@@ -69,7 +69,7 @@ defmodule Gen.Articles do
   create a new reservation for <code class="inline">CentOS7Basev3_EmacsOpam</code>.  Once
   ready, then you can SSH into your devbox and access OCaml.</p>
   <p>
-    <img src="/images/blog/ocaml-and-vcl-cloud/06_login_instructions.png" alt="Login Instructions" />
+    <img src="/images/blog/ocaml-and-vcl-cloud/06_login_instructions.jpg" alt="Login Instructions" />
   </p>
   """,
   datetime: "2020-08-30",
@@ -82,7 +82,7 @@ defmodule Gen.Articles do
   <p>
   Let&#39;s get up and running with OCaml and VS Code on a Mac.</p>
   <p>
-    <img src="/images/blog/ocaml-and-vscode/vscode_ocaml.png" alt="VS Code up and running with OCaml" />
+    <img src="/images/blog/ocaml-and-vscode/vscode_ocaml.jpg" alt="VS Code up and running with OCaml" />
   </p>
   """,
   datetime: "2020-08-30",
@@ -123,7 +123,7 @@ defmodule Gen.Articles do
   I have been looking at using <a href="https://support.1password.com/command-line-getting-started/">1Password&#39;s CLI tool</a> to better manage secrets on the terminal.  1Password
   <a href="https://support.1password.com/verify-command-line/">strongly recommends you verify your download</a>.</p>
   <p>
-    <img src="/images/blog/shapkgsum-verify-mac-packages/mac-verify-fingerprint.png" alt="Verify Mac Package fingerprint" />
+    <img src="/images/blog/shapkgsum-verify-mac-packages/mac-verify-fingerprint.jpg" alt="Verify Mac Package fingerprint" />
   </p>
   <p>
   I decided to write a small <a href="https://github.com/aforward/shapkgsum">shapkgsum</a> script in <a href="https://golang.org">golang</a> to make that verification easier to automate. </p>
@@ -272,7 +272,7 @@ defmodule Gen.Articles do
     <tbody>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/empexdisplay.png" alt="Empex Display" />
+          <img src="/images/blog/liveview-examples/empexdisplay.jpg" alt="Empex Display" />
         </td>
         <td style="text-align: left;">
   Manipulating a SVG graphic for the 2019 <a href="https://empex.co/nyc.html">Empex NY conference</a>      </td>
@@ -338,7 +338,7 @@ defmodule Gen.Articles do
   How can you have your LiveView login form update the user&#39;s
   session across pages?</p>
   <p>
-    <img src="/images/blog/from-sockets-to-sessions-with-liveview/flash_user.png" alt="Adding authenticated user to flash" />
+    <img src="/images/blog/from-sockets-to-sessions-with-liveview/flash_user.jpg" alt="Adding authenticated user to flash" />
   </p>
   """,
   datetime: "2019-05-21",
@@ -355,7 +355,7 @@ defmodule Gen.Articles do
   In your LiveView LEEX, you can add a <code class="inline">script</code> tag and append a <code class="inline">@tick</code> to the <code class="inline">id</code>.
   This will force for the MorphDOM differ to always re-render (aka re-run) that code on the client.</p>
   <p>
-    <img src="/images/blog/executing-custom-javascript-with-liveview/script_id_with_tick.png" alt="Create a script with tick ID" />
+    <img src="/images/blog/executing-custom-javascript-with-liveview/script_id_with_tick.jpg" alt="Create a script with tick ID" />
   </p>
   """,
   datetime: "2019-05-20",
@@ -394,7 +394,7 @@ defmodule Gen.Articles do
   title: "Oh, the API Clients You'll Build (in Elixir)",
   body: """
   <p>
-    <img src="/images/blog/talks/oh-the-apis-opencamps-2017/oh_the_apis.png" alt="Oh, the API Clients You&#39;ll Build (in Elixir)" />
+    <img src="/images/blog/talks/oh-the-apis-opencamps-2017/oh_the_apis.jpg" alt="Oh, the API Clients You&#39;ll Build (in Elixir)" />
   </p>
   <p>
   Today we are going explore how to write API clients in the <a href="https://elixir-lang.org">Elixir</a> language. This is a follow-up article to my presentation at OpenCamps 2017.</p>
@@ -409,7 +409,7 @@ defmodule Gen.Articles do
   <p>
   Want to automate your infrastructure leveraging the awesome <a href="https://developers.digitalocean.com/documentation/v2/">Digital Ocean API V2</a>, then the shell is your friend. Here we will learn about how to access the API from the command line using Elixir&#39;s <a href="https://hexdocs.pm/mix/master/Mix.Tasks.Escript.Build.html">Escript</a> tooling.</p>
   <p>
-    <img src="/images/blog/doex/doex_on_hex.png" alt="doex API for digital ocean on hex" />
+    <img src="/images/blog/doex/doex_on_hex.jpg" alt="doex API for digital ocean on hex" />
   </p>
   """,
   datetime: "2017-07-28",
@@ -478,7 +478,7 @@ defmodule Gen.Articles do
   <p>
   An exploration of the Go language (golang) to build a simple webcrawler, all code is available on <a href="https://github.com/aforward/webl">Github</a>. This application was written as an exploration of the language and demonstration of the various features of the language; it is not feature complete but should be complex enough to provide some examples of using Go&#39;s various concurrent features, tied together in a simple command line and web interface.</p>
   <p>
-    <img src="/images/blog/webl/list.png" alt="List" />
+    <img src="/images/blog/webl/list.jpg" alt="List" />
   </p>
   """,
   datetime: "2014-06-07",
@@ -493,20 +493,20 @@ defmodule Gen.Articles do
   <p>
   Huge Doctor Who fan, and working through a few sketches.</p>
   <p>
-    <img src="/images/blog/doodles/tardises.png" alt="Tardises or maybe it&#39;s Tardii" />
+    <img src="/images/blog/doodles/tardises.jpg" alt="Tardises or maybe it&#39;s Tardii" />
   
-    <img src="/images/blog/doodles/dalek.png" alt="Dalek" />
+    <img src="/images/blog/doodles/dalek.jpg" alt="Dalek" />
   
-    <img src="/images/blog/doodles/weepingangle1.png" alt="Weeping Angle 1" />
+    <img src="/images/blog/doodles/weepingangle1.jpg" alt="Weeping Angle 1" />
   
-    <img src="/images/blog/doodles/weepingangle2.png" alt="Weeping Angle 2" />
+    <img src="/images/blog/doodles/weepingangle2.jpg" alt="Weeping Angle 2" />
   </p>
   """
 end
 def article("doodle-spacecat") do
   """
   <p>
-    <img src="/images/blog/doodles/spacecat.png" alt="Spacecat" />
+    <img src="/images/blog/doodles/spacecat.jpg" alt="Spacecat" />
   </p>
   <p>
   I am trying to get better at drawing and decided that drawing inspiration
@@ -577,7 +577,7 @@ def article("hugo_and_tailwind") do
   <h2>
   Installing Hugo with Tailwind CSS</h2>
   <p>
-    <img src="/images/blog/hugo_and_tailwind/html.png" alt="Hugo and Tailwind CSS homepage" />
+    <img src="/images/blog/hugo_and_tailwind/html.jpg" alt="Hugo and Tailwind CSS homepage" />
   </p>
   <p>
   I was experimenting with <a href="https://gohugo.io">Hugo</a>
@@ -713,32 +713,32 @@ def article("ocaml-and-vcl-cloud") do
   <a href="https://orec.rdc.uottawa.ca/vcl/index.php">https://orec.rdc.uottawa.ca/vcl/index.php</a>  </li>
   </ul>
   <p>
-    <img src="/images/blog/ocaml-and-vcl-cloud/01_vlc_login.png" alt="VCL Cloud" />
+    <img src="/images/blog/ocaml-and-vcl-cloud/01_vlc_login.jpg" alt="VCL Cloud" />
   </p>
   <h3>
   Create A Reservation</h3>
   <p>
-    <img src="/images/blog/ocaml-and-vcl-cloud/02_new_reservations.png" alt="Create a new reservation" />
+    <img src="/images/blog/ocaml-and-vcl-cloud/02_new_reservations.jpg" alt="Create a new reservation" />
   </p>
   <p>
   Figure out how long you want the server for.</p>
   <p>
-    <img src="/images/blog/ocaml-and-vcl-cloud/03_create_reservation.png" alt="Setup your reservation" />
+    <img src="/images/blog/ocaml-and-vcl-cloud/03_create_reservation.jpg" alt="Setup your reservation" />
   </p>
   <p>
   Make sure you grab the correct version <code class="inline">CentOS7Basev3_EmacsOpam</code>.</p>
   <p>
-    <img src="/images/blog/ocaml-and-vcl-cloud/04_emacs_opam.png" alt="EmacsOpam version" />
+    <img src="/images/blog/ocaml-and-vcl-cloud/04_emacs_opam.jpg" alt="EmacsOpam version" />
   </p>
   <p>
   And now you can connect</p>
   <p>
-    <img src="/images/blog/ocaml-and-vcl-cloud/05_connect.png" alt="Connect to your server" />
+    <img src="/images/blog/ocaml-and-vcl-cloud/05_connect.jpg" alt="Connect to your server" />
   </p>
   <p>
   When the box is ready, you will be given the necessary login instruction</p>
   <p>
-    <img src="/images/blog/ocaml-and-vcl-cloud/06_login_instructions.png" alt="Login Instructions" />
+    <img src="/images/blog/ocaml-and-vcl-cloud/06_login_instructions.jpg" alt="Login Instructions" />
   </p>
   <h3>
   SSH Client</h3>
@@ -828,7 +828,7 @@ def article("ocaml-and-vscode") do
   <p>
   If you open a new <code class="inline">Terminal</code> window, you should be able to run <code class="inline">utop</code></p>
   <p>
-    <img src="/images/blog/ocaml-and-vscode/utop.png" alt="Running utop" />
+    <img src="/images/blog/ocaml-and-vscode/utop.jpg" alt="Running utop" />
   </p>
   <h3>
   Install VS Code</h3>
@@ -850,12 +850,12 @@ def article("ocaml-and-vscode") do
   <p>
   To be able to run <code class="inline">code</code> from Terminal, open up Visual Code.</p>
   <p>
-    <img src="/images/blog/ocaml-and-vscode/01_view_palette.png" alt="Open the command palette" />
+    <img src="/images/blog/ocaml-and-vscode/01_view_palette.jpg" alt="Open the command palette" />
   </p>
   <p>
   And then install the command line tools</p>
   <p>
-    <img src="/images/blog/ocaml-and-vscode/02_command.png" alt="Install code on the command line" />
+    <img src="/images/blog/ocaml-and-vscode/02_command.jpg" alt="Install code on the command line" />
   </p>
   <h3>
   Integrate OCAML with VS Code</h3>
@@ -863,17 +863,17 @@ def article("ocaml-and-vscode") do
   We are going to use the <a href="https://marketplace.visualstudio.com/items?itemName=freebroccolo.reasonml">OCaml and Reason IDE extension</a>
   which can be installed directly from VS Code.</p>
   <p>
-    <img src="/images/blog/ocaml-and-vscode/03_install_extension.png" alt="install an extension" />
+    <img src="/images/blog/ocaml-and-vscode/03_install_extension.jpg" alt="install an extension" />
   </p>
   <p>
   And search for <code class="inline">OCaml and Reason IDE</code>.</p>
   <p>
-    <img src="/images/blog/ocaml-and-vscode/04_ocaml_and_reason_ide.png" alt="OCaml and Reason IDE extension" />
+    <img src="/images/blog/ocaml-and-vscode/04_ocaml_and_reason_ide.jpg" alt="OCaml and Reason IDE extension" />
   </p>
   <p>
   If everything ran as expected (which is always does), then you should now have a nice IDE for <a href="https://ocaml.org">OCaml</a> within VS Code.</p>
   <p>
-    <img src="/images/blog/ocaml-and-vscode/vscode_ocaml.png" alt="VS Code up and running with OCaml" />
+    <img src="/images/blog/ocaml-and-vscode/vscode_ocaml.jpg" alt="VS Code up and running with OCaml" />
   </p>
   <h3>
   Happy Coding!</h3>
@@ -908,7 +908,7 @@ def article("1password-sessions") do
   <p>
   Now instead of building a <em>forever</em> re-useable <code class="inline">opsession</code> (<a href="/articles/1password-bootstrap">as we did with expect</a>), we now have a 30-minute <code class="inline">opsession</code> token (within a file) that we can share with our build server as seen below (step B).</p>
   <p>
-    <img src="/images/blog/1password/opsession-token.png" alt="1password token file" />
+    <img src="/images/blog/1password/opsession-token.jpg" alt="1password token file" />
   </p>
   <p>
   Our automation scripts can now use the <code class="inline">--session</code> flag pointing to the contents
@@ -989,7 +989,7 @@ def article("1password-bootstrap") do
   <p>
   You can find most of information in the <code class="inline">Preferences</code> of the 1Password GUI.</p>
   <p>
-    <img src="/images/blog/1password/secrets.png" alt="1password secret information" />
+    <img src="/images/blog/1password/secrets.jpg" alt="1password secret information" />
   </p>
   <p>
   One password will then give you a 30-minute token</p>
@@ -1087,7 +1087,7 @@ def article("1password-bootstrap") do
   In the diagram below we show how we can isolate the safety
   of <code class="inline">opsession</code> from its usage (and ultimate destruction).</p>
   <p>
-    <img src="/images/blog/1password/opsession-safety.png" alt="Creating opsession locally" />
+    <img src="/images/blog/1password/opsession-safety.jpg" alt="Creating opsession locally" />
   </p>
   <p>
   In the above,</p>
@@ -1164,12 +1164,12 @@ def article("shapkgsum-verify-mac-packages") do
   I have been looking at using <a href="https://support.1password.com/command-line-getting-started/">1Password&#39;s CLI tool</a> to better manage secrets on the terminal.  1Password
   <a href="https://support.1password.com/verify-command-line/">strongly recommends you verify your download</a>.</p>
   <p>
-    <img src="/images/blog/shapkgsum-verify-mac-packages/mac-verify-fingerprint.png" alt="Verify Mac Package fingerprint" />
+    <img src="/images/blog/shapkgsum-verify-mac-packages/mac-verify-fingerprint.jpg" alt="Verify Mac Package fingerprint" />
   </p>
   <p>
   And that should be compared again the posted fingerprint</p>
   <p>
-    <img src="/images/blog/shapkgsum-verify-mac-packages/1password-fingerprint.png" alt="1Password fingerprint" />
+    <img src="/images/blog/shapkgsum-verify-mac-packages/1password-fingerprint.jpg" alt="1Password fingerprint" />
   </p>
   <p>
   The installer does mention that <code class="inline">the installer automatically verifies the files in the package</code>, but I wanted to dive deeper into the process.</p>
@@ -2024,7 +2024,7 @@ end
 def article("git-rebase-webcampzg") do
   """
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.001.png" alt="git rebase -i HEAD~25 slide 01" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.001.jpg" alt="git rebase -i HEAD~25 slide 01" />
   </p>
   <p>
   You can watch the video below, or keep reading for a transcript.</p>
@@ -2034,54 +2034,54 @@ def article("git-rebase-webcampzg") do
   <h3>
   Git is complicated.</h3>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.002.png" alt="git rebase -i HEAD~25 slide 02" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.002.jpg" alt="git rebase -i HEAD~25 slide 02" />
   </p>
   <p>
   There are concepts known as threshold concepts or <a href="https://en.wikipedia.org/wiki/Threshold_knowledge">threshold knowledge</a>,
   where once you cross a certain level of understanding it completely changes your perception of
   that concept.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.003.png" alt="git rebase -i HEAD~25 slide 03" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.003.jpg" alt="git rebase -i HEAD~25 slide 03" />
   </p>
   <p>
   My goal today is to push some of you a bit closer to the threshold edge to help make git a little less complicated.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.004.png" alt="git rebase -i HEAD~25 slide 04" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.004.jpg" alt="git rebase -i HEAD~25 slide 04" />
   </p>
   <p>
   Warning, I take no responsibility for any loss or damage you might suffer on your journey to git enlightenment.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.005.png" alt="git rebase -i HEAD~25 slide 05" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.005.jpg" alt="git rebase -i HEAD~25 slide 05" />
   </p>
   <p>
   In a perfect world, we solve problems perfectly.  In my imperfect world, I might find and fix a bug mid feature.  I might take a break from the feature and clean up the code.  I might forget to pull in other peoples changes for a while.  I might think I pulled in peoples changes, but haven&#39;t.  I might chase down a rabbit, trying a bunch of things with a bunch of poorly formed, poorly named, and just plain awful commits.  I might need to share code with a colleague that is riddled with half implemented work.</p>
   <p>
   Reality is messy, and there is nothing wrong with changing our git commit history to tell a more compelling story about our intention with the changes, not the unfocussed journey that got us there.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.006.png" alt="git rebase -i HEAD~25 slide 06" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.006.jpg" alt="git rebase -i HEAD~25 slide 06" />
   </p>
   <p>
   Git rebase, and similar commands do allow us to change what actually happened.  Purest might complain your repository is an untrue reflection of what truly happened.  And, I agree!  It&#39;s a good thing that git allows us to clean up our disorganized self and our disorganized code.</p>
   <p>
   We alter history all the time.  My first draft of this talk is very different that what I am presenting now.  All other mediums are highly edited and tailored to the intended audience to deliver a clear and concise message, removing our mis-steps and better communicating our intent.  This benefits the audience, which will be your colleagues and most likely also your future self.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.007.png" alt="git rebase -i HEAD~25 slide 07" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.007.jpg" alt="git rebase -i HEAD~25 slide 07" />
   </p>
   <p>
   Git is a a distributed source code repository.  Unlike centralized repositories such as Subversion, every copy of a git repo IS itself also a git repository, and every copy can behave like a server and most copies can also behave like a client. So you push to the remote server and you pull into your local client.  Most people use it like a centralized repository, but it&#39;s not, so let&#39;s consider two falsehoods in what I just told you.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.008.png" alt="git rebase -i HEAD~25 slide 08" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.008.jpg" alt="git rebase -i HEAD~25 slide 08" />
   </p>
   <p>
   Firstly, you don&#39;t really pull into your local code.  You actually fetch code from a remote repository and then you merge it into your local code.  You now have your code locally, but also a local copy of the remote code. And then the legitimate remote code on the <code class="inline">origin</code> server.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.009.png" alt="git rebase -i HEAD~25 slide 09" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.009.jpg" alt="git rebase -i HEAD~25 slide 09" />
   </p>
   <p>
   If you look at your <code class="inline">.git/config</code> you will see the <code class="inline">origin</code> label is a variable,
   not a constants, and these variables help hook up your local copy with a remote one.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.010.png" alt="git rebase -i HEAD~25 slide 10" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.010.jpg" alt="git rebase -i HEAD~25 slide 10" />
   </p>
   <p>
   Words matter.  Master is an unfortunately named term in our
@@ -2090,25 +2090,25 @@ def article("git-rebase-webcampzg") do
   be able to change the default, but try, there are many better
   words without the emotional and historical baggage.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.011.png" alt="git rebase -i HEAD~25 slide 11" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.011.jpg" alt="git rebase -i HEAD~25 slide 11" />
   </p>
   <p>
   And <code class="inline">origin</code> refers to a remote git server to an imaginary repository on GitHub.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.012.png" alt="git rebase -i HEAD~25 slide 12" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.012.jpg" alt="git rebase -i HEAD~25 slide 12" />
   </p>
   <p>
   In this repo, we are tracking two remote branches <code class="inline">main</code> and <code class="inline">f/awesome</code>
   that both refer back to our <code class="inline">origin</code> remote server.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.013.png" alt="git rebase -i HEAD~25 slide 13" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.013.jpg" alt="git rebase -i HEAD~25 slide 13" />
   </p>
   <p>
   So <code class="inline">git pull</code>, which we might be used to using, actually updates your local
   copy of the <code class="inline">origin</code> remote code using a <code class="inline">git fetch</code>, and then merges that
   local <code class="inline">origin</code> code into our actual local local code.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.014.png" alt="git rebase -i HEAD~25 slide 14" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.014.jpg" alt="git rebase -i HEAD~25 slide 14" />
   </p>
   <p>
   The second falsehood is about git&#39;s decentralization.
@@ -2117,7 +2117,7 @@ def article("git-rebase-webcampzg") do
   needs a uniquely identifying name.  The default is <code class="inline">origin</code> but another
   popular name is <code class="inline">upstream</code>.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.015.png" alt="git rebase -i HEAD~25 slide 15" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.015.jpg" alt="git rebase -i HEAD~25 slide 15" />
   </p>
   <p>
   Let&#39;s now consider Amy, a developer getting back from a totally unplugged holiday.
@@ -2125,20 +2125,20 @@ def article("git-rebase-webcampzg") do
   She enters the main branch, fetches code from the <code class="inline">origin</code> server and then does a
   hard reset against the local <code class="inline">origin/main</code> branch.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.016.png" alt="git rebase -i HEAD~25 slide 16" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.016.jpg" alt="git rebase -i HEAD~25 slide 16" />
   </p>
   <p>
   This might be overkill, but Amy know she has no local changes and wants to start fresh.
   Other reasons to do a hard reset could be that you are lost in the <em>git-universe</em>
   and need to reset yourself to a known place.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.017.png" alt="git rebase -i HEAD~25 slide 17" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.017.jpg" alt="git rebase -i HEAD~25 slide 17" />
   </p>
   <p>
   Amy is now to ready to work on a new “jump to conclusions” feature.  She creates a new branch,
   and then immediately tells the <code class="inline">origin</code> server about this new branch so that she can push and fetch with ease.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.018.png" alt="git rebase -i HEAD~25 slide 18" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.018.jpg" alt="git rebase -i HEAD~25 slide 18" />
   </p>
   <p>
   Git checkout serves many purposes, and very recently, <a href="https://github.blog/2019-08-16-highlights-from-git-2-23/">as of last August</a>,
@@ -2146,37 +2146,37 @@ def article("git-rebase-webcampzg") do
   to track those purposes with better names.  We can now <code class="inline">git switch</code> to jump between branches and <code class="inline">git restore</code>
   to undo local changes.  I will continue to use <code class="inline">git checkout</code> for this talk, just know that change is coming.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.019.png" alt="git rebase -i HEAD~25 slide 19" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.019.jpg" alt="git rebase -i HEAD~25 slide 19" />
   </p>
   <p>
   Amy makes great progress on the feature, trying to follow the mantra of make the hard change
   easy, and then make the easy change... one small commit at a time.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.020.png" alt="git rebase -i HEAD~25 slide 20" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.020.jpg" alt="git rebase -i HEAD~25 slide 20" />
   </p>
   <p>
   Amy was in a rush on that last commit “doing stuff” and could write a better message.
   She amend&#39;s that last commit changing the message to “hard change”.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.021.png" alt="git rebase -i HEAD~25 slide 21" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.021.jpg" alt="git rebase -i HEAD~25 slide 21" />
   </p>
   <p>
   And now we have diverged.  Even changing the description of a commit changes the commit.
   So now our local feature branch is different from our local copy of our <code class="inline">origin</code> remote branch.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.022.png" alt="git rebase -i HEAD~25 slide 22" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.022.jpg" alt="git rebase -i HEAD~25 slide 22" />
   </p>
   <p>
   Git status is not a network operation.  So we could still be behind our remote version of the
   remote code.  That&#39;s why we want to <code class="inline">git fetch</code> all the time.  This will reduce accidental
   conflicts when you thought you had the latest remote code, but actually didn&#39;t.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.021.png" alt="git rebase -i HEAD~25 slide 21" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.021.jpg" alt="git rebase -i HEAD~25 slide 21" />
   </p>
   <p>
   This diverged makes sense because we changed our commit, we changed history.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.024.png" alt="git rebase -i HEAD~25 slide 24" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.024.jpg" alt="git rebase -i HEAD~25 slide 24" />
   </p>
   <p>
   Visually, we amended our last commit changing a “C” into a “D”.  We did the change,
@@ -2184,26 +2184,26 @@ def article("git-rebase-webcampzg") do
   <code class="inline">origin</code> server using <code class="inline">git push --force-with-lease</code>.  The “--with-lease” avoids overwriting
   commits that others might have pushed to our branch.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.025.png" alt="git rebase -i HEAD~25 slide 25" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.025.jpg" alt="git rebase -i HEAD~25 slide 25" />
   </p>
   <p>
   Amy then notices she also forgot to add a file to that last commit. Let&#39;s use the <code class="inline">-A</code> to add all
   changes to avoid this going forward.  We can also add a <code class="inline">--no-edit</code> flag as we don&#39;t want to change
   the commit message this time.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.026.png" alt="git rebase -i HEAD~25 slide 26" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.026.jpg" alt="git rebase -i HEAD~25 slide 26" />
   </p>
   <p>
   But, the code isn&#39;t really flowing and does not tell a good story of “making the hard change easy, and then making the easy change”,
   so Amy wants to re-order the commits to tell a better story of the progression of this feature. We can do this with an
   interactive <code class="inline">-i</code> rebase.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.027.png" alt="git rebase -i HEAD~25 slide 27" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.027.jpg" alt="git rebase -i HEAD~25 slide 27" />
   </p>
   <p>
   Once the commits are in a better logical order, as opposed to their original dis-organized time-based order we are ready to push our diverged local branch. Again, this is our branch, we own it, we are the only ones working on it, so we are going to force our changes back to the origin server.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.028.png" alt="git rebase -i HEAD~25 slide 28" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.028.jpg" alt="git rebase -i HEAD~25 slide 28" />
   </p>
   <p>
   Amy leaves for the day, and back tomorrow to finish the work.  Her teammate Bob was also
@@ -2212,64 +2212,64 @@ def article("git-rebase-webcampzg") do
   identified as <code class="inline">origin/main</code>.  This <code class="inline">origin/main</code> is the local copy of the main branch stored in our remote server labelled <code class="inline">origin</code>.
   Just like <code class="inline">origin/f/jumps</code> is the local copy of the <code class="inline">f/jumps</code> branch stored in our remote server labelled <code class="inline">origin</code>.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.029.png" alt="git rebase -i HEAD~25 slide 29" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.029.jpg" alt="git rebase -i HEAD~25 slide 29" />
   </p>
   <p>
   Visually.  Yesterday Amy did some work in her local branch, but Bob was working too.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.030.png" alt="git rebase -i HEAD~25 slide 30" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.030.jpg" alt="git rebase -i HEAD~25 slide 30" />
   </p>
   <p>
   So today Bobs new commits are in the main branch, and are visible once we “git fetch”.  Now we can rebase our work against that the new code.  Amy and Bob communicate well together so no conflicts are expected.</p>
   <p>
   The first step in a rebase will detach Amy&#39;s local commits from her branch.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.031.png" alt="git rebase -i HEAD~25 slide 31" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.031.jpg" alt="git rebase -i HEAD~25 slide 31" />
   </p>
   <p>
   The first step in a rebase will detach Amy&#39;s local commits from her branch.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.032.png" alt="git rebase -i HEAD~25 slide 32" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.032.jpg" alt="git rebase -i HEAD~25 slide 32" />
   </p>
   <p>
   And then will re-attach it back to now include those changes from Bob.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.033.png" alt="git rebase -i HEAD~25 slide 33" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.033.jpg" alt="git rebase -i HEAD~25 slide 33" />
   </p>
   <p>
   The output tries to relay that information.  We rewind back to where things diverged and then apply our changes in sequence to the new code base with the new commits.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.034.png" alt="git rebase -i HEAD~25 slide 34" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.034.jpg" alt="git rebase -i HEAD~25 slide 34" />
   </p>
   <p>
   With interactive rebase, you can also edit individual commits.  The process is similar to debug breakpoints.  Where the “applying of commits” will stop mid process and allow you to make changes.  This is a great way to make fix up local errors in your local branch.  Here you will edit that interim version of the code and make it more perfect.  Add your changes and then continue on with the rebase.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.035.png" alt="git rebase -i HEAD~25 slide 35" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.035.jpg" alt="git rebase -i HEAD~25 slide 35" />
   </p>
   <p>
   And this is why rebase gets a bad name, and why we shouldn&#39;t rebase against shared branches like main.  On the left was our tiny little amended commit.  But, we forgot to push the change and then someone else (maybe even us) pushed code to that remote branch that still had the older “C” commit.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.036.png" alt="git rebase -i HEAD~25 slide 36" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.036.jpg" alt="git rebase -i HEAD~25 slide 36" />
   </p>
   <p>
   We have diverged at commit “B” and if try and rebase then things will go very badly, as we now have the older conflicting commit “C”, changes from others, and then our updated “D” commit and then our changes after that. The moral is really, please always be fetching, always push to your remote branch, and avoid changing history on shared branches.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.037.png" alt="git rebase -i HEAD~25 slide 37" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.037.jpg" alt="git rebase -i HEAD~25 slide 37" />
   </p>
   <p>
   If ever you are mid rebase and your repository catches fire with strange merge conflicts, warnings of empty commits, or if you messed up; then you can always give up with —abort flag and try again later if you dare.  I sometimes get too over eager with changing history and —abort helps, a lot.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.038.png" alt="git rebase -i HEAD~25 slide 38" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.038.jpg" alt="git rebase -i HEAD~25 slide 38" />
   </p>
   <p>
   Back and Amy.  She find&#39;s a bug in some of Bobs code, but he is not available so Amy goes ahead and fixes the issue locally.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.039.png" alt="git rebase -i HEAD~25 slide 39" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.039.jpg" alt="git rebase -i HEAD~25 slide 39" />
   </p>
   <p>
   As it is unrelated to Amy&#39;s feature work, she is in the habit of automatically moving those unrelated change to the top of her local commit history.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.040.png" alt="git rebase -i HEAD~25 slide 40" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.040.jpg" alt="git rebase -i HEAD~25 slide 40" />
   </p>
   <p>
   Amy likes to have unrelated bug fixes at the top of her commits, for just such an occasion.
@@ -2279,17 +2279,17 @@ def article("git-rebase-webcampzg") do
   <code class="inline">b/off-by-one</code> branch and merge it separately without having to prematurely push her
   unfinished feature.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.041.png" alt="git rebase -i HEAD~25 slide 41" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.041.jpg" alt="git rebase -i HEAD~25 slide 41" />
   </p>
   <p>
   When Amy returns to her feature branch, she can remove that commit by deleting it from her interactive rebase shell.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.042.png" alt="git rebase -i HEAD~25 slide 42" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.042.jpg" alt="git rebase -i HEAD~25 slide 42" />
   </p>
   <p>
   And then rebase against origin/main that now has that bug fix in its commit history.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.043.png" alt="git rebase -i HEAD~25 slide 43" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.043.jpg" alt="git rebase -i HEAD~25 slide 43" />
   </p>
   <p>
   Your git commit history should tell a story as the code evolved to deliver a great feature, fix an awesome bug and clean up the code.  The reality might have been 8 mis-steps in 8 separate commits, some fat fingered typos, interspersed code clean up and random bug fixes.</p>
@@ -2298,18 +2298,18 @@ def article("git-rebase-webcampzg") do
   <p>
   Let&#39;s qualify this with an example.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.044.png" alt="git rebase -i HEAD~25 slide 44" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.044.jpg" alt="git rebase -i HEAD~25 slide 44" />
   </p>
   <p>
   We recently introduced Apple Pay at our company. Here&#39;s an isolated snippet of code to
   create an Apple Pay Session to get the payment process going.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.045.png" alt="git rebase -i HEAD~25 slide 45" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.045.jpg" alt="git rebase -i HEAD~25 slide 45" />
   </p>
   <p>
   The Apple Pay documentation was comprehensive, but the process was arduous. Here is a small snippet of PHP for code that I wrote while implementing this feature.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.046.png" alt="git rebase -i HEAD~25 slide 46" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.046.jpg" alt="git rebase -i HEAD~25 slide 46" />
   </p>
   <p>
   Look at all the hard coded-ness in there, absolutely awful, but necessarily as the code above
@@ -2317,35 +2317,35 @@ def article("git-rebase-webcampzg") do
   and within our payment gateway.  The intent of this code was short lived and used to get the
   end-to-end to be demonstrably working as there are many moving parts.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.047.png" alt="git rebase -i HEAD~25 slide 47" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.047.jpg" alt="git rebase -i HEAD~25 slide 47" />
   </p>
   <p>
   And I totally committed this work.  This work help demonstrate that the other, well-written,
   helper code actually worked as expected.  Slowly but surely the code was re-worked into
   it&#39;s final production-ready state.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.048.png" alt="git rebase -i HEAD~25 slide 48" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.048.jpg" alt="git rebase -i HEAD~25 slide 48" />
   </p>
   <p>
   Refactoring is about small, behaviour preserving incremental and safe steps. Refactoring is not an excuse to go back and fix “TODOs” like what we saw with the Apple Pay example.  There&#39;s a great quote from Kent Beck that I have repeated a few times already about making the hard change easy, and then making the easy change.  My interpretation is that you want to refactor, rework, re-architect your system before trying to implement a change.</p>
   <p>
   In a perfect world, you know exactly how to make the the hard change easy and prepare your code for the eventual change. In practice, that hard.  Git rebase allows us to use near perfect hindsight so that your code changes flow as a coherent set of refactoring, and then the actual feature changes after.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.049.png" alt="git rebase -i HEAD~25 slide 49" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.049.jpg" alt="git rebase -i HEAD~25 slide 49" />
   </p>
   <p>
   With our Apple Pay example, it became apparent, but not at first, to extract a PayPal method
   into a more generic wallet  helper.  This was originally discovered well after I had created
   duplicate code, but the final version had an isolated refactoring commit as you see above.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.050.png" alt="git rebase -i HEAD~25 slide 50" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.050.jpg" alt="git rebase -i HEAD~25 slide 50" />
   </p>
   <p>
   Adding support for ApplePay became a one-liner.  This wasn&#39;t my first version of my solution,
   not even my second, but it was the solution that I delivered as a pull-request for review
   from my team.  What an &quot;easy change&quot;, I made :-)</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.051.png" alt="git rebase -i HEAD~25 slide 51" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.051.jpg" alt="git rebase -i HEAD~25 slide 51" />
   </p>
   <p>
   Ideally our code is bug free.  Second to ideally, we fix bugs in isolation.  In reality, many times we fix bugs
@@ -2357,38 +2357,38 @@ def article("git-rebase-webcampzg") do
   But second, like we saw with Amy, we can easily cherry-pick that commit into a separately
   branch without being forced to prematurely pull in other code that isn&#39;t ready for production.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.052.png" alt="git rebase -i HEAD~25 slide 52" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.052.jpg" alt="git rebase -i HEAD~25 slide 52" />
   </p>
   <p>
   Here&#39;s a javascript bug that was observed when implementing apple way.  Captured as as an isolated commit.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.053.png" alt="git rebase -i HEAD~25 slide 53" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.053.jpg" alt="git rebase -i HEAD~25 slide 53" />
   </p>
   <p>
   Separately, we had another bug fix for a syntax error in an exceptional scenario.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.054.png" alt="git rebase -i HEAD~25 slide 54" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.054.jpg" alt="git rebase -i HEAD~25 slide 54" />
   </p>
   <p>
   We could use this rev-list command to figure out how far back to go with our interactive rebase.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.055.png" alt="git rebase -i HEAD~25 slide 55" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.055.jpg" alt="git rebase -i HEAD~25 slide 55" />
   </p>
   <p>
   Or, I usually just use GitHub.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.056.png" alt="git rebase -i HEAD~25 slide 56" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.056.jpg" alt="git rebase -i HEAD~25 slide 56" />
   </p>
   <p>
   With interactive rebase, I locate those two unrelated bug-fix commits.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.057.png" alt="git rebase -i HEAD~25 slide 57" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.057.jpg" alt="git rebase -i HEAD~25 slide 57" />
   </p>
   <p>
   And move them to the top of the file.  Now I am ready to cherry-pick, if needed, otherwise the bug fixes will go out
   when the overall feature is ready.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.058.png" alt="git rebase -i HEAD~25 slide 58" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.058.jpg" alt="git rebase -i HEAD~25 slide 58" />
   </p>
   <p>
   Pull request and git commit logs act as a great history of the evolution of your system.
@@ -2399,7 +2399,7 @@ def article("git-rebase-webcampzg") do
   code with comments; and it allows you the agility to split work out into separate pull-requests
   should some of your work be <em>ok</em> to merge, but others, not so much.</p>
   <p>
-    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.059.png" alt="git rebase -i HEAD~25 slide 59" />
+    <img src="/images/blog/talks/git-rebase-webcampzg/gitrebase.059.jpg" alt="git rebase -i HEAD~25 slide 59" />
   </p>
   <p>
   Git rebase gives us the tooling to alter our disorganized history into that coherent story allowing us to edit commit messages,
@@ -2433,7 +2433,7 @@ def article("the-code-i-didnt-write") do
   <h2>
   Show us some of your code, and talk about it</h2>
   <p>
-    <img src="/images/blog/the-code-i-didnt-write/academia_vs_business.png" alt="Academia vs Business" />
+    <img src="/images/blog/the-code-i-didnt-write/academia_vs_business.jpg" alt="Academia vs Business" />
   </p>
   <div class="reference">
     <a href="https://xkcd.com/664/">XKCD Cartoon</a></div>
@@ -2505,7 +2505,7 @@ def article("the-code-i-didnt-write") do
   <p>
   In one (of many) great talks from <a href="http://chadfowler.com/">Chad Fowler</a>, we get some insight into the <a href="https://www.youtube.com/watch?v=sAsRtZEGMMQ">dangers of stability and homeostatis</a>.  The system <em>should</em> be heterogenous by default and getting into the habit of throwing code away.</p>
   <p>
-    <img src="/images/blog/the-code-i-didnt-write/heterogenous_by_default.png" alt="Heterogenous By Default" />
+    <img src="/images/blog/the-code-i-didnt-write/heterogenous_by_default.jpg" alt="Heterogenous By Default" />
   </p>
   <p>
   Contrast that with an tweet from from <a href="https://dhh.dk/">David Heinemeier Hansson</a> at Basecamp.</p>
@@ -2649,7 +2649,7 @@ end
 def article("empex-2019-liveview") do
   """
   <p>
-    <img src="/images/blog/talks/empex-2019-liveview/title.png" alt="My Talk on LiveView" />
+    <img src="/images/blog/talks/empex-2019-liveview/title.jpg" alt="My Talk on LiveView" />
   </p>
   <p>
   It was great to be back at <a href="https://empex.co">EMPEX</a> in NYC again this (2019) year.
@@ -2674,7 +2674,7 @@ def article("empex-2019-liveview") do
   Within the talk, I mention of few projects directly.
   The source code has been grouped within the <a href="https://github.com/empex2019liveview">Code Samples on GitHub</a>.</p>
   <p>
-    <img src="/images/blog/talks/empex-2019-liveview/ilovegit.png" alt="I love git" />
+    <img src="/images/blog/talks/empex-2019-liveview/ilovegit.jpg" alt="I love git" />
   </p>
   <p>
   Look through the <a href="https://github.com/empex2019liveview/hangman/commits/main">git commit history</a>.
@@ -2682,7 +2682,7 @@ def article("empex-2019-liveview") do
   to an instagram live feed, and telling a scripted story for posterity I find more useful versus capturing
   the raw reality of potential many missteps.</p>
   <p>
-    <img src="/images/blog/talks/empex-2019-liveview/liveview_survey.png" alt="LiveView Survey" />
+    <img src="/images/blog/talks/empex-2019-liveview/liveview_survey.jpg" alt="LiveView Survey" />
   </p>
   <h3>
   Optimizing Dividend Reinvestment - The APP</h3>
@@ -2692,49 +2692,49 @@ def article("empex-2019-liveview") do
   Bob owns 100 shares, so he would be paid about $68 a quarter.  Alice has double that, with 200 shares netting
   her $136 every three months.</p>
   <p>
-    <img src="/images/blog/talks/empex-2019-liveview/july_payout.png" alt="July Dividend Payout" />
+    <img src="/images/blog/talks/empex-2019-liveview/july_payout.jpg" alt="July Dividend Payout" />
   </p>
   <p>
   What are Bob and Alice going to do with all the income?
   Obviously buy more shares.</p>
   <p>
-    <img src="/images/blog/talks/empex-2019-liveview/drip_power.png" alt="Drip Power" />
+    <img src="/images/blog/talks/empex-2019-liveview/drip_power.jpg" alt="Drip Power" />
   </p>
   <p>
   Let&#39;s build a application to help Alice and Bob optimize their DRIPs.</p>
   <p>
-    <img src="/images/blog/talks/empex-2019-liveview/letsgetstarted.png" alt="Let&#39;s Get Started" />
+    <img src="/images/blog/talks/empex-2019-liveview/letsgetstarted.jpg" alt="Let&#39;s Get Started" />
   </p>
   <h3>
   Client Side Versus Server Side Rendering</h3>
   <p>
   A (somewhat esoteric) server side only rendition would look like</p>
   <p>
-    <img src="/images/blog/talks/empex-2019-liveview/server_rendering.png" alt="Server Rending" />
+    <img src="/images/blog/talks/empex-2019-liveview/server_rendering.jpg" alt="Server Rending" />
   </p>
   <p>
   We definitely get the simplicity of having the rendering all in one spot.  But the page now needs to store local state to ensure the <em>paint</em> the right display each time.</p>
   <p>
   A client-side version support much improved rich client interactions would look like</p>
   <p>
-    <img src="/images/blog/talks/empex-2019-liveview/client_rendering.png" alt="Client Rending" />
+    <img src="/images/blog/talks/empex-2019-liveview/client_rendering.jpg" alt="Client Rending" />
   </p>
   <p>
   With a client side interaction, some (or all) of the rendering is moved to the browser, state is <em>somewhat</em> shared between between client and server code.  But some interactions now no longer require any communication back to the server.</p>
   <p>
   If we were using jQuery then the client would register the need for the event, and initiate the API call, aggregate the necessary data.</p>
   <p>
-    <img src="/images/blog/talks/empex-2019-liveview/register_events.png" alt="Register Events with jQuery" />
+    <img src="/images/blog/talks/empex-2019-liveview/register_events.jpg" alt="Register Events with jQuery" />
   </p>
   <p>
   We would have some sort API endpoint on the server and decide on the data handshake, where the server has to agree to how the client will call it and the agree needs to agree to how the server will reply.</p>
   <p>
-    <img src="/images/blog/talks/empex-2019-liveview/api_impln.png" alt="Client Server API Implementation" />
+    <img src="/images/blog/talks/empex-2019-liveview/api_impln.jpg" alt="Client Server API Implementation" />
   </p>
   <p>
   Our client then updates the display.  Here&#39;s we have plain old HTML templates with javascript, but we could easily be using a templating engine like Mustache or Handlebars, and/or a full on state mangement framework like React, Vue or Angular.</p>
   <p>
-    <img src="/images/blog/talks/empex-2019-liveview/client_update.png" alt="Client Update" />
+    <img src="/images/blog/talks/empex-2019-liveview/client_update.jpg" alt="Client Update" />
   </p>
   <h3>
   Ceremony Versus Substance</h3>
@@ -2743,7 +2743,7 @@ def article("empex-2019-liveview") do
   <h4>
   Managing Portfolio Ceremony Versus Substance</h4>
   <p>
-    <img src="/images/blog/talks/empex-2019-liveview/crud_ceremony_substance.png" alt="Managing Portfolio Ceremony Versus Substance" />
+    <img src="/images/blog/talks/empex-2019-liveview/crud_ceremony_substance.jpg" alt="Managing Portfolio Ceremony Versus Substance" />
   </p>
   <p>
   Contrast that with the substance of what we are trying to do… ultimately we are trying to do CRUD operations on our stock positions.  How much ceremony is dependent on the framework you are using, but the substance is usually constant regardless of picking Vue over React over jQuery.</p>
@@ -2752,12 +2752,12 @@ def article("empex-2019-liveview") do
   <p>
   Our dividending application will support <em>email</em> based authentication, and is implemented with a multi-step form.</p>
   <p>
-    <img src="/images/blog/talks/empex-2019-liveview/login_step_1.png" alt="Login Step 1" />
+    <img src="/images/blog/talks/empex-2019-liveview/login_step_1.jpg" alt="Login Step 1" />
   </p>
   <p>
   Some find this annoying, but we can&#39;t please everyone all the time.  Our application, like others that are rarely used, can benefit from pushing authentication in the users email so they don&#39;t have to remember another password.</p>
   <p>
-    <img src="/images/blog/talks/empex-2019-liveview/login_step_2.png" alt="Login Step 2" />
+    <img src="/images/blog/talks/empex-2019-liveview/login_step_2.jpg" alt="Login Step 2" />
   </p>
   <p>
   Ultimately we are trying to authenticate a user, which for our rarely used service is all about generating a secure token, sending it via email, and later validating it.</p>
@@ -2792,33 +2792,33 @@ def article("empex-2019-liveview") do
   <p>
   For our login behaviour.</p>
   <p>
-    <img src="/images/blog/talks/empex-2019-liveview/login_step_1.png" alt="Login Step 1" />
+    <img src="/images/blog/talks/empex-2019-liveview/login_step_1.jpg" alt="Login Step 1" />
   </p>
   <p>
   We have the following interactions between the client and the server</p>
   <p>
-    <img src="/images/blog/talks/empex-2019-liveview/liveview_login_rendering.png" alt="LiveView Login Rendering" />
+    <img src="/images/blog/talks/empex-2019-liveview/liveview_login_rendering.jpg" alt="LiveView Login Rendering" />
   </p>
   <p>
   LiveView is still very much page focussed, so we first grab the page normally.  We return the HTML as we normally would.  Nothing special to see here.</p>
   <p>
-    <img src="/images/blog/talks/empex-2019-liveview/mount_your_view.png" alt="Mount your LiveView" />
+    <img src="/images/blog/talks/empex-2019-liveview/mount_your_view.jpg" alt="Mount your LiveView" />
   </p>
   <p>
   But, as we have tagged this view as a LiveView EEX, we now get a socket connection from the client back to our server.  This allows for the client to push events to the server, but also for the server to push updates back to the client without the need for client hook.  This mounted connection typically results in a no-operation on the client, but there will be duplicate calls on the server when things are being setup for the first time.</p>
   <p>
-    <img src="/images/blog/talks/empex-2019-liveview/event_register.png" alt="Register Your Event" />
+    <img src="/images/blog/talks/empex-2019-liveview/event_register.jpg" alt="Register Your Event" />
   </p>
   <p>
   Events are sent back to the server through the mounted socket, and our LivewView page is really a GenServer that reacts to events and it returns an optimized encoding of your LEEX template.</p>
   <p>
-    <img src="/images/blog/talks/empex-2019-liveview/handle_event.png" alt="Handle Event Code" />
+    <img src="/images/blog/talks/empex-2019-liveview/handle_event.jpg" alt="Handle Event Code" />
   </p>
   <p>
   And much like a react-ive framework, your view is a reflection of the state of the page,
   so it is simply re-rendered based on the new data.</p>
   <p>
-    <img src="/images/blog/talks/empex-2019-liveview/view_based_on_state.png" alt="View Based On State" />
+    <img src="/images/blog/talks/empex-2019-liveview/view_based_on_state.jpg" alt="View Based On State" />
   </p>
   <p>
   And that&#39;s about it.  The actual talk dived into a few other aspects
@@ -2938,7 +2938,7 @@ def article("liveview-examples") do
     <tbody>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/ant_farm.png" alt="Ant Farm" />
+          <img src="/images/blog/liveview-examples/ant_farm.jpg" alt="Ant Farm" />
         </td>
         <td style="text-align: left;">
   A virtual ant farm where every ant was a GenServer process, simulating a basic AI behavior. Originally straightforward, it got much bigger and eventually forgotten. Finally gave the ant farm another go, this time using Elixir only. So I rolled up my sleeves, and surprisingly, four or five hours later I had the ant farm working, and this is how it was done...      </td>
@@ -2947,7 +2947,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/observer.png" alt="Erlang Observer" />
+          <img src="/images/blog/liveview-examples/observer.jpg" alt="Erlang Observer" />
         </td>
         <td style="text-align: left;">
   A port of <a href="https://github.com/zhongwencool/observer_cli">observer_cli</a> using <a href="https://github.com/phoenixframework/phoenix_live_view">LiveView</a>. The docs are clear, accurate and provide a very smooth introduction to the capabilities of this interactive server-side rendering way of doing things.      </td>
@@ -2956,7 +2956,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/markdown.png" alt="Markdown Editor" />
+          <img src="/images/blog/liveview-examples/markdown.jpg" alt="Markdown Editor" />
         </td>
         <td style="text-align: left;">
   When a client connects to the server they are initially served some HTML content. In our case, what is initially rendered is a textarea prepopulated with some Markdown and the HTML view of that Markdown. However, this is where things get interesting. A websocket connection is opened between the client and the server. The server listens for changes in the textbox, re-renders the HTML, and sends the smallest possible change back to the client which then updates the DOM.      </td>
@@ -2965,7 +2965,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/flappy_bird.png" alt="Flappy Bird" />
+          <img src="/images/blog/liveview-examples/flappy_bird.jpg" alt="Flappy Bird" />
         </td>
         <td style="text-align: left;">
   Flappy Bird Clone written in LiveView.  Some interesting files: <a href="https://github.com/moomerman/flappy-phoenix/blob/master/lib/flappy_phoenix_web/live/game_live.ex">Live &quot;view&quot;</a>, <a href="https://github.com/moomerman/flappy-phoenix/blob/master/lib/flappy_phoenix/game.ex">game logic</a>, <a href="https://github.com/moomerman/flappy-phoenix/blob/master/lib/flappy_phoenix_web/templates/game/index.html.leex">UI (leex)</a>      </td>
@@ -2974,7 +2974,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/breakout.png" alt="Breakout" />
+          <img src="/images/blog/liveview-examples/breakout.jpg" alt="Breakout" />
         </td>
         <td style="text-align: left;">
   A Breakout clone written in pure Elixir, using Phoenix LiveView.      </td>
@@ -2983,7 +2983,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/blackjack.png" alt="Black Jack" />
+          <img src="/images/blog/liveview-examples/blackjack.jpg" alt="Black Jack" />
         </td>
         <td style="text-align: left;">
   A Black Jack game      </td>
@@ -2992,7 +2992,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/hippo.png" alt="Hippo" />
+          <img src="/images/blog/liveview-examples/hippo.jpg" alt="Hippo" />
         </td>
         <td style="text-align: left;">
   Hippopotamuses have been the subjects of various African folktales. According to a San story; when the Creator assigned each animal its place in nature, the hippos wanted to live in the water, but were refused out of fear that they might eat all the fish. After begging and pleading, the hippos were finally allowed to live in the water on the conditions that they would eat grass instead of fish and would fling their dung so that it can be inspected for fish bones.      </td>
@@ -3001,7 +3001,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/bear.png" alt="Bear Game" />
+          <img src="/images/blog/liveview-examples/bear.jpg" alt="Bear Game" />
         </td>
         <td style="text-align: left;">
   A little toy repo to show off a very unnecessarily fast-rendering clock, done with Phoenix LiveView. There&#39;s also a keyboard demo in here, just haven&#39;t had a chance to write it up yet, but it does have a super cute bear 🐻.      </td>
@@ -3010,7 +3010,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/bear_necessities.png" alt="Bear Necessities" />
+          <img src="/images/blog/liveview-examples/bear_necessities.jpg" alt="Bear Necessities" />
         </td>
         <td style="text-align: left;">
   Another game involving a bear.      </td>
@@ -3019,7 +3019,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/property_search.png" alt="Milwaukee Property Search" />
+          <img src="/images/blog/liveview-examples/property_search.jpg" alt="Milwaukee Property Search" />
         </td>
         <td style="text-align: left;">
   A website that allows filtering by some attributes from Milwaukee&#39;s <a href="http://city.milwaukee.gov/DownloadTabularData3496.htm?docid=3496">Master Property Record</a>      </td>
@@ -3028,7 +3028,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/falling_tiles.png" alt="Falling Tiles" />
+          <img src="/images/blog/liveview-examples/falling_tiles.jpg" alt="Falling Tiles" />
         </td>
         <td style="text-align: left;">
   Simple shares, rotate the fast-dropping puzzle pieces and create solid lines — which then disappear. Rince and Repeat.      </td>
@@ -3037,7 +3037,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/wikipedia.png" alt="Wikipedia LiveView" />
+          <img src="/images/blog/liveview-examples/wikipedia.jpg" alt="Wikipedia LiveView" />
         </td>
         <td style="text-align: left;">
   Wikipedia LiveView, a little demo to test out some phoenix_live_view features using the SSE provided from the <a href="https://wikitech.wikimedia.org/wiki/Event_Platform/EventStreams">wikimedia Kafka clusters</a>.      </td>
@@ -3046,7 +3046,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/undo.png" alt="Undo" />
+          <img src="/images/blog/liveview-examples/undo.jpg" alt="Undo" />
         </td>
         <td style="text-align: left;">
   A simple pattern for support an undo feature.      </td>
@@ -3055,7 +3055,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/logic_simulator.png" alt="Logic Simulator" />
+          <img src="/images/blog/liveview-examples/logic_simulator.jpg" alt="Logic Simulator" />
         </td>
         <td style="text-align: left;">
   Simulating Logic Gates Switches and Lightbulbs.      </td>
@@ -3064,7 +3064,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/dooms_fire.png" alt="Doom&#39;s Fire" />
+          <img src="/images/blog/liveview-examples/dooms_fire.jpg" alt="Doom&#39;s Fire" />
         </td>
         <td style="text-align: left;">
   DOOM fire animated from server side. Made with <a href="https://github.com/phoenixframework/phoenix_live_view">Phoenix LiveView</a>. Based on <a href="https://github.com/filipedeschamps/doom-fire-algorithm">Doom fire algorithm</a>      </td>
@@ -3073,7 +3073,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/svgeditor.png" alt="SVG Editor" />
+          <img src="/images/blog/liveview-examples/svgeditor.jpg" alt="SVG Editor" />
         </td>
         <td style="text-align: left;">
   SVG Editor      </td>
@@ -3082,7 +3082,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/calculator.png" alt="Calculator" />
+          <img src="/images/blog/liveview-examples/calculator.jpg" alt="Calculator" />
         </td>
         <td style="text-align: left;">
   A simple calculator written in LiveView.      </td>
@@ -3091,7 +3091,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/pixels_with_frenemies.png" alt="Pixels with Frenemies" />
+          <img src="/images/blog/liveview-examples/pixels_with_frenemies.jpg" alt="Pixels with Frenemies" />
         </td>
         <td style="text-align: left;">
   Simple app to see how easy it would be to expand the demo apps to real-time collaboration. Spoiler: it was easy, in 1 day. Now just select a color and paint the canvas!      </td>
@@ -3100,7 +3100,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/load_generator.png" alt="Load Generator" />
+          <img src="/images/blog/liveview-examples/load_generator.jpg" alt="Load Generator" />
         </td>
         <td style="text-align: left;">
   Synthetic load generator + ad-hoc scheduler observer powered by LiveView      </td>
@@ -3109,7 +3109,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/sea_battle.png" alt="Sea Battle" />
+          <img src="/images/blog/liveview-examples/sea_battle.jpg" alt="Sea Battle" />
         </td>
         <td style="text-align: left;">
   Sea Battle game (require &quot;registration&quot;)      </td>
@@ -3118,7 +3118,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/bluetooth_low_energy_heart_rate_senor.png" alt="Bluetooth Low Energy Heart Rate Sensor" />
+          <img src="/images/blog/liveview-examples/bluetooth_low_energy_heart_rate_senor.jpg" alt="Bluetooth Low Energy Heart Rate Sensor" />
         </td>
         <td style="text-align: left;">
   Bluetooth Low Energy Heart Rate Sensor that gets <a href="https://www.w3.org/community/web-bluetooth/">Bluetooth Low Energy&#39;s</a> heart rate sensor data, and presents the results using LiveView.      </td>
@@ -3127,7 +3127,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/bike_compare.png" alt="Bike Comapare" />
+          <img src="/images/blog/liveview-examples/bike_compare.jpg" alt="Bike Comapare" />
         </td>
         <td style="text-align: left;">
   Bike Comparison tool written in LiveView      </td>
@@ -3136,7 +3136,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/adventure_capitalist.png" alt="Adventure Capitalist" />
+          <img src="/images/blog/liveview-examples/adventure_capitalist.jpg" alt="Adventure Capitalist" />
         </td>
         <td style="text-align: left;">
   A very simple implementation of <a href="https://en.wikipedia.org/wiki/AdVenture_Capitalist">Adventure Capitalist</a>      </td>
@@ -3145,7 +3145,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/examples.png" alt="Phoenix Live Examples" />
+          <img src="/images/blog/liveview-examples/examples.jpg" alt="Phoenix Live Examples" />
         </td>
         <td style="text-align: left;">
   A collection of examples including: thermostat, snake, autocomplete search, image editor, clock, pacman, rainbow, counter, &quot;top&quot;, CRUD (users), presence      </td>
@@ -3154,7 +3154,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/tablesort.png" alt="Table Sort" />
+          <img src="/images/blog/liveview-examples/tablesort.jpg" alt="Table Sort" />
         </td>
         <td style="text-align: left;">
   Table Sort in LiveView      </td>
@@ -3163,7 +3163,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/table_filter.png" alt="Table Filter" />
+          <img src="/images/blog/liveview-examples/table_filter.jpg" alt="Table Filter" />
         </td>
         <td style="text-align: left;">
   Table Filter in LiveView      </td>
@@ -3172,7 +3172,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/table_editing.png" alt="Table Editing" />
+          <img src="/images/blog/liveview-examples/table_editing.jpg" alt="Table Editing" />
         </td>
         <td style="text-align: left;">
   Table Editing in LiveView      </td>
@@ -3181,7 +3181,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/match.png" alt="Elixir Match" />
+          <img src="/images/blog/liveview-examples/match.jpg" alt="Elixir Match" />
         </td>
         <td style="text-align: left;">
   Elixir Match is an online version of the memory card game.      </td>
@@ -3190,7 +3190,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/empexdisplay.png" alt="Empex Display" />
+          <img src="/images/blog/liveview-examples/empexdisplay.jpg" alt="Empex Display" />
         </td>
         <td style="text-align: left;">
   Manipulating a SVG graphic for the 2019 <a href="https://empex.co/nyc.html">Empex NY conference</a>      </td>
@@ -3199,7 +3199,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/hangman.png" alt="Hangman" />
+          <img src="/images/blog/liveview-examples/hangman.jpg" alt="Hangman" />
         </td>
         <td style="text-align: left;">
   Impleneting a LiveView UI for Dave Thomas&#39; DIET implementation of hangman <a href="https://empex.co/nyc.html">Empex NY conference</a>      </td>
@@ -3208,7 +3208,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/hanoi.png" alt="Towers of Hanoi" />
+          <img src="/images/blog/liveview-examples/hanoi.jpg" alt="Towers of Hanoi" />
         </td>
         <td style="text-align: left;">
   Impleneting a LiveView UI for the Towers of Hanoi game      </td>
@@ -3217,7 +3217,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/chat.png" alt="LiveView Chat" />
+          <img src="/images/blog/liveview-examples/chat.jpg" alt="LiveView Chat" />
         </td>
         <td style="text-align: left;">
   Tracking Users in a Chat App with LiveView, PubSub Presence      </td>
@@ -3226,7 +3226,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/real_time_chat.png" alt="Another LiveView Chat" />
+          <img src="/images/blog/liveview-examples/real_time_chat.jpg" alt="Another LiveView Chat" />
         </td>
         <td style="text-align: left;">
   Another LiveView Chat      </td>
@@ -3235,7 +3235,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/debounce.png" alt="Search Debounce" />
+          <img src="/images/blog/liveview-examples/debounce.jpg" alt="Search Debounce" />
         </td>
         <td style="text-align: left;">
   Phoenix Live View Debounce      </td>
@@ -3244,7 +3244,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/blast.png" alt="Blast" />
+          <img src="/images/blog/liveview-examples/blast.jpg" alt="Blast" />
         </td>
         <td style="text-align: left;">
   Blast Game      </td>
@@ -3253,7 +3253,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/kanban_board.png" alt="Kanban Board" />
+          <img src="/images/blog/liveview-examples/kanban_board.jpg" alt="Kanban Board" />
         </td>
         <td style="text-align: left;">
   Kanban Board      </td>
@@ -3262,7 +3262,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/soup.png" alt="Boggle Game (Soup)" />
+          <img src="/images/blog/liveview-examples/soup.jpg" alt="Boggle Game (Soup)" />
         </td>
         <td style="text-align: left;">
   Boggle Game called Soup      </td>
@@ -3271,7 +3271,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/trivia.png" alt="Tech Trivia Game" />
+          <img src="/images/blog/liveview-examples/trivia.jpg" alt="Tech Trivia Game" />
         </td>
         <td style="text-align: left;">
   Tech Trivia      </td>
@@ -3280,7 +3280,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/compare_node.png" alt="Timer Compared To Node" />
+          <img src="/images/blog/liveview-examples/compare_node.jpg" alt="Timer Compared To Node" />
         </td>
         <td style="text-align: left;">
   Timer Comparison Node to LiveView      </td>
@@ -3289,7 +3289,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/rubular.png" alt="Rubular Regex Parser" />
+          <img src="/images/blog/liveview-examples/rubular.jpg" alt="Rubular Regex Parser" />
         </td>
         <td style="text-align: left;">
   Rubular Regex Parser      </td>
@@ -3298,7 +3298,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/moving_imu.png" alt="Displays IMU data using Phoenix LiveView" />
+          <img src="/images/blog/liveview-examples/moving_imu.jpg" alt="Displays IMU data using Phoenix LiveView" />
         </td>
         <td style="text-align: left;">
   Displays IMU data using Phoenix LiveView      </td>
@@ -3307,7 +3307,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/calendar.png" alt="Calendar" />
+          <img src="/images/blog/liveview-examples/calendar.jpg" alt="Calendar" />
         </td>
         <td style="text-align: left;">
   Calendar      </td>
@@ -3316,7 +3316,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/kubernetes.png" alt="Kubernetes Dashboard" />
+          <img src="/images/blog/liveview-examples/kubernetes.jpg" alt="Kubernetes Dashboard" />
         </td>
         <td style="text-align: left;">
   Kubernetes Dashboard      </td>
@@ -3325,7 +3325,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/ux_keypad.png" alt="UX Keypad" />
+          <img src="/images/blog/liveview-examples/ux_keypad.jpg" alt="UX Keypad" />
         </td>
         <td style="text-align: left;">
   UX Keypad      </td>
@@ -3334,7 +3334,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/functional_data_structures.png" alt="Visualizing Functional Data Structures with LiveView" />
+          <img src="/images/blog/liveview-examples/functional_data_structures.jpg" alt="Visualizing Functional Data Structures with LiveView" />
         </td>
         <td style="text-align: left;">
   Visualizing Functional Data Structures with LiveView      </td>
@@ -3343,7 +3343,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/todo.png" alt="TODO App in LiveView" />
+          <img src="/images/blog/liveview-examples/todo.jpg" alt="TODO App in LiveView" />
         </td>
         <td style="text-align: left;">
   TODO App      </td>
@@ -3352,7 +3352,7 @@ def article("liveview-examples") do
       </tr>
       <tr>
         <td style="text-align: left;">
-          <img src="/images/blog/liveview-examples/conway_game_of_life.png" alt="Conways Game of Life" />
+          <img src="/images/blog/liveview-examples/conway_game_of_life.jpg" alt="Conways Game of Life" />
         </td>
         <td style="text-align: left;">
   Conways Game of Life      </td>
@@ -3390,12 +3390,12 @@ def article("liveview-examples") do
   <h4>
   Chris McCord Keynote: ElixirConf 2018 (LiveView Sneak Peak)</h4>
   <p>
-  <a href="https://www.youtube.com/watch?feature=player_embedded&v=Z2DU0qLfPIY">  <img src="/images/blog/liveview-examples/video_elixirconf_2018_chrismccord.png" alt="Chris McCord Keynote: ElixirConf 2018 (LiveView Sneak Peak)" />
+  <a href="https://www.youtube.com/watch?feature=player_embedded&v=Z2DU0qLfPIY">  <img src="/images/blog/liveview-examples/video_elixirconf_2018_chrismccord.jpg" alt="Chris McCord Keynote: ElixirConf 2018 (LiveView Sneak Peak)" />
   </a></p>
   <h4>
   Chris McCord Keynote: ElixirConf EU 2019 (LiveView Released)</h4>
   <p>
-  <a href="https://www.youtube.com/watch?feature=player_embedded&v=8xJzHq8ru0M">  <img src="/images/blog/liveview-examples/video_elixirconfeu_2019_chrismccord.png" alt="Chris McCord Keynote: Code Sync 2019 (LiveView Released)" />
+  <a href="https://www.youtube.com/watch?feature=player_embedded&v=8xJzHq8ru0M">  <img src="/images/blog/liveview-examples/video_elixirconfeu_2019_chrismccord.jpg" alt="Chris McCord Keynote: Code Sync 2019 (LiveView Released)" />
   </a></p>
   <h4>
   How to Create a Counter with Phoenix LiveView</h4>
@@ -3420,13 +3420,13 @@ def article("liveview-examples") do
   <h4>
   Getting Started With Phoenix LiveView 3 Parts (Elixircasts)</h4>
   <p>
-  <a href="https://elixircasts.io/phoenix-liveview-part-1">  <img src="/images/blog/liveview-examples/video_elixircasts_part1.png" alt="Getting Started With Phoenix LiveView Part 1 (Free)" />
+  <a href="https://elixircasts.io/phoenix-liveview-part-1">  <img src="/images/blog/liveview-examples/video_elixircasts_part1.jpg" alt="Getting Started With Phoenix LiveView Part 1 (Free)" />
   </a></p>
   <p>
-  <a href="https://elixircasts.io/phoenix-liveview-part-2">  <img src="/images/blog/liveview-examples/video_elixircasts_part2.png" alt="Getting Started With Phoenix LiveView Part 2 (Subscription)" />
+  <a href="https://elixircasts.io/phoenix-liveview-part-2">  <img src="/images/blog/liveview-examples/video_elixircasts_part2.jpg" alt="Getting Started With Phoenix LiveView Part 2 (Subscription)" />
   </a></p>
   <p>
-  <a href="https://elixircasts.io/phoenix-liveview-part-3">  <img src="/images/blog/liveview-examples/video_elixircasts_part3.png" alt="Getting Started With Phoenix LiveView Part 3 (Subscription)" />
+  <a href="https://elixircasts.io/phoenix-liveview-part-3">  <img src="/images/blog/liveview-examples/video_elixircasts_part3.jpg" alt="Getting Started With Phoenix LiveView Part 3 (Subscription)" />
   </a></p>
   <h4>
   Setup Phoenix Live View</h4>
@@ -3509,7 +3509,7 @@ def article("hackerrank-for-elixir") do
   <p>
   When you run against HackerRank, you (properly get)</p>
   <p>
-    <img src="/images/blog/hackerrank-for-elixir/elixir_solution_setup.png" alt="Reading and Writing for HackerRank" />
+    <img src="/images/blog/hackerrank-for-elixir/elixir_solution_setup.jpg" alt="Reading and Writing for HackerRank" />
   </p>
   <p>
   Notice the OUTPUT properly captured the input (i.e. the code is
@@ -3546,13 +3546,13 @@ def article("installing-chefdk-on-mac") do
   That should download the SDK for your Mac (<a href="https://docs.chef.io/install_dk.html">not running OS X then check out the docs</a>).
   and popup the installer.</p>
   <p>
-    <img src="/images/blog/installing-chefdk-on-mac/chefdk_installer.png" alt="ChefDK Installer" />
+    <img src="/images/blog/installing-chefdk-on-mac/chefdk_installer.jpg" alt="ChefDK Installer" />
   </p>
   <p>
   If you click on the <code class="inline">.pkg</code> that will open up the installer.  Follow the
   instructions.</p>
   <p>
-    <img src="/images/blog/installing-chefdk-on-mac/chefdk_install_prompt.png" alt="ChefDK Install Prompts" />
+    <img src="/images/blog/installing-chefdk-on-mac/chefdk_install_prompt.jpg" alt="ChefDK Install Prompts" />
   </p>
   <p>
   The installed things into <code class="inline">/opt/chefdk</code>. Let&#39;s make the chefdk
@@ -3699,7 +3699,7 @@ def article("from-sockets-to-sessions-with-liveview") do
   this information is encrypted between the server and client to
   avoid the client <em>writing</em> their own flash messages.</p>
   <p>
-    <img src="/images/blog/from-sockets-to-sessions-with-liveview/put_flash.png" alt="Putting Flash in a LiveView message" />
+    <img src="/images/blog/from-sockets-to-sessions-with-liveview/put_flash.jpg" alt="Putting Flash in a LiveView message" />
   </p>
   <h3>
   Using Flash to pass along login success</h3>
@@ -3708,7 +3708,7 @@ def article("from-sockets-to-sessions-with-liveview") do
   those messages are encrypted, we can use that that flash information
   from the LiveView genserver back to the server.</p>
   <p>
-    <img src="/images/blog/from-sockets-to-sessions-with-liveview/flash_user.png" alt="Adding authenticated user to flash" />
+    <img src="/images/blog/from-sockets-to-sessions-with-liveview/flash_user.jpg" alt="Adding authenticated user to flash" />
   </p>
   <p>
   In friendly copy and paste code...</p>
@@ -3732,7 +3732,7 @@ def article("from-sockets-to-sessions-with-liveview") do
   On the server connection, we can then look at the <code class="inline">:user</code> flash message
   to check if we were logged in from LiveView</p>
   <p>
-    <img src="/images/blog/from-sockets-to-sessions-with-liveview/fetch_flash.png" alt="Fetch user from flash" />
+    <img src="/images/blog/from-sockets-to-sessions-with-liveview/fetch_flash.jpg" alt="Fetch user from flash" />
   </p>
   <p>
   In friendly copy and paste code...</p>
@@ -3772,7 +3772,7 @@ def article("executing-custom-javascript-with-liveview") do
   When ever you return data back to the client through the the websocket,
   consider adding an auto-incrementer.  This will allow you to uniquely track every <em>liveview</em> refresh.</p>
   <p>
-    <img src="/images/blog/executing-custom-javascript-with-liveview/mounting_a_tick.png" alt="Adding a tick to every message" />
+    <img src="/images/blog/executing-custom-javascript-with-liveview/mounting_a_tick.jpg" alt="Adding a tick to every message" />
   </p>
   <p>
   In friendly copy and paste code...</p>
@@ -3790,7 +3790,7 @@ def article("executing-custom-javascript-with-liveview") do
   <p>
   In your LiveView LEEX, you can add a <code class="inline">script</code> tag and append the <code class="inline">@tick</code> to the <code class="inline">id</code>.   This will force for the MorphDOM differ to always re-render (aka re-run) that code on the client.</p>
   <p>
-    <img src="/images/blog/executing-custom-javascript-with-liveview/script_id_with_tick.png" alt="Create a script with tick ID" />
+    <img src="/images/blog/executing-custom-javascript-with-liveview/script_id_with_tick.jpg" alt="Create a script with tick ID" />
   </p>
   <p>
   In friendly copy and paste code...</p>
@@ -3811,19 +3811,19 @@ def article("executing-custom-javascript-with-liveview") do
   So when the page loads, but focus on the input.  This can totally be done without
   JavaScript and plain old <code class="inline">autofocus</code> works well.</p>
   <p>
-    <img src="/images/blog/executing-custom-javascript-with-liveview/focus_one.png" alt="Autofocus on first input" />
+    <img src="/images/blog/executing-custom-javascript-with-liveview/focus_one.jpg" alt="Autofocus on first input" />
   </p>
   <p>
   But, when you want to edit a particular stock, for example, we want to put focus on <em>that</em> input.</p>
   <p>
-    <img src="/images/blog/executing-custom-javascript-with-liveview/focus_two.png" alt="Autofocus edit input" />
+    <img src="/images/blog/executing-custom-javascript-with-liveview/focus_two.jpg" alt="Autofocus edit input" />
   </p>
   <p>
   And once done editing, put focus back on the original <em>new</em> input.</p>
   <p>
   This was accomplished with the following code</p>
   <p>
-    <img src="/images/blog/executing-custom-javascript-with-liveview/autofocus_example.png" alt="Maintaining autofocus using a script" />
+    <img src="/images/blog/executing-custom-javascript-with-liveview/autofocus_example.jpg" alt="Maintaining autofocus using a script" />
   </p>
   <p>
   In friendly copy and paste code...</p>
@@ -3918,12 +3918,12 @@ def article("llewellyn-falco-from-0-to-100-tested-code") do
   <p>
   Falco is using a tool to support <a href="https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864">Test-Commit-Revert</a>, where every day is committed if it the tests pass.</p>
   <p>
-    <img src="/images/blog/videos/llewellyn-falco-from-0-to-100-tested-code/tcr_commit.png" alt="TCR tool in Java" />
+    <img src="/images/blog/videos/llewellyn-falco-from-0-to-100-tested-code/tcr_commit.jpg" alt="TCR tool in Java" />
   </p>
   <p>
   Much of the first part of the talk is about <em>documenting</em> through tests the behaviour of the existing method, and using a coverage tool here is very helpful in showing that you have (well) covered all the existing code before you try and change it.</p>
   <p>
-    <img src="/images/blog/videos/llewellyn-falco-from-0-to-100-tested-code/another_input.png" alt="Adding tests to increase coverage before refactoring" />
+    <img src="/images/blog/videos/llewellyn-falco-from-0-to-100-tested-code/another_input.jpg" alt="Adding tests to increase coverage before refactoring" />
   </p>
   <p>
   It takes about 20 lines of code and 400 <em>tests</em> until 100% coverage is achieved and we can start to do actual work.</p>
@@ -3997,7 +3997,7 @@ end
 def article("oh-the-apis-opencamps-2017") do
   """
   <p>
-    <img src="/images/blog/talks/oh-the-apis-opencamps-2017/oh_the_apis.png" alt="Oh, the API Clients You&#39;ll Build (in Elixir)" />
+    <img src="/images/blog/talks/oh-the-apis-opencamps-2017/oh_the_apis.jpg" alt="Oh, the API Clients You&#39;ll Build (in Elixir)" />
   </p>
   <p>
   Today we are going explore how to write API clients in the <a href="https://elixir-lang.org">Elixir</a> language. This is a follow-up article to my presentation at OpenCamps 2017.</p>
@@ -4012,7 +4012,7 @@ def article("oh-the-apis-opencamps-2017") do
   <p>
   For starters, API is a very overloaded term. So here, I am referring to RESTful APIs available over HTTP. These are indeed not the only meaning of API, but for this context that is what we are referring to.</p>
   <p>
-    <img src="/images/blog/talks/oh-the-apis-opencamps-2017/api_calls.png" alt="API calls" />
+    <img src="/images/blog/talks/oh-the-apis-opencamps-2017/api_calls.jpg" alt="API calls" />
   </p>
   <p>
   In the example above, we have a Weather API and several clients that interact with that API over HTTP. Those clients could be straight curl commands, or more likely a think wrapper written in the programming language like Ruby, Java, or in our case <a href="https://elixir-lang.org">Elixir</a>.</p>
@@ -4023,7 +4023,7 @@ def article("oh-the-apis-opencamps-2017") do
   <p>
   Leonard Richardson provided a nice breakdown of the <a href="https://martinfowler.com/articles/richardsonMaturityModel.html">principles an a RESTful approach into various maturity levels</a>, which was summarized well by Martin Fowler. The higher the level, the more closely you are following the full spirit of REST; but even any HTTP service offering could qualify as REST, just not a very mature implementation.</p>
   <p>
-    <img src="/images/blog/talks/oh-the-apis-opencamps-2017/restful_mm.png" alt="RESTful maturity model" />
+    <img src="/images/blog/talks/oh-the-apis-opencamps-2017/restful_mm.jpg" alt="RESTful maturity model" />
   </p>
   <p>
   OK, now let&#39;s start talking Elixir.</p>
@@ -4032,7 +4032,7 @@ def article("oh-the-apis-opencamps-2017") do
   <p>
   There are lots of libraries available for interacting with HTTP services. Some in pure elixir, others in Erlang, and bypass is a mocking library to help us test HTTP calls without actually reaching out the service.</p>
   <p>
-    <img src="/images/blog/talks/oh-the-apis-opencamps-2017/elixir_rest_libs.png" alt="Elixir Libraries To Talk HTTP" />
+    <img src="/images/blog/talks/oh-the-apis-opencamps-2017/elixir_rest_libs.jpg" alt="Elixir Libraries To Talk HTTP" />
   </p>
   <p>
   We are going to use <a href="https://hex.pm/packages/httpoison">httpoison</a>, it is a pure Elixir library built on top of <a href="https://hex.pm/packages/hackney">hackney</a> and provides a very approachable interface.</p>
@@ -4212,7 +4212,7 @@ def article("oh-the-apis-opencamps-2017") do
   <p>
   But not really.</p>
   <p>
-    <img src="/images/blog/talks/oh-the-apis-opencamps-2017/api_other_concerns.png" alt="Other API concerns" />
+    <img src="/images/blog/talks/oh-the-apis-opencamps-2017/api_other_concerns.jpg" alt="Other API concerns" />
   </p>
   <p>
   We have gone pretty far with our spike, but have not really talked about how we can test our client. Or, how to send data to the API. Or, how to handle those other API calls like <code class="inline">POST</code> and <code class="inline">PUT</code> and <code class="inline">DELETE</code>. Or, how to handle accessing protected API endpoints, using something like secure tokens or an OAuth2 like protocol.</p>
@@ -4309,21 +4309,21 @@ def article("doex-elixir-api-for-digital-ocean") do
   <p>
   Want to automate your infrastructure leveraging the awesome <a href="https://developers.digitalocean.com/documentation/v2/">Digital Ocean API V2</a>, then the shell is your friend. Here we will learn about how to access the API from the command line using Elixir&#39;s <a href="https://hexdocs.pm/mix/master/Mix.Tasks.Escript.Build.html">Escript</a> tooling.</p>
   <p>
-    <img src="/images/blog/doex/doex_on_hex.png" alt="doex API for digital ocean on hex" />
+    <img src="/images/blog/doex/doex_on_hex.jpg" alt="doex API for digital ocean on hex" />
   </p>
   <p>
   Doex, access <a href="https://m.do.co/c/e450543d2a29">Digital Ocean</a>&#39;s API through the shell and/or Elixir</p>
   <p>
   First, if you don&#39;t know <a href="https://m.do.co/c/e450543d2a29">Digital Ocean</a> (my referral link should you wish to sign up, we both get a little kickback) is a cloud provider that helps you spin up new servers, quickly, to help get your application into production.</p>
   <p>
-    <img src="/images/blog/doex/create_droplet.png" alt="Digital Ocean create droplet" />
+    <img src="/images/blog/doex/create_droplet.jpg" alt="Digital Ocean create droplet" />
   </p>
   <p>
   With features like <a href="https://www.digitalocean.com/community/tutorials/how-to-use-floating-ips-on-digitalocean">Floating IPs</a>, <a href="https://www.digitalocean.com/community/tutorials/how-to-create-your-first-digitalocean-load-balancer">Load Balancers</a>, and <a href="https://www.digitalocean.com/community/tutorials/an-introduction-to-digitalocean-cloud-firewalls">Firewalls</a> you can be up and running with a production grade setup on the cheap.</p>
   <p>
   After setting up your DO account, you then need to generate a new Token through the API link from the top of your digital ocean dashboard.</p>
   <p>
-    <img src="/images/blog/doex/do_api_tokens.png" alt="Digital Ocean API tokens" />
+    <img src="/images/blog/doex/create_droplet.jpg" alt="Digital Ocean API tokens" />
   </p>
   <h2>
   That&#39;s not a real token, so don&#39;t bother trying</h2>
@@ -4374,7 +4374,7 @@ def article("doex-elixir-api-for-digital-ocean") do
   <p>
   It&#39;s just that easy.</p>
   <p>
-    <img src="/images/blog/doex/mydroplet.png" alt="my droplet created" />
+    <img src="/images/blog/doex/mydroplet.jpg" alt="my droplet created" />
   </p>
   <p>
   The command line script is still evolving, but all GET/POST DigitalOcean endpoints are available from the <a href="https://github.com/capbash/doex">elixir doex library</a>.</p>
@@ -4405,7 +4405,7 @@ def article("doex-elixir-api-for-digital-ocean") do
   <p>
   There are also a few other Elixir specific libraries, but none that have gained much traction and none provide both elixir API access AND command line access.</p>
   <p>
-    <img src="/images/blog/doex/altneratives_do_clients.png" alt="Alternatives to elixir Digital Ocean clients" />
+    <img src="/images/blog/doex/altneratives_do_clients.jpg" alt="Alternatives to elixir Digital Ocean clients" />
   </p>
   <p>
   Yep, that&#39;s doex at the the bottom there with a ton of downloads; watch out!</p>
@@ -4426,7 +4426,7 @@ def article("mailgun-on-digital-ocean") do
   <p>
   If you are setting up your account directly against your domain, then things are a bit easier (and the instructions work a little more as expected). If you are setting up against a subdomain, skim this section as the subdomain instructions are a bit different.</p>
   <p>
-    <img src="/images/blog/mailgun-on-digital-ocean/new_domain_on_mailgun.png" alt="New domain on mailgun" />
+    <img src="/images/blog/mailgun-on-digital-ocean/new_domain_on_mailgun.jpg" alt="New domain on mailgun" />
   </p>
   <p>
   I wanted to provide my view of how to get things configured should the <em>shorthand</em> editor in <a href="https://m.do.co/c/e450543d2a29">Digital Ocean</a> change between now and when you are reading me.</p>
@@ -4447,7 +4447,7 @@ def article("mailgun-on-digital-ocean") do
   <p>
   <a href="https://m.do.co/c/e450543d2a29">Digital Ocean</a>&#39;s data entry provides shortcuts in the editor, so be sure to leave out mydomain.com, and use the @ symbol where necessary. Here&#39;s what the values look like in <a href="https://m.do.co/c/e450543d2a29">Digital Ocean</a>&#39;s editor</p>
   <p>
-    <img src="/images/blog/mailgun-on-digital-ocean/do_dns_editor.png" alt="Digital Ocean DNS editor" />
+    <img src="/images/blog/mailgun-on-digital-ocean/do_dns_editor.jpg" alt="Digital Ocean DNS editor" />
   </p>
   <p>
   Please note that 10.20.30.40 is the IP address of your droplet and NOT that provided by mailgun.</p>
@@ -4456,12 +4456,12 @@ def article("mailgun-on-digital-ocean") do
   <p>
   If you want to keep your primary domain free and clear from <a href="https://www.mailgun.com">Mailgun</a>, you might consider setting up a subdomain to route all email through.</p>
   <p>
-    <img src="/images/blog/mailgun-on-digital-ocean/subdomain_domain_on_mailgun.png" alt="Using instead a subdomain on mailgun" />
+    <img src="/images/blog/mailgun-on-digital-ocean/subdomain_domain_on_mailgun.jpg" alt="Using instead a subdomain on mailgun" />
   </p>
   <p>
   Please note that in this example I have NOT configured the MX records, and you will not be able to receive emails. This is because at the moment <a href="https://m.do.co/c/e450543d2a29">Digital Ocean</a> does not directly support subdomain MX records. If you do configure your MX records, your account will still show as active, but the MX records will not be configured as you expect in Mailgun.</p>
   <p>
-    <img src="/images/blog/mailgun-on-digital-ocean/mailgun_mx_records.png" alt="MX records on mailgun" />
+    <img src="/images/blog/mailgun-on-digital-ocean/mailgun_mx_records.jpg" alt="MX records on mailgun" />
   </p>
   <p>
   Skip to the next section if you will want to both send AND receive emails from your subdomain. See <a href="https://www.digitalocean.com/community/questions/mx-record-for-subdomains">here</a> and <a href="https://www.digitalocean.com/community/questions/sub-domains-with-mx-records-for-mailgun">here</a> for discussions about the limitations in the DNS editor.</p>
@@ -4481,7 +4481,7 @@ def article("mailgun-on-digital-ocean") do
   <p>
   <a href="https://m.do.co/c/e450543d2a29">Digital Ocean</a>&#39;s data entry provides shortcuts in the editor, so you will want to leave out mydomain.ca, but <strong>NOT</strong> mg. Here&#39;s what the values look like in <a href="https://m.do.co/c/e450543d2a29">Digital Ocean</a>&#39;s editor.</p>
   <p>
-    <img src="/images/blog/mailgun-on-digital-ocean/do_dns_subdomain_editor.png" alt="Digital Ocean editing subdomains in DNS editor" />
+    <img src="/images/blog/mailgun-on-digital-ocean/do_dns_subdomain_editor.jpg" alt="Digital Ocean editing subdomains in DNS editor" />
   </p>
   <p>
   Here&#39;s what you need to change for your specific configuration</p>
@@ -4502,17 +4502,17 @@ def article("mailgun-on-digital-ocean") do
   <p>
   First, you will need to create an entirely new domain for your subdomain in <a href="https://m.do.co/c/e450543d2a29">Digital Ocean</a></p>
   <p>
-    <img src="/images/blog/mailgun-on-digital-ocean/do_add_a_domain.png" alt="Digital Ocean add a domain" />
+    <img src="/images/blog/mailgun-on-digital-ocean/do_add_a_domain.jpg" alt="Digital Ocean add a domain" />
   </p>
   <p>
   The IP address of 1.2.3.4 should that from <a href="https://www.mailgun.com">Mailgun</a> and NOT your droplet&#39;s IP. Here is what the records will look like in editor.</p>
   <p>
-    <img src="/images/blog/mailgun-on-digital-ocean/do_dns_to_mailgun.png" alt="Digital Ocean DNS points to mailgun" />
+    <img src="/images/blog/mailgun-on-digital-ocean/do_dns_to_mailgun.jpg" alt="Digital Ocean DNS points to mailgun" />
   </p>
   <p>
   In the above the 1.2.3.4 IP address is the one provided by Mailgun, and NOT your DigitalOcean droplet. Once those settings propagate you should be able to receive emails from @mg.mydomain.com.</p>
   <p>
-    <img src="/images/blog/mailgun-on-digital-ocean/mailgun_working_mx_records.png" alt="Mailgun working MX records" />
+    <img src="/images/blog/mailgun-on-digital-ocean/mailgun_working_mx_records.jpg" alt="Mailgun working MX records" />
   </p>
   <p>
   Do not copy and paste anything from this post, and instead use the values provided by <a href="https://www.mailgun.com">Mailgun</a>.</p>
@@ -4818,7 +4818,7 @@ def article("webl") do
   <p>
   An exploration of the Go language (golang) to build a simple webcrawler, all code is available on <a href="https://github.com/aforward/webl">GitHub</a>.  This application was written as an exploration of the language and demonstration of the various features of the language; it is not feature complete but should be complex enough to provide some examples of using Go&#39;s various concurrent features, tied together in a simple command line and web interface.</p>
   <p>
-    <img src="/images/blog/webl/github.png" alt="GitHub Repo for Webl" />
+    <img src="/images/blog/webl/github.jpg" alt="GitHub Repo for Webl" />
   </p>
   <h3>
   Installation</h3>
@@ -4845,27 +4845,27 @@ def article("webl") do
   <p>
   The launched application should be available at <a href="http://127.0.0.1:4005">http://127.0.0.1:4005</a>, and you can add urls to crawl.</p>
   <p>
-    <img src="/images/blog/webl/add_url.png" alt="Adding a URL" />
+    <img src="/images/blog/webl/add_url.jpg" alt="Adding a URL" />
   </p>
   <p>
   Using websockets, it attaches itself to the running project and streams the current status back to Javascript.</p>
   <p>
-    <img src="/images/blog/webl/logger.png" alt="The Logger" />
+    <img src="/images/blog/webl/logger.jpg" alt="The Logger" />
   </p>
   <p>
   Data is persisted to <a href="https://redis.io">Redis</a>, so that you can view recently crawled</p>
   <p>
-    <img src="/images/blog/webl/list.png" alt="Found files list view" />
+    <img src="/images/blog/webl/list.jpg" alt="Found files list view" />
   </p>
   <p>
   In the details view, we show the sitemap as a table, showing links (to other pages), and assets (being used on the current page, e.g. Javascript / CSS). For simplicity, we are only crawling within a domain (e.g. a4word.com), and do not look beyond (e.g. twitter.com / facebook.com) or within other subdomains (e.g. admin.a4word.com).</p>
   <p>
-    <img src="/images/blog/webl/table_view.png" alt="Found files table view" />
+    <img src="/images/blog/webl/table_view.jpg" alt="Found files table view" />
   </p>
   <p>
   I experimented with <a href="http://www.graphdracula.net/">Graph Dracula</a> for some better visualizations, but right now the results are far too busy.</p>
   <p>
-    <img src="/images/blog/webl/graph.png" alt="Graph Dracula view" />
+    <img src="/images/blog/webl/graph.jpg" alt="Graph Dracula view" />
   </p>
   <h3>
   The Console Application</h3>
@@ -4878,12 +4878,12 @@ def article("webl") do
   <p>
   The webl library is consumed by a web application (described above) and console application, described here.  Both systems are thin clients and push most of the work to the Go library.</p>
   <p>
-    <img src="/images/blog/webl/console_help.png" alt="Console help flag" />
+    <img src="/images/blog/webl/console_help.jpg" alt="Console help flag" />
   </p>
   <p>
   In fact, the logged output in the web application is drawn from the same logging information used to display to the console (but the console has extra flags to turn verbosity up and down)</p>
   <p>
-    <img src="/images/blog/webl/console_download.png" alt="Console download" />
+    <img src="/images/blog/webl/console_download.jpg" alt="Console download" />
   </p>
   <h3>
   The Data Store</h3>
@@ -5079,7 +5079,7 @@ def article("webl") do
   <p>
   The <a href="http://www.robotstxt.org/">Web Robots Pages</a> describes how bots, like webl all allowed to interact with the site.  To achieve this, we used a <a href="https://github.com/temoto/robotstxt-go">robotstxt</a> and enhanced the fetchResource to keep track of &lt;i&gt;which&lt;/i&gt; robots it had loaded to avoid having to fetch the data on each request.</p>
   <p>
-    <img src="/images/blog/webl/robots_txt.png" alt="Robots dot text" />
+    <img src="/images/blog/webl/robots_txt.jpg" alt="Robots dot text" />
   </p>
   <p>
   The bulk of the heavy lifting looks like the following:</p>
