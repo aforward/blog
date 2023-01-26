@@ -2,6 +2,22 @@ defmodule Gen.Books do
   def books() do
     [
       %{
+  title: "The Alchemist",
+  author: "Paulo Coelho",
+  published: "1989-04-15",
+  url: "/images/book-covers/the-alchemist.jpg",
+  slug: "the-alchemist"
+},
+
+%{
+  title: "On Writing -  A memoir of the Craft",
+  author: "Stephen King",
+  published: "2000-10-03",
+  url: "/images/book-covers/on-writing.jpg",
+  slug: "on-writing"
+},
+
+%{
   title: "Save The Cat! Writes a Novel",
   author: "Jessica Brody",
   published: "2018-10-09",
