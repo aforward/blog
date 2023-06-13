@@ -202,6 +202,14 @@ defmodule Gen.Books do
 },
 
 %{
+  title: "The End of the World is Just the Beginning",
+  author: "Peter Zeihan",
+  published: "2022-06-14",
+  url: "/images/book-covers/the-end-of-the-world-is-just-the-beginning.jpg",
+  slug: "the-end-of-the-world-is-just-the-beginning"
+},
+
+%{
   title: "The 10% Entrepreneur: Live Your Startup Dream Without Quitting Your Day Job",
   author: "Patrick J. McGinnis",
   published: "2016-04-12",
