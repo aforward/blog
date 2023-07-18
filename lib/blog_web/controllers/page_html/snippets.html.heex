@@ -2,11 +2,7 @@
   <Spotlight.header mode="snippets" />
   <div class="mt-10">
     <%= for snippet <- @snippets do %>
-      <Spotlight.snippet
-        slug={snippet.slug}
-        title={snippet.title}
-        body={snippet.body}
-      />
+      <Spotlight.snippet slug={snippet.slug} title={snippet.title} body={snippet.body} />
     <% end %>
   </div>
 </Spotlight.body>
