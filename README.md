@@ -13,7 +13,8 @@ The blog articles are located in
 To regenerate run
 
 ```bash
-mix run --eval "Blog.Generator.run()"
+mix run --eval "Blog.Generator.run()" && \
+  mix format
 ```
 
 ## Deploy
