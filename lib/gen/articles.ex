@@ -2,6 +2,20 @@ defmodule Gen.Articles do
   def articles() do
     [
       %{
+        title: "Installing a specific version of DBT (using Python / PIP)",
+        body: """
+        <p>
+        A nice little script for getting the <em>extract</em> correct DBT installed
+        on your system.</p>
+        <pre><code class="bash language-bash">python -m pip install --upgrade pip setuptools wheel --no-cache-dir
+        python -m pip install --upgrade dbt-core==1.5.3</code></pre>
+        <p>
+        (Note that you might need to call <code class="inline">python3</code>)</p>
+        """,
+        datetime: "2023-07-18",
+        slug: "dbt_install"
+      },
+      %{
         title: "Recommending Elixir for Machine Learning",
         body: """
         <p>
@@ -503,6 +517,35 @@ defmodule Gen.Articles do
         slug: "webl"
       }
     ]
+  end
+
+  def article("dbt_install") do
+    """
+    <p>
+    Here is a script that I include in my dbt projects to help setup
+    the desired version of dbt (note that your python might just be <code class="inline">python</code>).</p>
+    <pre><code class="bash language-bash">DBT_VERSION=${DBT_VERSION-1.5.3}
+
+    python3 -m pip install --upgrade pip setuptools wheel --no-cache-dir
+    python3 -m pip install --upgrade dbt-core==${DBT_VERSION}
+    dbt --version</code></pre>
+    <p>
+    I store this is <code class="inline">./scripts/setup_dbt.sh</code>, and then can run it with</p>
+    <pre><code class="bash language-bash">./scripts/setup_dbt.sh</code></pre>
+    <p>
+    Or, if I need to revert to an older version.</p>
+    <pre><code class="bash language-bash">DBT_VERSION=1.4.4 ./scripts/setup_dbt.sh</code></pre>
+    <p>
+    The output should look similar to</p>
+    <pre><code class="bash language-bash">dbtstuff (main)$ dbt --version
+    Core:
+      - installed: 1.4.4
+      - latest:    1.5.3 - Update available!
+
+      Your version of dbt-core is out of date!
+      You can find instructions for upgrading here:
+      https://docs.getdbt.com/docs/installation</code></pre>
+    """
   end
 
   def article("empex-2023-machine-learning") do
@@ -5868,6 +5911,7 @@ defmodule Gen.Articles do
     """
   end
 
+  def title("dbt_install"), do: "Installing a specific version of DBT (using Python / PIP)"
   def title("empex-2023-machine-learning"), do: "Recommending Elixir for Machine Learning"
 
   def title("lighthouse-seo-chrome-tool"),
@@ -5912,6 +5956,14 @@ defmodule Gen.Articles do
   def title("continuous-testing-with-elixir"), do: "Continuous Testing with Elixir"
   def title("safetybox"), do: "Simple encryption in Elixir"
   def title("webl"), do: "A simple web crawler in Golang"
+
+  def meta("dbt_install") do
+    %{
+      title: "Installing a specific version of DBT (using Python / PIP)",
+      datetime: "2023-07-18",
+      slug: "dbt_install"
+    }
+  end
 
   def meta("empex-2023-machine-learning") do
     %{
